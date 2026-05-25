@@ -149,7 +149,7 @@ Wikipedia MLM (0.904$\pm$0.115) nearly matches jailbreak-domain MLM at full leng
 Perturbation analysis (Section~\ref{sec:perturbation}) reveals a sharper domain specificity effect: Wikipedia MLM degrades by $\sim$12\,pp under adversarial paraphrasing while jailbreak-domain MLM degrades by only 2.6\,pp.
 
 \paragraph{Misaligned supervision destabilizes generalization.}
-Topic classification's poor performance (0.541$\pm$0.207) is consistent with misaligned supervision; the cleaner test isolating domain exposure is Wiki-MLM vs.\ JB-MLM (Section~\ref{sec:decomposition}).
+Topic classification's poor performance (0.541$\pm$0.207) is consistent with misaligned supervision (error analysis in Appendix~\ref{app:topic_failure}); the cleaner test isolating domain exposure is Wiki-MLM vs.\ JB-MLM (Section~\ref{sec:decomposition}).
 
 \paragraph{Evidence hierarchy on strategy-diverse attacks.}
 ActorAttack~\citep{ren2024actorattack} preserves the same hierarchy (Figure~\ref{fig:evidence_hierarchy}) with wider gaps: TF-IDF collapses (0.261) while classification variants converge (0.951--0.990, max gap 3.9\,pp); DAPT provides $\sim$71\,pp over vanilla (Appendix~\ref{sec:actorattack_full},~\ref{app:aa_error}).

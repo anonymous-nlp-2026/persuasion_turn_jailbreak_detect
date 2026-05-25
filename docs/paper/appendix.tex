@@ -181,24 +181,26 @@ DD conversations span 5 active source strategies (565 transitions), with Emotion
 \section{Centered CKA Heatmaps}
 \label{sec:cka_heatmap}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{figures/paper/cka_heatmap.pdf}
-\caption{Centered CKA similarity~\citep{kornblith2019cka} between encoder variants on IID and OOD data for DeBERTa-v3 and RoBERTa. Low off-diagonal values (vanilla vs.\ adapted variants) confirm that continued pretraining substantially reshapes representations; the MLM vs.\ 9-class block shows distinct geometries (CKA $\leq$ 0.2 on RoBERTa OOD).}
-\label{fig:cka_heatmap}
-\end{figure}
+% [Figure commented out: cka_heatmap.pdf not available in anonymous repo]
+% \begin{figure}[t]
+% \centering
+% \includegraphics[width=\columnwidth]{figures/paper/cka_heatmap.pdf}
+% \caption{Centered CKA similarity~\citep{kornblith2019cka} between encoder variants on IID and OOD data for DeBERTa-v3 and RoBERTa. Low off-diagonal values (vanilla vs.\ adapted variants) confirm that continued pretraining substantially reshapes representations; the MLM vs.\ 9-class block shows distinct geometries (CKA $\leq$ 0.2 on RoBERTa OOD).}
+% \end{figure}
+\label{fig:cka_heatmap} % phantom label to preserve \ref
 
 \section{Embedding Space Visualization}
 \label{app:tsne}
 
 Figure~\ref{fig:tsne} visualizes mean-pooled \texttt{[CLS]} embeddings via t-SNE for three representative variants (Vanilla, JB-MLM, 9-Class) on DD OOD and ActorAttack. Vanilla embeddings show dispersed jailbreak clusters with ambiguous decision boundaries, while domain-adapted variants (JB-MLM, 9-Class) produce tighter, more separable clusters. JB-MLM achieves the clearest bimodal separation on both evaluation sets, consistent with its superior detection performance.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\columnwidth]{figures/paper/embedding_tsne.pdf}
-\caption{t-SNE visualization of mean-pooled \texttt{[CLS]} embeddings (perplexity=30) for Vanilla, JB-MLM, and 9-Class variants on DD OOD and ActorAttack (118 samples each; blue=benign, red=jailbreak).}
-\label{fig:tsne}
-\end{figure}
+% [Figure commented out: embedding_tsne.pdf not available in anonymous repo]
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=\columnwidth]{figures/paper/embedding_tsne.pdf}
+% \caption{t-SNE visualization of mean-pooled \texttt{[CLS]} embeddings (perplexity=30) for Vanilla, JB-MLM, and 9-Class variants on DD OOD and ActorAttack (118 samples each; blue=benign, red=jailbreak).}
+% \end{figure}
+\label{fig:tsne} % phantom label to preserve \ref
 
 \section{Cross-LLM Validation}
 \label{app:cross_llm}

@@ -46,5 +46,5 @@ The \textbf{vanilla} baseline uses the pretrained DeBERTa-v3-base weights withou
 
 Turn embeddings $\{h_1, \ldots, h_K\}$ from the frozen Stage-1 encoder are aggregated by a 2-layer bidirectional GRU ($d_{\text{hidden}}$=256, dropout 0.3): $\bar{h} = [\overrightarrow{h_K};\; \overleftarrow{h_1}] \in \mathbb{R}^{512}$.
 A two-layer MLP ($512 \to 256 \to 2$, ReLU activation) maps $\bar{h}$ to $\hat{y} \in \{0, 1\}$.
-The Stage-1 encoder is frozen during Stage~2 to ensure ablation fairness across all seven variants.
+The Stage-1 encoder is frozen during Stage~2 to ensure ablation fairness across all seven variants (freezing verification in Appendix~\ref{app:frozen_verify}; end-to-end fine-tuning comparison in Appendix~\ref{app:e2e}).
 We retain BiGRU as the default aggregator for its amenability to representation analysis (Centered Kernel Alignment [CKA], t-SNE), noting that mean pooling achieves comparable detection (Section~\ref{sec:decomposition}). Cross-architecture validation on RoBERTa (Section~\ref{sec:cross_encoder}) yields thirteen configurations across three scales.
