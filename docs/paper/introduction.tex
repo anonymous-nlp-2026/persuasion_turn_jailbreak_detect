@@ -17,7 +17,7 @@ Our pipeline, \textbf{DisPeD} (Disentangled Persuasion Detection)\footnote{We us
 
 Our contributions:
 \begin{itemize}[leftmargin=*, itemsep=2pt, topsep=4pt]
-  \item \textbf{Systematic ablation of cross-attack generalization.} Thirteen encoder configurations at three scales (125--355M) decompose jailbreak detection into attack-side and benign-side factors, constituting the first controlled factorial study in this domain. Classification DAPT recovers OOD detection (0.26--0.31 $\rightarrow$ 0.97--1.0) while unsupervised pretraining collapses under mixed-LLM training; 10--25 benign conversations reduce false-positive rates (FPR) from 58--68\% to 0--1.5\%.
+  \item \textbf{Systematic ablation of cross-attack generalization.} Thirteen encoder configurations at three scales (125--355M) decompose jailbreak detection into attack-side and benign-side factors, constituting, to the best of our knowledge, the first controlled factorial study in this domain. Classification DAPT recovers OOD detection (0.26--0.31 $\rightarrow$ 0.97--1.0) while unsupervised pretraining collapses under mixed-LLM training; 10--25 benign conversations reduce false-positive rates (FPR) from 58--68\% to 0--1.5\%.
 
   \item \textbf{Partition sufficiency with a difficulty gradient.} Scrambled labels match correct labels for template-attack detection (Two One-Sided Tests [TOST] $|d| \leq 0.14$), but strategy-diverse attacks retain moderate label sensitivity ($d$\,=\,0.44). Domain-relevant partitioning, not label semantics, is the operative mechanism, consistent with \citet{zhang2021understanding}: compression localizes to 3 singular value decomposition (SVD) dimensions in layers 8--12.
 
