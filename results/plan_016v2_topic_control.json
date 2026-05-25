@@ -1,0 +1,48 @@
+{
+  "experiment": "plan_016v2_topic_control",
+  "description": "5-class topic auxiliary task (no intent head) as control for cross-attack generalization",
+  "dd_results": {
+    "full": {
+      "f1_macro": 0.7268518518518519,
+      "precision": 0.7714285714285714,
+      "recall": 0.8,
+      "n": 118
+    },
+    "k=1": {
+      "f1_macro": 0.697103043637697,
+      "precision": 0.7164502164502164,
+      "recall": 0.7467105263157895,
+      "n": 118
+    },
+    "k=2": {
+      "f1_macro": 0.7157456748667785,
+      "precision": 0.7409288824383164,
+      "recall": 0.7730263157894737,
+      "n": 118
+    },
+    "k=3": {
+      "f1_macro": 0.7169029443838604,
+      "precision": 0.7490488732806555,
+      "recall": 0.7799342105263158,
+      "n": 118
+    },
+    "k=5": {
+      "f1_macro": 0.7502007445798964,
+      "precision": 0.7751814223512337,
+      "recall": 0.8118421052631579,
+      "n": 118
+    }
+  },
+  "reference_plan006_treatment": {
+    "k=1": 1.0,
+    "k=2": 0.99,
+    "k=3": 0.99,
+    "k=5": 1.0,
+    "full": 1.0
+  },
+  "reference_plan006_baseline": {
+    "k=1": 0.575,
+    "k=2": 0.438,
+    "full": 0.285
+  }
+}

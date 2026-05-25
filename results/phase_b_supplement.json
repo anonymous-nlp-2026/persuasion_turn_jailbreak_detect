@@ -1,0 +1,183 @@
+{
+  "k1_early_detection": {
+    "treatment": {
+      "f1": 0.9866666666666667,
+      "precision": 0.9736842105263158,
+      "recall": 1.0,
+      "accuracy": 0.9861111111111112,
+      "fpr_at_95tpr": 0.0
+    },
+    "baseline": {
+      "f1": 0.8615384615384616,
+      "precision": 1.0,
+      "recall": 0.7567567567567568,
+      "accuracy": 0.875,
+      "fpr_at_95tpr": 0.05714285714285714
+    },
+    "tfidf": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    }
+  },
+  "per_attack_type_k2": {
+    "Academic Disguise": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 3,
+      "n_jailbreak": 3,
+      "n_benign": 0
+    },
+    "Classic Crescendo": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 3,
+      "n_jailbreak": 3,
+      "n_benign": 0
+    },
+    "DAN Variant": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Emotional Path": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Full Spectrum": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 8,
+      "n_jailbreak": 8,
+      "n_benign": 0
+    },
+    "Mixed Emotional": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Obfuscation Path": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 2,
+      "n_jailbreak": 2,
+      "n_benign": 0
+    },
+    "Role + Obfuscation": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 6,
+      "n_jailbreak": 6,
+      "n_benign": 0
+    },
+    "qwen3-8b-v4c-casual": {
+      "f1": 0.0,
+      "accuracy": 0.9714285714285714,
+      "n": 35,
+      "n_jailbreak": 0,
+      "n_benign": 35
+    }
+  },
+  "per_attack_type_k2_baseline": {
+    "Academic Disguise": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 3,
+      "n_jailbreak": 3,
+      "n_benign": 0
+    },
+    "Classic Crescendo": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 3,
+      "n_jailbreak": 3,
+      "n_benign": 0
+    },
+    "DAN Variant": {
+      "f1": 0.75,
+      "accuracy": 0.6,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Emotional Path": {
+      "f1": 0.5714285714285714,
+      "accuracy": 0.4,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Full Spectrum": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 8,
+      "n_jailbreak": 8,
+      "n_benign": 0
+    },
+    "Mixed Emotional": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 5,
+      "n_jailbreak": 5,
+      "n_benign": 0
+    },
+    "Obfuscation Path": {
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "n": 2,
+      "n_jailbreak": 2,
+      "n_benign": 0
+    },
+    "Role + Obfuscation": {
+      "f1": 0.6666666666666666,
+      "accuracy": 0.5,
+      "n": 6,
+      "n_jailbreak": 6,
+      "n_benign": 0
+    },
+    "qwen3-8b-v4c-casual": {
+      "f1": 0.0,
+      "accuracy": 1.0,
+      "n": 35,
+      "n_jailbreak": 0,
+      "n_benign": 35
+    }
+  },
+  "balanced_tfidf_cv": {
+    "mean_f1": 1.0,
+    "std_f1": 0.0,
+    "per_fold": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_per_class": 161,
+    "n_total": 322
+  },
+  "fpr95_full": {
+    "treatment": 0.0,
+    "baseline": 0.0,
+    "tfidf": 0.0
+  },
+  "fpr95_K=2": {
+    "treatment": 0.0,
+    "baseline": 0.05714285714285714,
+    "tfidf": 0.0
+  },
+  "fpr95_K=1": {
+    "treatment": 0.0,
+    "baseline": 0.05714285714285714,
+    "tfidf": 0.0
+  }
+}

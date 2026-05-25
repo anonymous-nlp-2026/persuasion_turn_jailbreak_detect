@@ -1,0 +1,26 @@
+{
+  "50": {
+    "n_train": 50,
+    "label_distribution": {
+      "benign": 25,
+      "jailbreak": 25
+    },
+    "iid": 0.6458781362007169,
+    "dd_ood": 0.5288697788697789,
+    "aa_ood": 0.23376623376623376,
+    "data_seed": 42,
+    "model_seed": 42
+  },
+  "250": {
+    "n_train": 250,
+    "label_distribution": {
+      "jailbreak": 125,
+      "benign": 125
+    },
+    "iid": 0.9868398268398269,
+    "dd_ood": 0.36506252368321335,
+    "aa_ood": 0.5014568764568764,
+    "data_seed": 42,
+    "model_seed": 42
+  }
+}

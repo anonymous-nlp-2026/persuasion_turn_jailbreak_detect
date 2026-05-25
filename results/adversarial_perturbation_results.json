@@ -1,0 +1,178 @@
+{
+  "1": {
+    "treatment": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.9743589743589743,
+        "precision": 0.95,
+        "recall": 1.0,
+        "accuracy": 0.9736842105263158
+      }
+    },
+    "baseline": {
+      "original": {
+        "f1": 0.987012987012987,
+        "precision": 0.9743589743589743,
+        "recall": 1.0,
+        "accuracy": 0.9868421052631579
+      },
+      "perturbed": {
+        "f1": 0.8405797101449275,
+        "precision": 0.9354838709677419,
+        "recall": 0.7631578947368421,
+        "accuracy": 0.8552631578947368
+      }
+    },
+    "tfidf": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.9041095890410958,
+        "precision": 0.9428571428571428,
+        "recall": 0.868421052631579,
+        "accuracy": 0.9078947368421053
+      }
+    }
+  },
+  "2": {
+    "treatment": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    },
+    "baseline": {
+      "original": {
+        "f1": 0.9866666666666667,
+        "precision": 1.0,
+        "recall": 0.9736842105263158,
+        "accuracy": 0.9868421052631579
+      },
+      "perturbed": {
+        "f1": 0.8656716417910447,
+        "precision": 1.0,
+        "recall": 0.7631578947368421,
+        "accuracy": 0.881578947368421
+      }
+    },
+    "tfidf": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.958904109589041,
+        "precision": 1.0,
+        "recall": 0.9210526315789473,
+        "accuracy": 0.9605263157894737
+      }
+    }
+  },
+  "3": {
+    "treatment": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    },
+    "baseline": {
+      "original": {
+        "f1": 0.9866666666666667,
+        "precision": 1.0,
+        "recall": 0.9736842105263158,
+        "accuracy": 0.9868421052631579
+      },
+      "perturbed": {
+        "f1": 0.8484848484848485,
+        "precision": 1.0,
+        "recall": 0.7368421052631579,
+        "accuracy": 0.868421052631579
+      }
+    },
+    "tfidf": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.9866666666666667,
+        "precision": 1.0,
+        "recall": 0.9736842105263158,
+        "accuracy": 0.9868421052631579
+      }
+    }
+  },
+  "full": {
+    "treatment": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    },
+    "baseline": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.8823529411764706,
+        "precision": 1.0,
+        "recall": 0.7894736842105263,
+        "accuracy": 0.8947368421052632
+      }
+    },
+    "tfidf": {
+      "original": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "perturbed": {
+        "f1": 0.9866666666666667,
+        "precision": 1.0,
+        "recall": 0.9736842105263158,
+        "accuracy": 0.9868421052631579
+      }
+    }
+  }
+}

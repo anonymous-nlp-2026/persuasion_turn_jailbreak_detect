@@ -1,0 +1,19 @@
+{
+  "bertscore_f1": {
+    "mean": 0.9236753582954407,
+    "std": 0.014180067926645279
+  },
+  "semantic_similarity": {
+    "mean": 0.7436632513999939,
+    "std": 0.11587034165859222
+  },
+  "lexical_overlap": {
+    "mean": 0.19617660494651304,
+    "std": 0.05455298245340242
+  },
+  "total_turns": 632,
+  "low_quality_turns": 0,
+  "filtered_conversations": 0,
+  "remaining_conversations": 76,
+  "bertscore_threshold": 0.6
+}

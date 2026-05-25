@@ -1,0 +1,49 @@
+{
+  "dataset": {
+    "total": 270,
+    "train": 189,
+    "val": 40,
+    "test": 41,
+    "jailbreak_ratio": 0.9259259259259259
+  },
+  "deberta_stage1": {
+    "best_epoch": 4,
+    "best_val_loss": 0.831,
+    "val_persuasion_acc": 0.7089,
+    "val_intent_acc": 0.9842
+  },
+  "full_conversation": {
+    "treatment": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    },
+    "baseline": {
+      "f1_macro": 0.7371794871794872,
+      "accuracy": 0.9512195121951219,
+      "fpr_at_95tpr": 0.0
+    },
+    "tfidf": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    }
+  },
+  "early_detection": {
+    "k=2": {
+      "treatment_f1": 1.0,
+      "baseline_f1": 0.7371794871794872,
+      "tfidf_f1": 0.8935064935064936
+    },
+    "k=3": {
+      "treatment_f1": 1.0,
+      "baseline_f1": 0.8935064935064936,
+      "tfidf_f1": 0.8935064935064936
+    },
+    "k=5": {
+      "treatment_f1": 1.0,
+      "baseline_f1": 0.8935064935064936,
+      "tfidf_f1": 0.8935064935064936
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "experiment": "plan_018_wiki_mlm_control",
+  "description": "Wikipedia MLM continued pretraining control (domain-irrelevant text)",
+  "hypothesis": "If domain-specific exposure drives OOD generalization, Wikipedia MLM should perform significantly worse than jailbreak-domain MLM (plan_017)",
+  "dd_ood_results": {
+    "full": {
+      "f1_macro": 0.7421,
+      "precision": 0.9808,
+      "recall": 0.6375,
+      "n": 118
+    },
+    "k=1": {
+      "f1_macro": 0.8219,
+      "precision": 0.9688,
+      "recall": 0.775,
+      "n": 118
+    },
+    "k=2": {
+      "f1_macro": 0.815,
+      "precision": 0.9836,
+      "recall": 0.75,
+      "n": 118
+    },
+    "k=3": {
+      "f1_macro": 0.8492,
+      "precision": 1.0,
+      "recall": 0.7875,
+      "n": 118
+    },
+    "k=5": {
+      "f1_macro": 0.808,
+      "precision": 1.0,
+      "recall": 0.725,
+      "n": 118
+    }
+  },
+  "iid_results": {
+    "full": {
+      "f1_macro": 0.9868,
+      "precision": 0.9744,
+      "recall": 1.0,
+      "n": 76
+    },
+    "k=1": {
+      "f1_macro": 0.9474,
+      "precision": 0.9474,
+      "recall": 0.9474,
+      "n": 76
+    },
+    "k=2": {
+      "f1_macro": 0.9341,
+      "precision": 0.9714,
+      "recall": 0.8947,
+      "n": 76
+    },
+    "k=3": {
+      "f1_macro": 0.9737,
+      "precision": 1.0,
+      "recall": 0.9474,
+      "n": 76
+    },
+    "k=5": {
+      "f1_macro": 0.9868,
+      "precision": 1.0,
+      "recall": 0.9737,
+      "n": 76
+    }
+  },
+  "reference_plan017_jb_mlm": {
+    "k=1": 1.0,
+    "k=2": 1.0,
+    "k=3": 1.0,
+    "k=5": 1.0,
+    "full": 1.0
+  },
+  "reference_plan006_treatment": {
+    "k=1": 1.0,
+    "k=2": 0.99,
+    "k=3": 0.99,
+    "k=5": 1.0,
+    "full": 1.0
+  },
+  "reference_plan006_baseline": {
+    "k=1": 0.575,
+    "k=2": 0.438,
+    "full": 0.285
+  }
+}

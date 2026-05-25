@@ -1,0 +1,42 @@
+{
+  "vanilla_dd": {
+    "f1_macro": 0.18072289156626506,
+    "precision_macro": 0.11538461538461539,
+    "recall_macro": 0.4166666666666667,
+    "n": 68,
+    "n_jailbreak": 50,
+    "n_benign": 18,
+    "preds_jb": 3,
+    "preds_benign": 65
+  },
+  "vanilla_aa": {
+    "f1_macro": 0.4112554112554112,
+    "precision_macro": 0.5504807692307692,
+    "recall_macro": 0.5466666666666666,
+    "n": 68,
+    "n_jailbreak": 50,
+    "n_benign": 18,
+    "preds_jb": 16,
+    "preds_benign": 52
+  },
+  "mlm_dd": {
+    "f1_macro": 0.19047619047619047,
+    "precision_macro": 0.12121212121212122,
+    "recall_macro": 0.4444444444444444,
+    "n": 68,
+    "n_jailbreak": 50,
+    "n_benign": 18,
+    "preds_jb": 2,
+    "preds_benign": 66
+  },
+  "mlm_aa": {
+    "f1_macro": 0.2902509438152343,
+    "precision_macro": 0.4882903981264637,
+    "recall_macro": 0.4944444444444444,
+    "n": 68,
+    "n_jailbreak": 50,
+    "n_benign": 18,
+    "preds_jb": 7,
+    "preds_benign": 61
+  }
+}

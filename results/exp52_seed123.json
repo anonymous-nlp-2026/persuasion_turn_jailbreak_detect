@@ -1,0 +1,21 @@
+{
+  "exp_id": "exp52",
+  "seed": 123,
+  "n_adapt": 25,
+  "source": "oasst2",
+  "eval_n": 200,
+  "results": {
+    "oasst2_fpr": 0.005,
+    "oasst2_n_fp": 1,
+    "iid_f1_macro": 1.0,
+    "ood_dd_recall": 1.0,
+    "ood_dd_f1": 1.0,
+    "ood_aa_recall": 0.8875,
+    "ood_aa_f1": 0.9172574990261005,
+    "ood_fitd_recall": 1.0,
+    "ood_fitd_f1": 1.0
+  },
+  "deberta_path": "checkpoints/exp52_oasst2_n25_seed123/deberta_multitask/best",
+  "gru_path": "checkpoints/exp52_oasst2_n25_seed123/gru/best.pt",
+  "time_min": 1.8
+}

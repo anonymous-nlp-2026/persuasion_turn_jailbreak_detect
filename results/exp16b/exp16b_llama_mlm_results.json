@@ -1,0 +1,42 @@
+{
+  "llama_only_test": {
+    "f1_macro": 0.8441295546558705,
+    "precision": 0.8441295546558705,
+    "recall": 0.8441295546558705,
+    "n": 77,
+    "n_jailbreak": 39,
+    "n_benign": 38
+  },
+  "mixed_test": {
+    "f1_macro": 0.7212032281731475,
+    "precision": 0.8053571428571429,
+    "recall": 0.736842105263158,
+    "n": 76,
+    "n_jailbreak": 38,
+    "n_benign": 38
+  },
+  "dd_ood": {
+    "f1_macro": 0.3327380952380952,
+    "precision": 0.4693627450980392,
+    "recall": 0.48355263157894735,
+    "n": 118,
+    "n_jailbreak": 80,
+    "n_benign": 38
+  },
+  "aa_ood": {
+    "f1_macro": 0.8151629072681704,
+    "precision": 0.806159420289855,
+    "recall": 0.8335526315789473,
+    "n": 118,
+    "n_jailbreak": 80,
+    "n_benign": 38
+  },
+  "toxicchat": {
+    "f1_macro": 0.16262975778546712,
+    "precision": 0.27647058823529413,
+    "recall": 0.11519607843137254,
+    "n": 242,
+    "n_jailbreak": 204,
+    "n_benign": 38
+  }
+}

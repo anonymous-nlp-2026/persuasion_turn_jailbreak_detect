@@ -1,0 +1,38 @@
+{
+  "experiment": "exp45_benign_adaptation_curve",
+  "n": 10,
+  "seeds": [42, 123, 456],
+  "per_seed": {
+    "42": {
+      "wildchat_fpr": 0.0,
+      "iid_f1_macro": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_f1": 1.0,
+      "ood_fitd_f1": 1.0,
+      "ood_aa_recall": 1.0
+    },
+    "123": {
+      "wildchat_fpr": 0.0,
+      "iid_f1_macro": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_f1": 0.9714585181004596,
+      "ood_fitd_f1": 1.0,
+      "ood_aa_recall": 0.9625
+    },
+    "456": {
+      "wildchat_fpr": 0.0,
+      "iid_f1_macro": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_f1": 0.9714585181004596,
+      "ood_fitd_f1": 1.0,
+      "ood_aa_recall": 0.9625
+    }
+  },
+  "aggregated": {
+    "wildchat_fpr": {"mean": 0.0, "std": 0.0},
+    "iid_f1_macro": {"mean": 1.0, "std": 0.0},
+    "ood_dd_f1": {"mean": 1.0, "std": 0.0},
+    "ood_aa_f1": {"mean": 0.9810, "std": 0.0165},
+    "ood_fitd_f1": {"mean": 1.0, "std": 0.0}
+  }
+}

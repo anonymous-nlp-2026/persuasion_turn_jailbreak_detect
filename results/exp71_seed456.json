@@ -1,0 +1,40 @@
+{
+  "experiment": "exp71_mixed_llm_disentangle",
+  "seed": 456,
+  "data_dir": "data/mixed_llm_350",
+  "condition": "350+350 mixed (Qwen+Llama)",
+  "results": {
+    "iid": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 76,
+      "n_jailbreak": 38,
+      "n_benign": 38
+    },
+    "dd_ood": {
+      "f1_macro": 0.9349555083077408,
+      "precision": 0.9222222222222223,
+      "recall": 0.95625,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    },
+    "aa_ood": {
+      "f1_macro": 0.6009784876609828,
+      "precision": 0.7235294117647059,
+      "recall": 0.70625,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    },
+    "fitd_ood": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    }
+  }
+}

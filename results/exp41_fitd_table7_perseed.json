@@ -1,0 +1,70 @@
+{
+  "description": "FITD OOD per-seed F1-macro for Table 7 (tab:full_prefix)",
+  "source": "results/per_sample_predictions/fitd_ood_per_sample.json",
+  "checkpoints": "plan_002 (from checkpoints_archive via exp35)",
+  "n_attack": 80,
+  "n_benign": 38,
+  "n_total": 118,
+  "metric": "F1-macro",
+  "std_ddof": 0,
+  "results": {
+    "9class": {
+      "K1": {
+        "seeds": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "K2": {
+        "seeds": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "Full": {
+        "seeds": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "vanilla": {
+      "K1": {
+        "seeds": {
+          "42": 0.990228,
+          "123": 0.971086,
+          "456": 0.899869
+        },
+        "mean": 0.953728,
+        "std": 0.038877
+      },
+      "K2": {
+        "seeds": {
+          "42": 1.0,
+          "123": 0.990362,
+          "456": 0.865858
+        },
+        "mean": 0.952073,
+        "std": 0.06109
+      },
+      "Full": {
+        "seeds": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 0.98085
+        },
+        "mean": 0.993617,
+        "std": 0.009027
+      }
+    }
+  }
+}

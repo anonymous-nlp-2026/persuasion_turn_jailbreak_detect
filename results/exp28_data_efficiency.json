@@ -1,0 +1,75 @@
+{
+  "9class": {
+    "50": {
+      "n_train": 50,
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9904,
+      "label_distribution": {
+        "jailbreak": 25,
+        "benign": 25
+      }
+    },
+    "125": {
+      "n_train": 125,
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9904,
+      "label_distribution": {
+        "jailbreak": 62,
+        "benign": 63
+      }
+    },
+    "250": {
+      "n_train": 250,
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 1.0,
+      "label_distribution": {
+        "jailbreak": 125,
+        "benign": 125
+      }
+    },
+    "350": {
+      "n_train": 350,
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 1.0,
+      "label_distribution": {
+        "jailbreak": 175,
+        "benign": 175
+      }
+    }
+  },
+  "vanilla": {
+    "125": {
+      "n_train": 125,
+      "label_distribution": {
+        "jailbreak": 62,
+        "benign": 63
+      },
+      "iid": 0.5324036095159967,
+      "dd_ood": 0.24358974358974358,
+      "aa_ood": 0.24358974358974358,
+      "deberta_train_losses": [],
+      "deberta_best_val_loss": null
+    },
+    "350": {
+      "n_train": 350,
+      "label_distribution": {
+        "benign": 175,
+        "jailbreak": 175
+      },
+      "iid": 1.0,
+      "dd_ood": 0.3596269968661622,
+      "aa_ood": 0.48940227356068944,
+      "deberta_train_losses": [],
+      "deberta_best_val_loss": null
+    }
+  },
+  "reference": {
+    "vanilla_multiseed_dd_ood_full_mean": 0.312,
+    "9class_plan002_iid_full_seed42": 1.0,
+    "note": "Vanilla DD OOD mean=0.312 from vanilla_multiseed_dd_ood registry entry"
+  }
+}

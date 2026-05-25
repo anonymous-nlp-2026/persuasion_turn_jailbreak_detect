@@ -1,0 +1,23 @@
+{
+  "mean_pooling_treatment": {
+    "k1_f1": 1.0,
+    "k2_f1": 1.0,
+    "k3_f1": 1.0,
+    "k5_f1": 1.0,
+    "full_f1": 1.0
+  },
+  "gru_treatment_reference": {
+    "k1_f1": 1.0,
+    "k2_f1": 1.0,
+    "k3_f1": 1.0,
+    "k5_f1": 1.0,
+    "full_f1": 1.0
+  },
+  "delta_gru_minus_meanpool": {
+    "k1": 0.0,
+    "k2": 0.0,
+    "k3": 0.0,
+    "k5": 0.0,
+    "full": 0.0
+  }
+}

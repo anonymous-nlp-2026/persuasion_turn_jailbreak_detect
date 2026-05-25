@@ -1,0 +1,387 @@
+{
+  "experiment": "exp17_dataset_scale",
+  "description": "3 variants x 3 seeds on expanded 1000-sample dataset",
+  "data_dir": "data/expanded_1000",
+  "results": {
+    "vanilla_seed42": {
+      "dd_ood": {
+        "f1_macro": 0.32608695652173914,
+        "precision": 0.24193548387096775,
+        "recall": 0.5,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.5067319461444308,
+        "precision": 0.7678571428571428,
+        "recall": 0.59375,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.3581780538302277,
+        "precision": 0.5984455958549223,
+        "recall": 0.6200980392156863,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9866642958748222,
+        "precision": 0.987012987012987,
+        "recall": 0.9866666666666667,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "vanilla_seed123": {
+      "dd_ood": {
+        "f1_macro": 0.32608695652173914,
+        "precision": 0.24193548387096775,
+        "recall": 0.5,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.4045888704318937,
+        "precision": 0.7516778523489933,
+        "recall": 0.5375,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.3503411247713011,
+        "precision": 0.5974358974358974,
+        "recall": 0.6151960784313726,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9799919967987194,
+        "precision": 0.9807692307692308,
+        "recall": 0.98,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "vanilla_seed456": {
+      "dd_ood": {
+        "f1_macro": 0.32608695652173914,
+        "precision": 0.24193548387096775,
+        "recall": 0.5,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.6129300776914539,
+        "precision": 0.7906976744186047,
+        "recall": 0.6625,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.3925452169726979,
+        "precision": 0.6032608695652174,
+        "recall": 0.642156862745098,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9933330370238678,
+        "precision": 0.993421052631579,
+        "recall": 0.9933333333333334,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "mlm_seed42": {
+      "dd_ood": {
+        "f1_macro": 0.35008757496948145,
+        "precision": 0.5767543859649122,
+        "recall": 0.5058333333333334,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.3631479140328698,
+        "precision": 0.6200331125827815,
+        "recall": 0.5120833333333333,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.31817017570821166,
+        "precision": 0.5935960591133005,
+        "recall": 0.5955882352941176,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9933330370238678,
+        "precision": 0.993421052631579,
+        "recall": 0.9933333333333334,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "mlm_seed123": {
+      "dd_ood": {
+        "f1_macro": 0.32608695652173914,
+        "precision": 0.24193548387096775,
+        "recall": 0.5,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.32608695652173914,
+        "precision": 0.24193548387096775,
+        "recall": 0.5,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.28452533538408953,
+        "precision": 0.590047393364929,
+        "recall": 0.5759803921568627,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9866642958748222,
+        "precision": 0.987012987012987,
+        "recall": 0.9866666666666667,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "mlm_seed456": {
+      "dd_ood": {
+        "f1_macro": 0.33675652545999146,
+        "precision": 0.49183006535947715,
+        "recall": 0.4995833333333333,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.3631479140328698,
+        "precision": 0.6200331125827815,
+        "recall": 0.5120833333333333,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.30573770491803276,
+        "precision": 0.5922330097087378,
+        "recall": 0.5882352941176471,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 0.9666533279978657,
+        "precision": 0.9674145299145299,
+        "recall": 0.9666666666666667,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "9class_seed42": {
+      "dd_ood": {
+        "f1_macro": 0.8427991886409736,
+        "precision": 0.8787878787878788,
+        "recall": 0.85,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.8697478991596639,
+        "precision": 0.8947368421052632,
+        "recall": 0.875,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.30990557177740213,
+        "precision": 0.5926829268292683,
+        "recall": 0.5906862745098039,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "9class_seed123": {
+      "dd_ood": {
+        "f1_macro": 0.8830482897384306,
+        "precision": 0.9032258064516129,
+        "recall": 0.8875,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.9028213166144201,
+        "precision": 0.9166666666666667,
+        "recall": 0.90625,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.3736265619911209,
+        "precision": 0.6005291005291005,
+        "recall": 0.6299019607843137,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "9class_seed456": {
+      "dd_ood": {
+        "f1_macro": 0.941896788704236,
+        "precision": 0.9464285714285714,
+        "recall": 0.94375,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.967741935483871,
+        "precision": 0.96875,
+        "recall": 0.96875,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "toxicchat": {
+        "f1_macro": 0.4073946333724219,
+        "precision": 0.6055555555555555,
+        "recall": 0.6519607843137255,
+        "n": 242,
+        "n_jailbreak": 204,
+        "n_benign": 38
+      },
+      "iid": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    }
+  },
+  "summary_rows": [
+    {
+      "variant": "vanilla",
+      "seed": 42,
+      "dd_ood_f1": 0.32608695652173914,
+      "aa_ood_f1": 0.5067319461444308,
+      "toxicchat_f1": 0.3581780538302277,
+      "iid_f1": 0.9866642958748222
+    },
+    {
+      "variant": "vanilla",
+      "seed": 123,
+      "dd_ood_f1": 0.32608695652173914,
+      "aa_ood_f1": 0.4045888704318937,
+      "toxicchat_f1": 0.3503411247713011,
+      "iid_f1": 0.9799919967987194
+    },
+    {
+      "variant": "vanilla",
+      "seed": 456,
+      "dd_ood_f1": 0.32608695652173914,
+      "aa_ood_f1": 0.6129300776914539,
+      "toxicchat_f1": 0.3925452169726979,
+      "iid_f1": 0.9933330370238678
+    },
+    {
+      "variant": "mlm",
+      "seed": 42,
+      "dd_ood_f1": 0.35008757496948145,
+      "aa_ood_f1": 0.3631479140328698,
+      "toxicchat_f1": 0.31817017570821166,
+      "iid_f1": 0.9933330370238678
+    },
+    {
+      "variant": "mlm",
+      "seed": 123,
+      "dd_ood_f1": 0.32608695652173914,
+      "aa_ood_f1": 0.32608695652173914,
+      "toxicchat_f1": 0.28452533538408953,
+      "iid_f1": 0.9866642958748222
+    },
+    {
+      "variant": "mlm",
+      "seed": 456,
+      "dd_ood_f1": 0.33675652545999146,
+      "aa_ood_f1": 0.3631479140328698,
+      "toxicchat_f1": 0.30573770491803276,
+      "iid_f1": 0.9666533279978657
+    },
+    {
+      "variant": "9class",
+      "seed": 42,
+      "dd_ood_f1": 0.8427991886409736,
+      "aa_ood_f1": 0.8697478991596639,
+      "toxicchat_f1": 0.30990557177740213,
+      "iid_f1": 1.0
+    },
+    {
+      "variant": "9class",
+      "seed": 123,
+      "dd_ood_f1": 0.8830482897384306,
+      "aa_ood_f1": 0.9028213166144201,
+      "toxicchat_f1": 0.3736265619911209,
+      "iid_f1": 1.0
+    },
+    {
+      "variant": "9class",
+      "seed": 456,
+      "dd_ood_f1": 0.941896788704236,
+      "aa_ood_f1": 0.967741935483871,
+      "toxicchat_f1": 0.4073946333724219,
+      "iid_f1": 1.0
+    }
+  ]
+}

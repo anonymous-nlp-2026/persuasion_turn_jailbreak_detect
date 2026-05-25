@@ -1,0 +1,354 @@
+{
+  "seeds": {
+    "42": {
+      "seed": 42,
+      "individual": {
+        "jb_mlm": {
+          "iid": {
+            "f1_macro": 1.0,
+            "accuracy": 1.0,
+            "n": 76
+          },
+          "toxicchat": {
+            "f1_macro": 0.8201699039384627,
+            "accuracy": 0.821078431372549,
+            "n": 408
+          },
+          "wildchat": {
+            "fpr": 0.30612244897959184,
+            "fp": 15,
+            "n": 49
+          },
+          "ood_DD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_AA": {
+            "f1_macro": 0.9714585181004596,
+            "recall": 0.9625,
+            "n_ood": 80
+          },
+          "ood_FITD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          }
+        },
+        "9class": {
+          "iid": {
+            "f1_macro": 1.0,
+            "accuracy": 1.0,
+            "n": 76
+          },
+          "toxicchat": {
+            "f1_macro": 0.595854171196637,
+            "accuracy": 0.5980392156862745,
+            "n": 408
+          },
+          "wildchat": {
+            "fpr": 0.7551020408163265,
+            "fp": 37,
+            "n": 49
+          },
+          "ood_DD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_AA": {
+            "f1_macro": 0.9903618394184432,
+            "recall": 0.9875,
+            "n_ood": 80
+          },
+          "ood_FITD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          }
+        }
+      },
+      "ensemble": {
+        "logit_avg": {
+          "iid": {
+            "f1_macro": 1.0,
+            "accuracy": 1.0,
+            "n": 76
+          },
+          "toxicchat": {
+            "f1_macro": 0.6207878990371473,
+            "accuracy": 0.625,
+            "n": 408
+          },
+          "wildchat": {
+            "fpr": 0.7346938775510204,
+            "fp": 36,
+            "n": 49
+          },
+          "ood_DD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_AA": {
+            "f1_macro": 0.9903618394184432,
+            "recall": 0.9875,
+            "n_ood": 80
+          },
+          "ood_FITD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          }
+        },
+        "vote_and": {
+          "iid": {
+            "f1_macro": 1.0,
+            "accuracy": 1.0,
+            "n": 76
+          },
+          "toxicchat": {
+            "f1_macro": 0.7352076802507836,
+            "accuracy": 0.7401960784313726,
+            "n": 408
+          },
+          "wildchat": {
+            "fpr": 0.1836734693877551,
+            "fp": 9,
+            "n": 49
+          },
+          "ood_DD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_AA": {
+            "f1_macro": 0.9621794871794871,
+            "recall": 0.95,
+            "n_ood": 80
+          },
+          "ood_FITD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          }
+        },
+        "vote_or": {
+          "iid": {
+            "f1_macro": 1.0,
+            "accuracy": 1.0,
+            "n": 76
+          },
+          "toxicchat": {
+            "f1_macro": 0.6512115062092548,
+            "accuracy": 0.678921568627451,
+            "n": 408
+          },
+          "wildchat": {
+            "fpr": 0.8775510204081632,
+            "fp": 43,
+            "n": 49
+          },
+          "ood_DD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_AA": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          },
+          "ood_FITD": {
+            "f1_macro": 1.0,
+            "recall": 1.0,
+            "n_ood": 80
+          }
+        },
+        "weighted_avg": {
+          "grid_search": {
+            "0.3": {
+              "mlm_weight": 0.3,
+              "iid": {
+                "f1_macro": 1.0,
+                "accuracy": 1.0,
+                "n": 76
+              },
+              "toxicchat": {
+                "f1_macro": 0.595854171196637,
+                "accuracy": 0.5980392156862745,
+                "n": 408
+              },
+              "wildchat": {
+                "fpr": 0.7551020408163265,
+                "fp": 37,
+                "n": 49
+              },
+              "ood_DD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              },
+              "ood_AA": {
+                "f1_macro": 0.9903618394184432,
+                "recall": 0.9875,
+                "n_ood": 80
+              },
+              "ood_FITD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              }
+            },
+            "0.4": {
+              "mlm_weight": 0.4,
+              "iid": {
+                "f1_macro": 1.0,
+                "accuracy": 1.0,
+                "n": 76
+              },
+              "toxicchat": {
+                "f1_macro": 0.595854171196637,
+                "accuracy": 0.5980392156862745,
+                "n": 408
+              },
+              "wildchat": {
+                "fpr": 0.7755102040816326,
+                "fp": 38,
+                "n": 49
+              },
+              "ood_DD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              },
+              "ood_AA": {
+                "f1_macro": 0.9903618394184432,
+                "recall": 0.9875,
+                "n_ood": 80
+              },
+              "ood_FITD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              }
+            },
+            "0.5": {
+              "mlm_weight": 0.5,
+              "iid": {
+                "f1_macro": 1.0,
+                "accuracy": 1.0,
+                "n": 76
+              },
+              "toxicchat": {
+                "f1_macro": 0.6207878990371473,
+                "accuracy": 0.625,
+                "n": 408
+              },
+              "wildchat": {
+                "fpr": 0.7346938775510204,
+                "fp": 36,
+                "n": 49
+              },
+              "ood_DD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              },
+              "ood_AA": {
+                "f1_macro": 0.9903618394184432,
+                "recall": 0.9875,
+                "n_ood": 80
+              },
+              "ood_FITD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              }
+            },
+            "0.6": {
+              "mlm_weight": 0.6,
+              "iid": {
+                "f1_macro": 1.0,
+                "accuracy": 1.0,
+                "n": 76
+              },
+              "toxicchat": {
+                "f1_macro": 0.7626203857294942,
+                "accuracy": 0.7696078431372549,
+                "n": 408
+              },
+              "wildchat": {
+                "fpr": 0.40816326530612246,
+                "fp": 20,
+                "n": 49
+              },
+              "ood_DD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              },
+              "ood_AA": {
+                "f1_macro": 0.9903618394184432,
+                "recall": 0.9875,
+                "n_ood": 80
+              },
+              "ood_FITD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              }
+            },
+            "0.7": {
+              "mlm_weight": 0.7,
+              "iid": {
+                "f1_macro": 1.0,
+                "accuracy": 1.0,
+                "n": 76
+              },
+              "toxicchat": {
+                "f1_macro": 0.8061403508771929,
+                "accuracy": 0.8088235294117647,
+                "n": 408
+              },
+              "wildchat": {
+                "fpr": 0.32653061224489793,
+                "fp": 16,
+                "n": 49
+              },
+              "ood_DD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              },
+              "ood_AA": {
+                "f1_macro": 0.9808503732554366,
+                "recall": 0.975,
+                "n_ood": 80
+              },
+              "ood_FITD": {
+                "f1_macro": 1.0,
+                "recall": 1.0,
+                "n_ood": 80
+              }
+            }
+          },
+          "best_weight": 0.3
+        }
+      }
+    }
+  },
+  "config": {
+    "seeds": [
+      42
+    ],
+    "device": "cuda:0",
+    "mlm_weights_grid": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ]
+  }
+}

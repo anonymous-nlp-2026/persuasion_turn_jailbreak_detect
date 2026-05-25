@@ -1,0 +1,48 @@
+{
+  "experiment": "plan_003_scrambled_label_ablation",
+  "description": "DeBERTa fine-tuned with scrambled persuasion_strategy labels on jailbreak turns (seed=42). Tests whether strategy labels carry real signal.",
+  "deberta_training": {
+    "epochs_completed": 4,
+    "best_epoch": 3,
+    "best_val_loss": 1.0147,
+    "val_persuasion_acc": 0.6437,
+    "val_intent_acc": 0.9674
+  },
+  "early_detection": {
+    "1": {
+      "f1": 0.9743589743589743,
+      "precision": 0.95,
+      "recall": 1.0,
+      "accuracy": 0.9726027397260274,
+      "fpr_at_95tpr": 0.0
+    },
+    "2": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    },
+    "3": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    },
+    "5": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    },
+    "full": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "fpr_at_95tpr": 0.0
+    }
+  }
+}

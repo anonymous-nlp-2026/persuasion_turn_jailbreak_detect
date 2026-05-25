@@ -1,0 +1,156 @@
+{
+  "experiment": "plan_003_scrambled_fix",
+  "description": "Scrambled-label control using plan_002_splits data (NOT final_v2)",
+  "data_source": "data/plan_002_splits/",
+  "seed": 42,
+  "deberta_metrics": {
+    "best_epoch": 4,
+    "val_persuasion_acc": 0.6792452830188679,
+    "val_intent_acc": 1.0,
+    "val_loss": 0.7760585379355673
+  },
+  "iid_test_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "dd_ood_results": {
+    "full": {
+      "f1_macro": 0.9904,
+      "precision": 0.9872,
+      "recall": 0.9938,
+      "accuracy": 0.9915
+    },
+    "k=1": {
+      "f1_macro": 0.9904,
+      "precision": 0.9872,
+      "recall": 0.9938,
+      "accuracy": 0.9915
+    },
+    "k=2": {
+      "f1_macro": 0.9439,
+      "precision": 0.9318,
+      "recall": 0.9625,
+      "accuracy": 0.9492
+    },
+    "k=3": {
+      "f1_macro": 0.935,
+      "precision": 0.9222,
+      "recall": 0.9563,
+      "accuracy": 0.9407
+    },
+    "k=5": {
+      "f1_macro": 0.9904,
+      "precision": 0.9872,
+      "recall": 0.9938,
+      "accuracy": 0.9915
+    }
+  },
+  "perturbation": {
+    "clean": {
+      "full": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=1": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=2": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=3": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=5": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    },
+    "perturbed": {
+      "full": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=1": {
+        "f1_macro": 0.9473,
+        "precision": 0.9486,
+        "recall": 0.9474,
+        "accuracy": 0.9474
+      },
+      "k=2": {
+        "f1_macro": 0.9737,
+        "precision": 0.9737,
+        "recall": 0.9737,
+        "accuracy": 0.9737
+      },
+      "k=3": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "k=5": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    },
+    "delta_f1": {
+      "full": 0.0,
+      "k=1": 0.0527,
+      "k=2": 0.0263,
+      "k=3": 0.0,
+      "k=5": 0.0
+    }
+  },
+  "sample_counts": {
+    "train": 350,
+    "val": 74,
+    "test_iid": 76,
+    "test_dd_ood": 118,
+    "test_perturbed": 76
+  }
+}

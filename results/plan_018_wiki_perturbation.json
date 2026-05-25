@@ -1,0 +1,103 @@
+{
+  "experiment": "plan_018_wiki_perturbation",
+  "description": "Wikipedia MLM control model evaluated on adversarially perturbed data",
+  "clean_results": {
+    "full": {
+      "f1_macro": 0.9868,
+      "precision": 0.9872,
+      "recall": 0.9868,
+      "accuracy": 0.9868
+    },
+    "k=1": {
+      "f1_macro": 0.9474,
+      "precision": 0.9474,
+      "recall": 0.9474,
+      "accuracy": 0.9474
+    },
+    "k=2": {
+      "f1_macro": 0.9341,
+      "precision": 0.9369,
+      "recall": 0.9342,
+      "accuracy": 0.9342
+    },
+    "k=3": {
+      "f1_macro": 0.9737,
+      "precision": 0.975,
+      "recall": 0.9737,
+      "accuracy": 0.9737
+    },
+    "k=5": {
+      "f1_macro": 0.9868,
+      "precision": 0.9872,
+      "recall": 0.9868,
+      "accuracy": 0.9868
+    }
+  },
+  "perturbed_results": {
+    "full": {
+      "f1_macro": 0.8661,
+      "precision": 0.8958,
+      "recall": 0.8684,
+      "accuracy": 0.8684
+    },
+    "k=1": {
+      "f1_macro": 0.8238,
+      "precision": 0.8725,
+      "recall": 0.8289,
+      "accuracy": 0.8289
+    },
+    "k=2": {
+      "f1_macro": 0.7797,
+      "precision": 0.8519,
+      "recall": 0.7895,
+      "accuracy": 0.7895
+    },
+    "k=3": {
+      "f1_macro": 0.7946,
+      "precision": 0.8585,
+      "recall": 0.8026,
+      "accuracy": 0.8026
+    },
+    "k=5": {
+      "f1_macro": 0.8381,
+      "precision": 0.88,
+      "recall": 0.8421,
+      "accuracy": 0.8421
+    }
+  },
+  "delta_f1": {
+    "full": 0.1207,
+    "k=1": 0.1236,
+    "k=2": 0.1544,
+    "k=3": 0.1791,
+    "k=5": 0.1487
+  },
+  "reference_plan004": {
+    "treatment": {
+      "k=1": -0.0256,
+      "k=2": 0.0,
+      "k=3": 0.0,
+      "full": 0.0
+    },
+    "baseline": {
+      "k=1": -0.1464,
+      "k=2": -0.121,
+      "k=3": -0.1382,
+      "full": -0.1176
+    },
+    "tfidf": {
+      "k=1": -0.0959,
+      "k=2": -0.0411,
+      "k=3": -0.0133,
+      "full": -0.0133
+    },
+    "jb_mlm": {
+      "k=1": -0.0256,
+      "k=2": 0.0,
+      "k=3": 0.0,
+      "k=5": 0.0,
+      "full": -0.026
+    }
+  },
+  "sample_count": 76
+}

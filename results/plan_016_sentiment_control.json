@@ -1,0 +1,48 @@
+{
+  "experiment": "plan_016_sentiment_control",
+  "description": "3-class sentiment auxiliary task (replacing 9-class persuasion) as control for cross-attack generalization",
+  "dd_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "reference_plan006_treatment": {
+    "k=1": 1.0,
+    "k=2": 0.99,
+    "k=3": 0.99,
+    "k=5": 1.0,
+    "full": 1.0
+  },
+  "reference_plan006_baseline": {
+    "k=1": 0.575,
+    "k=2": 0.438,
+    "full": 0.285
+  }
+}

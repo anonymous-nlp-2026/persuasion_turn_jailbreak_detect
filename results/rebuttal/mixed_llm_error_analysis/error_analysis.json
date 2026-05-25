@@ -1,0 +1,347 @@
+{
+  "experiment": "exp69_mixed_llm_aa_error",
+  "description": "Error analysis of mixed-LLM 9-class model on ActorAttack OOD",
+  "data_source": "exp16_balanced_ood_reeval.json + per_sample_predictions/actorattack_per_sample.json",
+  "per_seed_confusion_matrix": {
+    "42": {
+      "f1_macro": 0.4486390269227917,
+      "precision_macro": 0.6881188118811881,
+      "recall_macro": 0.60625,
+      "f1_per_class": [
+        0.5467625899280576,
+        0.35051546391752575
+      ],
+      "confusion_matrix": {
+        "TN": 38,
+        "FP": 0,
+        "FN": 63,
+        "TP": 17
+      },
+      "jailbreak_precision": 1.0,
+      "jailbreak_recall": 0.2125,
+      "benign_precision": 0.37623762376237624,
+      "benign_recall": 1.0,
+      "total_predictions_jailbreak": 17,
+      "total_predictions_benign": 101,
+      "total_actual_jailbreak": 80,
+      "total_actual_benign": 38
+    },
+    "123": {
+      "f1_macro": 0.6525174172232996,
+      "precision_macro": 0.740506329113924,
+      "recall_macro": 0.74375,
+      "f1_per_class": [
+        0.6495726495726496,
+        0.6554621848739496
+      ],
+      "confusion_matrix": {
+        "TN": 38,
+        "FP": 0,
+        "FN": 41,
+        "TP": 39
+      },
+      "jailbreak_precision": 1.0,
+      "jailbreak_recall": 0.4875,
+      "benign_precision": 0.4810126582278481,
+      "benign_recall": 1.0,
+      "total_predictions_jailbreak": 39,
+      "total_predictions_benign": 79,
+      "total_actual_jailbreak": 80,
+      "total_actual_benign": 38
+    },
+    "456": {
+      "f1_macro": 0.409779768570362,
+      "precision_macro": 0.6462783171521036,
+      "recall_macro": 0.5743421052631579,
+      "f1_per_class": [
+        0.524822695035461,
+        0.29473684210526313
+      ],
+      "confusion_matrix": {
+        "TN": 37,
+        "FP": 1,
+        "FN": 66,
+        "TP": 14
+      },
+      "jailbreak_precision": 0.9333333333333333,
+      "jailbreak_recall": 0.175,
+      "benign_precision": 0.3592233009708738,
+      "benign_recall": 0.9736842105263158,
+      "total_predictions_jailbreak": 15,
+      "total_predictions_benign": 103,
+      "total_actual_jailbreak": 80,
+      "total_actual_benign": 38
+    }
+  },
+  "single_source_comparison": {
+    "single_source_9class_aa_ood": {
+      "f1_mean": 0.9718930623815424,
+      "f1_std": 0.02611879496602988,
+      "per_seed_f1": {
+        "42": 0.9903618394184431,
+        "123": 0.9349555083077408,
+        "456": 0.9903618394184431
+      },
+      "per_seed_recall": {
+        "42": 0.9875,
+        "123": 0.9125,
+        "456": 0.9875
+      }
+    },
+    "mixed_llm_9class_aa_ood": {
+      "f1_mean": 0.5036454042388178,
+      "f1_std": 0.10645708893716758,
+      "per_seed_f1": {
+        "42": 0.4486390269227917,
+        "123": 0.6525174172232996,
+        "456": 0.409779768570362
+      },
+      "per_seed_recall": {
+        "42": 0.2125,
+        "123": 0.4875,
+        "456": 0.175
+      }
+    },
+    "delta_f1_mean": 0.4682476581427246
+  },
+  "cross_ood_comparison": {
+    "dd_ood": {
+      "f1_mean": 0.8181095173435452,
+      "f1_std": 0.09624164218008925,
+      "per_seed_f1": [
+        0.734985148156198,
+        0.9530067702110713,
+        0.7663366336633664
+      ]
+    },
+    "aa_ood": {
+      "f1_mean": 0.5036454042388178,
+      "f1_std": 0.10645708893716758,
+      "per_seed_f1": [
+        0.4486390269227917,
+        0.6525174172232996,
+        0.409779768570362
+      ]
+    },
+    "fitd_ood": {
+      "f1_mean": 0.9967425810904071,
+      "f1_std": 0.004606686000276745,
+      "per_seed_f1": [
+        1.0,
+        1.0,
+        0.9902277432712215
+      ]
+    }
+  },
+  "cross_variant_comparison": {
+    "vanilla": {
+      "f1_mean": 0.3891447451571399,
+      "f1_std": 0.07267834965456546,
+      "per_seed_f1": [
+        0.3458195984417141,
+        0.33008921330089214,
+        0.4915254237288136
+      ]
+    },
+    "mlm": {
+      "f1_mean": 0.25817493987696033,
+      "f1_std": 0.0750545209976559,
+      "per_seed_f1": [
+        0.19727891156462585,
+        0.3639125747329217,
+        0.21333333333333335
+      ]
+    },
+    "9class": {
+      "f1_mean": 0.5036454042388178,
+      "f1_std": 0.10645708893716758,
+      "per_seed_f1": [
+        0.4486390269227917,
+        0.6525174172232996,
+        0.409779768570362
+      ]
+    }
+  },
+  "actorattack_data_profile": {
+    "n_conversations": 80,
+    "strategy_frequency": {
+      "role_assignment": 194,
+      "authority_appeal": 80,
+      "logical_reframing": 60,
+      "gradual_escalation": 45,
+      "obfuscation": 22,
+      "direct_request": 10
+    },
+    "topic_distribution": {
+      "cybersecurity": 8,
+      "email security": 8,
+      "data privacy": 8,
+      "identity verification": 8,
+      "social engineering": 8,
+      "account security": 8,
+      "chemistry safety": 8,
+      "media technology": 8,
+      "digital privacy": 8,
+      "content moderation": 8
+    },
+    "turn_count_distribution": {
+      "3": 20,
+      "4": 15,
+      "5": 11,
+      "6": 12,
+      "7": 12,
+      "8": 10
+    },
+    "all_start_with_role_assignment": true
+  },
+  "findings": {
+    "primary_error_type": "FN (missed jailbreaks)",
+    "avg_FN_per_seed": 56.666666666666664,
+    "avg_FP_per_seed": 0.3333333333333333,
+    "avg_jailbreak_recall": 0.2916666666666667,
+    "avg_jailbreak_precision": 0.9777777777777779,
+    "recall_vs_precision": "recall-limited (precision near-perfect, recall 17-49%)",
+    "seed_variance": "High variance in jailbreak recall: [0.2125, 0.4875, 0.175]",
+    "cross_ood_insight": "AA OOD F1=0.504 vs DD OOD F1=0.818 vs FITD F1=0.997 \u2014 AA specifically hard",
+    "single_source_delta": "Single-source 9class AA F1=0.972 vs mixed-LLM F1=0.504, delta=0.468",
+    "hypothesis": "Mixed-LLM training introduces distributional noise that specifically disrupts the turn-level persuasion patterns learned for ActorAttack role-play escalation, while FITD detection is preserved because its patterns (false information injection) are more robust to LLM-style variation."
+  },
+  "limitation": "Per-sample predictions not available for mixed-LLM model (exp16 checkpoints cleaned). Per-strategy recall requires re-running evaluation.",
+  "single_source_fn_analysis": {
+    "description": "Which AA samples the single-source 9-class model misclassifies (full turns)",
+    "seed_42": {
+      "FN_count": 1,
+      "FN_indices": [
+        33
+      ],
+      "FN_details": [
+        {
+          "idx": 33,
+          "topic": "social engineering",
+          "turns": 4,
+          "strategies": [
+            "role_assignment",
+            "authority_appeal",
+            "role_assignment",
+            "logical_reframing"
+          ]
+        }
+      ]
+    },
+    "seed_123": {
+      "FN_count": 7,
+      "FN_indices": [
+        18,
+        20,
+        27,
+        28,
+        33,
+        64,
+        67
+      ],
+      "FN_details": [
+        {
+          "idx": 18,
+          "topic": "data privacy",
+          "turns": 6
+        },
+        {
+          "idx": 20,
+          "topic": "data privacy",
+          "turns": 3
+        },
+        {
+          "idx": 27,
+          "topic": "identity verification",
+          "turns": 5
+        },
+        {
+          "idx": 28,
+          "topic": "identity verification",
+          "turns": 6
+        },
+        {
+          "idx": 33,
+          "topic": "social engineering",
+          "turns": 4
+        },
+        {
+          "idx": 64,
+          "topic": "digital privacy",
+          "turns": 3
+        },
+        {
+          "idx": 67,
+          "topic": "digital privacy",
+          "turns": 3
+        }
+      ]
+    },
+    "seed_456": {
+      "FN_count": 1,
+      "FN_indices": [
+        20
+      ],
+      "FN_details": [
+        {
+          "idx": 20,
+          "topic": "data privacy",
+          "turns": 3
+        }
+      ]
+    },
+    "consistently_hard_samples": {
+      "sample_33": "social engineering, 4 turns \u2014 FN in all 3 seeds",
+      "sample_20": "data privacy, 3 turns \u2014 FN in seeds 123 and 456",
+      "short_conversations_3_turns": "samples 20, 64, 67 are all 3-turn and appear in FN sets"
+    }
+  },
+  "early_detection_comparison": {
+    "single_source_9class": {
+      "description": "Single-source 9-class jailbreak recall at different truncation levels",
+      "seed_42": {
+        "k1": 0.738,
+        "k2": 0.812,
+        "k3": 0.925,
+        "k5": 0.988,
+        "full": 0.988
+      },
+      "seed_123": {
+        "k1": 0.588,
+        "k2": 0.7,
+        "k3": 0.8,
+        "k5": 0.9,
+        "full": 0.912
+      },
+      "seed_456": {
+        "k1": 0.688,
+        "k2": 0.875,
+        "k3": 0.95,
+        "k5": 0.975,
+        "full": 0.988
+      }
+    },
+    "note": "Mixed-LLM recall at full is comparable to single-source recall at k1 (first user turn only)"
+  },
+  "critical_comparison": {
+    "observation": "Mixed-LLM 9-class on AA behaves like single-source VANILLA, not single-source 9-class",
+    "evidence": {
+      "single_source_vanilla_aa_recall_full": {
+        "42": 0.013,
+        "123": 0.013,
+        "456": 0.013
+      },
+      "mixed_llm_9class_aa_recall_full": {
+        "42": 0.2125,
+        "123": 0.4875,
+        "456": 0.175
+      },
+      "single_source_9class_aa_recall_full": {
+        "42": 0.988,
+        "123": 0.912,
+        "456": 0.988
+      }
+    },
+    "interpretation": "The 9-class strategy supervision provides a ~0.15-0.47 boost over vanilla in the mixed-LLM setting (vs ~0.9 boost in single-source). Mixed-LLM training substantially weakens but does not eliminate the strategy supervision benefit."
+  }
+}

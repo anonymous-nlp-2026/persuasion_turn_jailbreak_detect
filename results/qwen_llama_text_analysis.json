@@ -1,0 +1,281 @@
+{
+  "data": {
+    "qwen_source": "data/generated/benign_topic_anchored_v2.jsonl",
+    "llama_source": "data/llama_conversations/benign_llama_250.jsonl",
+    "qwen_assistant_turns": 2003,
+    "llama_assistant_turns": 1896
+  },
+  "unigram_kl": {
+    "kl_qwen_given_llama": 1.138678,
+    "kl_llama_given_qwen": 1.035561,
+    "jsd": 0.207657,
+    "vocab_size": 20613
+  },
+  "distinctive_vocabulary": {
+    "qwen_top20": [
+      {
+        "token": "ll",
+        "ratio": 666.35,
+        "qwen_freq": 572,
+        "llama_freq": 0
+      },
+      {
+        "token": "authenticator",
+        "ratio": 516.33,
+        "qwen_freq": 443,
+        "llama_freq": 0
+      },
+      {
+        "token": "gun",
+        "ratio": 464.0,
+        "qwen_freq": 398,
+        "llama_freq": 0
+      },
+      {
+        "token": "totp",
+        "ratio": 418.65,
+        "qwen_freq": 359,
+        "llama_freq": 0
+      },
+      {
+        "token": "faucet",
+        "ratio": 412.83,
+        "qwen_freq": 354,
+        "llama_freq": 0
+      },
+      {
+        "token": "bitwarden",
+        "ratio": 352.36,
+        "qwen_freq": 302,
+        "llama_freq": 0
+      },
+      {
+        "token": "don",
+        "ratio": 337.25,
+        "qwen_freq": 289,
+        "llama_freq": 0
+      },
+      {
+        "token": "qr",
+        "ratio": 303.52,
+        "qwen_freq": 260,
+        "llama_freq": 0
+      },
+      {
+        "token": "cartridge",
+        "ratio": 296.54,
+        "qwen_freq": 254,
+        "llama_freq": 0
+      },
+      {
+        "token": "threads",
+        "ratio": 291.89,
+        "qwen_freq": 250,
+        "llama_freq": 0
+      },
+      {
+        "token": "spill",
+        "ratio": 289.57,
+        "qwen_freq": 248,
+        "llama_freq": 0
+      },
+      {
+        "token": "peroxides",
+        "ratio": 281.43,
+        "qwen_freq": 241,
+        "llama_freq": 0
+      },
+      {
+        "token": "monograph",
+        "ratio": 257.0,
+        "qwen_freq": 220,
+        "llama_freq": 0
+      },
+      {
+        "token": "scanners",
+        "ratio": 234.91,
+        "qwen_freq": 201,
+        "llama_freq": 0
+      },
+      {
+        "token": "keyword",
+        "ratio": 215.14,
+        "qwen_freq": 184,
+        "llama_freq": 0
+      },
+      {
+        "token": "port",
+        "ratio": 213.98,
+        "qwen_freq": 183,
+        "llama_freq": 0
+      },
+      {
+        "token": "blur",
+        "ratio": 210.49,
+        "qwen_freq": 180,
+        "llama_freq": 0
+      },
+      {
+        "token": "ctrl",
+        "ratio": 208.16,
+        "qwen_freq": 178,
+        "llama_freq": 0
+      },
+      {
+        "token": "otc",
+        "ratio": 199.44,
+        "qwen_freq": 342,
+        "llama_freq": 1
+      },
+      {
+        "token": "peroxide",
+        "ratio": 198.86,
+        "qwen_freq": 341,
+        "llama_freq": 1
+      }
+    ],
+    "llama_top20": [
+      {
+        "token": "chord",
+        "ratio": 403.3,
+        "llama_freq": 468,
+        "qwen_freq": 0
+      },
+      {
+        "token": "him",
+        "ratio": 357.72,
+        "llama_freq": 415,
+        "qwen_freq": 0
+      },
+      {
+        "token": "investigators",
+        "ratio": 349.12,
+        "llama_freq": 405,
+        "qwen_freq": 0
+      },
+      {
+        "token": "brother",
+        "ratio": 326.77,
+        "llama_freq": 379,
+        "qwen_freq": 0
+      },
+      {
+        "token": "canyon",
+        "ratio": 298.39,
+        "llama_freq": 346,
+        "qwen_freq": 0
+      },
+      {
+        "token": "maillard",
+        "ratio": 260.55,
+        "llama_freq": 302,
+        "qwen_freq": 0
+      },
+      {
+        "token": "grand",
+        "ratio": 256.25,
+        "llama_freq": 297,
+        "qwen_freq": 0
+      },
+      {
+        "token": "her",
+        "ratio": 218.7,
+        "llama_freq": 762,
+        "qwen_freq": 2
+      },
+      {
+        "token": "dog",
+        "ratio": 211.54,
+        "llama_freq": 491,
+        "qwen_freq": 1
+      },
+      {
+        "token": "wing",
+        "ratio": 206.38,
+        "llama_freq": 239,
+        "qwen_freq": 0
+      },
+      {
+        "token": "hydroponic",
+        "ratio": 204.66,
+        "llama_freq": 237,
+        "qwen_freq": 0
+      },
+      {
+        "token": "misinformation",
+        "ratio": 202.08,
+        "llama_freq": 234,
+        "qwen_freq": 0
+      },
+      {
+        "token": "pilots",
+        "ratio": 199.5,
+        "llama_freq": 231,
+        "qwen_freq": 0
+      },
+      {
+        "token": "composting",
+        "ratio": 197.78,
+        "llama_freq": 229,
+        "qwen_freq": 0
+      },
+      {
+        "token": "dog's",
+        "ratio": 186.6,
+        "llama_freq": 216,
+        "qwen_freq": 0
+      },
+      {
+        "token": "colorado",
+        "ratio": 184.88,
+        "llama_freq": 214,
+        "qwen_freq": 0
+      },
+      {
+        "token": "dad",
+        "ratio": 182.3,
+        "llama_freq": 211,
+        "qwen_freq": 0
+      },
+      {
+        "token": "rocks",
+        "ratio": 181.44,
+        "llama_freq": 210,
+        "qwen_freq": 0
+      },
+      {
+        "token": "farmers",
+        "ratio": 180.58,
+        "llama_freq": 209,
+        "qwen_freq": 0
+      },
+      {
+        "token": "supplements",
+        "ratio": 178.86,
+        "llama_freq": 207,
+        "qwen_freq": 0
+      }
+    ]
+  },
+  "bigram_jaccard": {
+    "jaccard": 0.22549,
+    "intersection": 184,
+    "union": 816
+  },
+  "type_token_ratio": {
+    "qwen": {
+      "ttr": 0.022778,
+      "unique": 13283,
+      "total": 583141
+    },
+    "llama": {
+      "ttr": 0.022186,
+      "unique": 15120,
+      "total": 681501
+    }
+  },
+  "avg_turn_length": {
+    "qwen": 291.1,
+    "llama": 359.4
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "turncount_full": {
+    "iid": 0.5429,
+    "dd": 0.5581,
+    "fitd": 0.4237,
+    "aa": 0.0,
+    "toxicchat": 0.0
+  },
+  "turncount_k1": {
+    "iid": 0.0,
+    "dd": 0.0,
+    "fitd": 0.0,
+    "aa": 0.0,
+    "toxicchat": 0.0
+  },
+  "disped_full": {
+    "iid": 1.0,
+    "dd": 0.9968,
+    "fitd": 1.0,
+    "aa": 0.9719,
+    "toxicchat": 0.596
+  },
+  "disped_k1": {
+    "iid": null,
+    "dd": null,
+    "fitd": 1.0,
+    "aa": 0.773,
+    "toxicchat": 0.596
+  },
+  "metadata": {
+    "train_n": 350,
+    "classifier": "LogisticRegression(turn_count_only)",
+    "disped_source_full": "exp58_summary_9class_mean",
+    "disped_source_k1": "exp22(AA)/exp25(FITD)/task_spec(ToxicChat)",
+    "note": "IID/DD K=1 DisPeD not available from early detection experiments"
+  }
+}

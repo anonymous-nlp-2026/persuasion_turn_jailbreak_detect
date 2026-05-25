@@ -1,0 +1,492 @@
+{
+  "DD_OOD": {
+    "per_bin": {
+      "1-3": {
+        "N": 0
+      },
+      "4-6": {
+        "N": 20,
+        "n_jb": 20,
+        "n_bn": 0,
+        "composition": "jb_only",
+        "9class": {
+          "metric": "jb_recall",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "metric": "jb_recall",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "metric": "jb_recall",
+          "mean": 0.0167,
+          "std": 0.0236,
+          "per_seed": [
+            0.05,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "7-10": {
+        "N": 60,
+        "n_jb": 60,
+        "n_bn": 0,
+        "composition": "jb_only",
+        "9class": {
+          "metric": "jb_recall",
+          "mean": 0.9944,
+          "std": 0.0079,
+          "per_seed": [
+            1.0,
+            1.0,
+            0.9833
+          ]
+        },
+        "jb_mlm": {
+          "metric": "jb_recall",
+          "mean": 0.8389,
+          "std": 0.2278,
+          "per_seed": [
+            1.0,
+            1.0,
+            0.5167
+          ]
+        },
+        "vanilla": {
+          "metric": "jb_recall",
+          "mean": 0.0167,
+          "std": 0.0136,
+          "per_seed": [
+            0.0333,
+            0.0167,
+            0.0
+          ]
+        }
+      },
+      "10+": {
+        "N": 38,
+        "n_jb": 0,
+        "n_bn": 38,
+        "composition": "bn_only",
+        "9class": {
+          "metric": "bn_specificity",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "metric": "bn_specificity",
+          "mean": 0.9912,
+          "std": 0.0124,
+          "per_seed": [
+            1.0,
+            0.9737,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "metric": "bn_specificity",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "turn_distribution": {
+      "1-3": {
+        "N": 0,
+        "unique_turns": []
+      },
+      "4-6": {
+        "N": 20,
+        "unique_turns": [
+          6
+        ]
+      },
+      "7-10": {
+        "N": 60,
+        "unique_turns": [
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "10+": {
+        "N": 38,
+        "unique_turns": [
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      }
+    },
+    "jb_only_recall_by_bin": {
+      "1-3": {
+        "N": 0
+      },
+      "4-6": {
+        "N": 20,
+        "9class": {
+          "recall_mean": 1.0,
+          "recall_std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "recall_mean": 1.0,
+          "recall_std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "recall_mean": 0.0167,
+          "recall_std": 0.0236,
+          "per_seed": [
+            0.05,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "7-10": {
+        "N": 60,
+        "9class": {
+          "recall_mean": 0.9944,
+          "recall_std": 0.0079,
+          "per_seed": [
+            1.0,
+            1.0,
+            0.9833
+          ]
+        },
+        "jb_mlm": {
+          "recall_mean": 0.8389,
+          "recall_std": 0.2278,
+          "per_seed": [
+            1.0,
+            1.0,
+            0.5167
+          ]
+        },
+        "vanilla": {
+          "recall_mean": 0.0167,
+          "recall_std": 0.0136,
+          "per_seed": [
+            0.0333,
+            0.0167,
+            0.0
+          ]
+        }
+      },
+      "10+": {
+        "N": 0
+      }
+    }
+  },
+  "AA_OOD": {
+    "per_bin": {
+      "1-3": {
+        "N": 20,
+        "n_jb": 20,
+        "n_bn": 0,
+        "composition": "jb_only",
+        "9class": {
+          "metric": "jb_recall",
+          "mean": 0.9333,
+          "std": 0.0624,
+          "per_seed": [
+            1.0,
+            0.85,
+            0.95
+          ]
+        },
+        "jb_mlm": {
+          "metric": "jb_recall",
+          "mean": 0.9,
+          "std": 0.0707,
+          "per_seed": [
+            0.85,
+            0.85,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "metric": "jb_recall",
+          "mean": 0.0,
+          "std": 0.0,
+          "per_seed": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "4-6": {
+        "N": 38,
+        "n_jb": 38,
+        "n_bn": 0,
+        "composition": "jb_only",
+        "9class": {
+          "metric": "jb_recall",
+          "mean": 0.9561,
+          "std": 0.0447,
+          "per_seed": [
+            0.9737,
+            0.8947,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "metric": "jb_recall",
+          "mean": 0.9211,
+          "std": 0.0937,
+          "per_seed": [
+            1.0,
+            0.9737,
+            0.7895
+          ]
+        },
+        "vanilla": {
+          "metric": "jb_recall",
+          "mean": 0.0263,
+          "std": 0.0,
+          "per_seed": [
+            0.0263,
+            0.0263,
+            0.0263
+          ]
+        }
+      },
+      "7-10": {
+        "N": 22,
+        "n_jb": 22,
+        "n_bn": 0,
+        "composition": "jb_only",
+        "9class": {
+          "metric": "jb_recall",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "metric": "jb_recall",
+          "mean": 0.697,
+          "std": 0.3368,
+          "per_seed": [
+            1.0,
+            0.8636,
+            0.2273
+          ]
+        },
+        "vanilla": {
+          "metric": "jb_recall",
+          "mean": 0.0,
+          "std": 0.0,
+          "per_seed": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "10+": {
+        "N": 38,
+        "n_jb": 0,
+        "n_bn": 38,
+        "composition": "bn_only",
+        "9class": {
+          "metric": "bn_specificity",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "metric": "bn_specificity",
+          "mean": 0.9912,
+          "std": 0.0124,
+          "per_seed": [
+            1.0,
+            0.9737,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "metric": "bn_specificity",
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "turn_distribution": {
+      "1-3": {
+        "N": 20,
+        "unique_turns": [
+          3
+        ]
+      },
+      "4-6": {
+        "N": 38,
+        "unique_turns": [
+          4,
+          5,
+          6
+        ]
+      },
+      "7-10": {
+        "N": 22,
+        "unique_turns": [
+          7,
+          8
+        ]
+      },
+      "10+": {
+        "N": 38,
+        "unique_turns": [
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      }
+    },
+    "jb_only_recall_by_bin": {
+      "1-3": {
+        "N": 20,
+        "9class": {
+          "recall_mean": 0.9333,
+          "recall_std": 0.0624,
+          "per_seed": [
+            1.0,
+            0.85,
+            0.95
+          ]
+        },
+        "jb_mlm": {
+          "recall_mean": 0.9,
+          "recall_std": 0.0707,
+          "per_seed": [
+            0.85,
+            0.85,
+            1.0
+          ]
+        },
+        "vanilla": {
+          "recall_mean": 0.0,
+          "recall_std": 0.0,
+          "per_seed": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "4-6": {
+        "N": 38,
+        "9class": {
+          "recall_mean": 0.9561,
+          "recall_std": 0.0447,
+          "per_seed": [
+            0.9737,
+            0.8947,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "recall_mean": 0.9211,
+          "recall_std": 0.0937,
+          "per_seed": [
+            1.0,
+            0.9737,
+            0.7895
+          ]
+        },
+        "vanilla": {
+          "recall_mean": 0.0263,
+          "recall_std": 0.0,
+          "per_seed": [
+            0.0263,
+            0.0263,
+            0.0263
+          ]
+        }
+      },
+      "7-10": {
+        "N": 22,
+        "9class": {
+          "recall_mean": 1.0,
+          "recall_std": 0.0,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "jb_mlm": {
+          "recall_mean": 0.697,
+          "recall_std": 0.3368,
+          "per_seed": [
+            1.0,
+            0.8636,
+            0.2273
+          ]
+        },
+        "vanilla": {
+          "recall_mean": 0.0,
+          "recall_std": 0.0,
+          "per_seed": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "10+": {
+        "N": 0
+      }
+    }
+  }
+}

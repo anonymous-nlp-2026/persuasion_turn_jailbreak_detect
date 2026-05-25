@@ -1,0 +1,54 @@
+{
+  "experiment": "exp19_wildchat_fpr",
+  "data_file": "data/wildchat_benign_226.jsonl",
+  "n_conversations": 226,
+  "avg_turns": 7.3584070796460175,
+  "checkpoint_source": "exp17",
+  "results": {
+    "9class_seed42": {
+      "fpr": 66.8141592920354,
+      "n_fp": 151,
+      "n_total": 226
+    },
+    "9class_seed123": {
+      "fpr": 61.06194690265486,
+      "n_fp": 138,
+      "n_total": 226
+    },
+    "9class_seed456": {
+      "fpr": 76.54867256637168,
+      "n_fp": 173,
+      "n_total": 226
+    },
+    "mlm_seed42": {
+      "fpr": 36.72566371681416,
+      "n_fp": 83,
+      "n_total": 226
+    },
+    "mlm_seed123": {
+      "fpr": 64.60176991150442,
+      "n_fp": 146,
+      "n_total": 226
+    },
+    "mlm_seed456": {
+      "fpr": 32.30088495575221,
+      "n_fp": 73,
+      "n_total": 226
+    },
+    "vanilla_seed42": {
+      "fpr": 47.34513274336283,
+      "n_fp": 107,
+      "n_total": 226
+    },
+    "vanilla_seed123": {
+      "fpr": 42.47787610619469,
+      "n_fp": 96,
+      "n_total": 226
+    },
+    "vanilla_seed456": {
+      "fpr": 54.424778761061944,
+      "n_fp": 123,
+      "n_total": 226
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "evaluated": {
+    "scrambled_seed123": {
+      "full": 0.9903618394184432,
+      "k1": 0.857487922705314,
+      "k2": 0.8742770167427701,
+      "k3": 0.9714585181004596,
+      "k5": 0.9903618394184432
+    }
+  },
+  "missing_checkpoints": [
+    "binary_seed42"
+  ],
+  "note": "binary seed42 checkpoint (mf1_binary_seed42) does not exist"
+}

@@ -1,0 +1,106 @@
+{
+  "experiment": "plan_013_binary_perturbation",
+  "description": "Binary persuasion (none-collapse) model evaluated on adversarially perturbed data",
+  "clean_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "perturbed_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 0.9079,
+      "precision": 0.9082,
+      "recall": 0.9079,
+      "accuracy": 0.9079
+    },
+    "k=2": {
+      "f1_macro": 0.9737,
+      "precision": 0.975,
+      "recall": 0.9737,
+      "accuracy": 0.9737
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "delta_f1": {
+    "full": 0.0,
+    "k=1": 0.0921,
+    "k=2": 0.0263,
+    "k=3": 0.0,
+    "k=5": 0.0
+  },
+  "reference": {
+    "treatment_9class": {
+      "k=1": 0.0,
+      "k=2": 0.0,
+      "k=3": 0.0,
+      "k=5": 0.0,
+      "full": 0.0
+    },
+    "jb_mlm": {
+      "k=1": -0.0922,
+      "k=2": -0.0396,
+      "k=3": -0.0395,
+      "k=5": -0.0395,
+      "full": -0.026
+    },
+    "baseline": {
+      "k=1": -0.1464,
+      "k=2": -0.121,
+      "k=3": -0.1382,
+      "k=5": -0.1176,
+      "full": -0.1176
+    },
+    "wiki_mlm": {
+      "k=1": -0.1236,
+      "k=2": -0.1544,
+      "k=3": -0.1791,
+      "k=5": -0.1487,
+      "full": -0.1207
+    }
+  },
+  "sample_count": 76
+}

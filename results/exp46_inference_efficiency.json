@@ -1,0 +1,57 @@
+{
+  "experiment": "exp46_inference_efficiency",
+  "description": "Side-by-side inference efficiency: DisPeD vs Qwen3-8B LLM-as-judge",
+  "test_data": {
+    "n_iid": 50,
+    "n_dd_ood": 50,
+    "n_total": 100
+  },
+  "disped": {
+    "model": "DisPeD (DeBERTa-v3-base + BiGRU)",
+    "params_total": 186731022,
+    "params_M": 186.73,
+    "params_breakdown": {
+      "encoder_M": 183.83,
+      "multitask_heads_M": 0.0085,
+      "gru_M": 2.891
+    },
+    "gpu_mem_MB": 868.3,
+    "device": "cuda:0",
+    "latency_ms": {
+      "mean": 13.12,
+      "std": 1.61,
+      "median": 12.84,
+      "p95": 15.69
+    },
+    "throughput_conv_per_sec": 76.19,
+    "n_conversations": 100,
+    "n_measurements": 300,
+    "avg_turns_per_conv": 8.2,
+    "warmup_iters": 10
+  },
+  "qwen3_8b": {
+    "model": "Qwen3-8B (3-shot, local)",
+    "params_total": 8190735360,
+    "params_B": 8.19,
+    "gpu_mem_MB": 16095.9,
+    "device": "cuda:0",
+    "latency_ms": {
+      "mean": 318.53,
+      "std": 26.8,
+      "median": 317.22,
+      "p95": 325.84
+    },
+    "throughput_conv_per_sec": 3.1394,
+    "n_conversations": 100,
+    "n_measurements": 100,
+    "avg_turns_per_conv": 8.2,
+    "avg_input_tokens": 1592,
+    "avg_output_tokens": 13,
+    "warmup_iters": 3
+  },
+  "speedup_disped_vs_qwen": {
+    "factor": 24.3,
+    "note": "DisPeD is 24.3x faster than Qwen3-8B 3-shot"
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

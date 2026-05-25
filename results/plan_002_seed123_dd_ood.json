@@ -1,0 +1,70 @@
+{
+  "experiment": "plan_002_seed123_dd_ood",
+  "seed": 123,
+  "deberta_checkpoint": "checkpoints/plan_002_seed123/deberta_multitask/best/model.pt",
+  "gru_checkpoint": "checkpoints/plan_002_seed123/gru/treatment/best.pt",
+  "dd_ood_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 0.9903618394184432,
+      "precision": 1.0,
+      "recall": 0.9875,
+      "accuracy": 0.9915254237288136
+    },
+    "k=3": {
+      "f1_macro": 0.9903618394184432,
+      "precision": 1.0,
+      "recall": 0.9875,
+      "accuracy": 0.9915254237288136
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "iid_sanity_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  }
+}

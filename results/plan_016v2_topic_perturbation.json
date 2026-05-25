@@ -1,0 +1,96 @@
+{
+  "experiment": "plan_016v2_topic_perturbation",
+  "description": "Topic classification model evaluated on adversarially perturbed data",
+  "clean_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 0.8947,
+      "precision": 0.8958,
+      "recall": 0.8947,
+      "accuracy": 0.8947
+    },
+    "k=2": {
+      "f1_macro": 0.9473,
+      "precision": 0.9486,
+      "recall": 0.9474,
+      "accuracy": 0.9474
+    },
+    "k=3": {
+      "f1_macro": 0.9605,
+      "precision": 0.9608,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    },
+    "k=5": {
+      "f1_macro": 0.9868,
+      "precision": 0.9872,
+      "recall": 0.9868,
+      "accuracy": 0.9868
+    }
+  },
+  "perturbed_results": {
+    "full": {
+      "f1_macro": 0.9605,
+      "precision": 0.9634,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    },
+    "k=1": {
+      "f1_macro": 0.8676,
+      "precision": 0.8778,
+      "recall": 0.8684,
+      "accuracy": 0.8684
+    },
+    "k=2": {
+      "f1_macro": 0.9206,
+      "precision": 0.9318,
+      "recall": 0.9211,
+      "accuracy": 0.9211
+    },
+    "k=3": {
+      "f1_macro": 0.9605,
+      "precision": 0.9634,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    },
+    "k=5": {
+      "f1_macro": 0.9605,
+      "precision": 0.9634,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    }
+  },
+  "delta_f1": {
+    "full": -0.0395,
+    "k=1": -0.0271,
+    "k=2": -0.0267,
+    "k=3": 0.0,
+    "k=5": -0.0263
+  },
+  "reference": {
+    "persuasion_treatment": {
+      "k=1": 0.0,
+      "k=2": 0.0,
+      "k=3": 0.0,
+      "full": 0.0
+    },
+    "jailbreak_mlm_017": {
+      "k=1": -0.026,
+      "full": -0.026
+    },
+    "wiki_mlm_018": {
+      "k=1": -0.121,
+      "full": -0.121
+    },
+    "vanilla_baseline": {
+      "k=1": -0.118,
+      "full": -0.118
+    }
+  },
+  "sample_count": 76
+}

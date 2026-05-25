@@ -1,0 +1,18 @@
+{
+  "n": 10,
+  "seed": 123,
+  "results": {
+    "wildchat_fpr": 0.0,
+    "wildchat_n": 49,
+    "iid_f1_macro": 1.0,
+    "ood_dd_recall": 1.0,
+    "ood_dd_f1": 1.0,
+    "ood_aa_recall": 0.9625,
+    "ood_aa_f1": 0.9714585181004596,
+    "ood_fitd_recall": 1.0,
+    "ood_fitd_f1": 1.0,
+    "seed": 123,
+    "train_size": 360,
+    "time_min": 2.4
+  }
+}

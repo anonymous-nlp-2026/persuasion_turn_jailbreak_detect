@@ -1,0 +1,80 @@
+{
+  "experiment": "plan_017_mlm_control",
+  "description": "MLM continued pretraining (no classification labels) as control",
+  "dd_ood_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "iid_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 0.9604647130223687,
+      "precision": 1.0,
+      "recall": 0.9210526315789473,
+      "accuracy": 0.9605263157894737
+    },
+    "k=2": {
+      "f1_macro": 0.9736659736659736,
+      "precision": 1.0,
+      "recall": 0.9473684210526315,
+      "accuracy": 0.9736842105263158
+    },
+    "k=3": {
+      "f1_macro": 0.9868398268398269,
+      "precision": 1.0,
+      "recall": 0.9736842105263158,
+      "accuracy": 0.9868421052631579
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "reference_plan006_treatment": {
+    "k=1": 1.0,
+    "k=2": 0.99,
+    "k=3": 0.99,
+    "k=5": 1.0,
+    "full": 1.0
+  },
+  "reference_plan006_baseline": {
+    "k=1": 0.575,
+    "k=2": 0.438,
+    "full": 0.285
+  }
+}

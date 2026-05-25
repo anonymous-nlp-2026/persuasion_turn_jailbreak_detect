@@ -1,0 +1,96 @@
+{
+  "experiment": "plan_017_mlm_perturbation",
+  "description": "MLM continued pretraining model evaluated on adversarially perturbed data",
+  "clean_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 0.9605,
+      "precision": 0.9634,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    },
+    "k=2": {
+      "f1_macro": 0.9737,
+      "precision": 0.975,
+      "recall": 0.9737,
+      "accuracy": 0.9737
+    },
+    "k=3": {
+      "f1_macro": 0.9868,
+      "precision": 0.9872,
+      "recall": 0.9868,
+      "accuracy": 0.9868
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "perturbed_results": {
+    "full": {
+      "f1_macro": 0.9737,
+      "precision": 0.9737,
+      "recall": 0.9737,
+      "accuracy": 0.9737
+    },
+    "k=1": {
+      "f1_macro": 0.8683,
+      "precision": 0.8694,
+      "recall": 0.8684,
+      "accuracy": 0.8684
+    },
+    "k=2": {
+      "f1_macro": 0.9341,
+      "precision": 0.9369,
+      "recall": 0.9342,
+      "accuracy": 0.9342
+    },
+    "k=3": {
+      "f1_macro": 0.9473,
+      "precision": 0.9486,
+      "recall": 0.9474,
+      "accuracy": 0.9474
+    },
+    "k=5": {
+      "f1_macro": 0.9605,
+      "precision": 0.9608,
+      "recall": 0.9605,
+      "accuracy": 0.9605
+    }
+  },
+  "delta_f1": {
+    "full": 0.0263,
+    "k=1": 0.0922,
+    "k=2": 0.0396,
+    "k=3": 0.0395,
+    "k=5": 0.0395
+  },
+  "reference_plan004": {
+    "treatment": {
+      "k=1": -0.0256,
+      "k=2": 0.0,
+      "k=3": 0.0,
+      "full": 0.0
+    },
+    "baseline": {
+      "k=1": -0.1464,
+      "k=2": -0.121,
+      "k=3": -0.1382,
+      "full": -0.1176
+    },
+    "tfidf": {
+      "k=1": -0.0959,
+      "k=2": -0.0411,
+      "k=3": -0.0133,
+      "full": -0.0133
+    }
+  },
+  "sample_count": 76
+}

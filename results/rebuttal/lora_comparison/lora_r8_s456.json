@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/lora_r8_s456",
+  "seed": 456,
+  "dd_f1": 1.0,
+  "aa_f1": 0.9714585181004596
+}

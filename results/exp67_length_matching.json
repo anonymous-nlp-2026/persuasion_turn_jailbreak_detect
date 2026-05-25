@@ -1,0 +1,504 @@
+{
+  "experiment": "exp67_length_matching",
+  "description": "Length-matched control: verify OOD detection is not driven by turn-count shortcut",
+  "model": "exp59 DeBERTa 9-class + BiGRU (3 seeds)",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "per_seed": {
+    "seed42": {
+      "dd_ood": {
+        "full": {
+          "f1_macro": 0.7654054054054054,
+          "precision_macro": 0.8409090909090908,
+          "recall_macro": 0.78125,
+          "accuracy": 0.7741935483870968,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.7470967741935484,
+          "precision_macro": 0.8157894736842105,
+          "recall_macro": 0.78125,
+          "accuracy": 0.75,
+          "n": 140,
+          "n_jailbreak": 80,
+          "n_benign": 60
+        },
+        "bucket_matched": {
+          "f1_macro": 0.8018698001543871,
+          "precision_macro": 0.861842105263158,
+          "recall_macro": 0.8090909090909091,
+          "accuracy": 0.8090909090909091,
+          "n": 110,
+          "n_jailbreak": 55,
+          "n_benign": 55
+        },
+        "match_info": {
+          "jailbreak_range": [
+            6,
+            10
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            10
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 80,
+          "benign_original": 75,
+          "benign_matched": 60
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 11,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 13,
+            "bn": 18,
+            "matched": 13
+          },
+          "9": {
+            "jb": 16,
+            "bn": 11,
+            "matched": 11
+          },
+          "10": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          }
+        },
+        "delta_range_matched": -0.018308631211856996,
+        "delta_bucket_matched": 0.03646439474898178
+      },
+      "aa_ood": {
+        "full": {
+          "f1_macro": 0.7580645161290323,
+          "precision_macro": 0.8378378378378378,
+          "recall_macro": 0.775,
+          "accuracy": 0.7677419354838709,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.7925925925925925,
+          "precision_macro": 0.8653846153846154,
+          "recall_macro": 0.7941176470588236,
+          "accuracy": 0.8055555555555556,
+          "n": 72,
+          "n_jailbreak": 34,
+          "n_benign": 38
+        },
+        "bucket_matched": {
+          "f1_macro": 0.7916666666666667,
+          "precision_macro": 0.8571428571428572,
+          "recall_macro": 0.8,
+          "accuracy": 0.8,
+          "n": 60,
+          "n_jailbreak": 30,
+          "n_benign": 30
+        },
+        "match_info": {
+          "jailbreak_range": [
+            3,
+            8
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            8
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 34,
+          "benign_original": 75,
+          "benign_matched": 38
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 12,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 12,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 10,
+            "bn": 18,
+            "matched": 10
+          }
+        },
+        "delta_range_matched": 0.034528076463560264,
+        "delta_bucket_matched": 0.03360215053763449
+      }
+    },
+    "seed123": {
+      "dd_ood": {
+        "full": {
+          "f1_macro": 0.9483849483849484,
+          "precision_macro": 0.9500333667000334,
+          "recall_macro": 0.9495833333333333,
+          "accuracy": 0.9483870967741935,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.9495651278884257,
+          "precision_macro": 0.9477611940298507,
+          "recall_macro": 0.95625,
+          "accuracy": 0.95,
+          "n": 140,
+          "n_jailbreak": 80,
+          "n_benign": 60
+        },
+        "bucket_matched": {
+          "f1_macro": 0.972706972128029,
+          "precision_macro": 0.9741379310344828,
+          "recall_macro": 0.9727272727272727,
+          "accuracy": 0.9727272727272728,
+          "n": 110,
+          "n_jailbreak": 55,
+          "n_benign": 55
+        },
+        "match_info": {
+          "jailbreak_range": [
+            6,
+            10
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            10
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 80,
+          "benign_original": 75,
+          "benign_matched": 60
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 11,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 13,
+            "bn": 18,
+            "matched": 13
+          },
+          "9": {
+            "jb": 16,
+            "bn": 11,
+            "matched": 11
+          },
+          "10": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          }
+        },
+        "delta_range_matched": 0.0011801795034773743,
+        "delta_bucket_matched": 0.02432202374308068
+      },
+      "aa_ood": {
+        "full": {
+          "f1_macro": 0.9160031681187211,
+          "precision_macro": 0.9229861813279407,
+          "recall_macro": 0.9183333333333333,
+          "accuracy": 0.9161290322580645,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.9294532627865961,
+          "precision_macro": 0.9418604651162791,
+          "recall_macro": 0.9264705882352942,
+          "accuracy": 0.9305555555555556,
+          "n": 72,
+          "n_jailbreak": 34,
+          "n_benign": 38
+        },
+        "bucket_matched": {
+          "f1_macro": 0.916083916083916,
+          "precision_macro": 0.9285714285714286,
+          "recall_macro": 0.9166666666666667,
+          "accuracy": 0.9166666666666666,
+          "n": 60,
+          "n_jailbreak": 30,
+          "n_benign": 30
+        },
+        "match_info": {
+          "jailbreak_range": [
+            3,
+            8
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            8
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 34,
+          "benign_original": 75,
+          "benign_matched": 38
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 12,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 12,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 10,
+            "bn": 18,
+            "matched": 10
+          }
+        },
+        "delta_range_matched": 0.013450094667875057,
+        "delta_bucket_matched": 8.074796519497163e-05
+      }
+    },
+    "seed456": {
+      "dd_ood": {
+        "full": {
+          "f1_macro": 0.9483677548301133,
+          "precision_macro": 0.9518072289156627,
+          "recall_macro": 0.95,
+          "accuracy": 0.9483870967741935,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.9424342105263157,
+          "precision_macro": 0.9411764705882353,
+          "recall_macro": 0.95,
+          "accuracy": 0.9428571428571428,
+          "n": 140,
+          "n_jailbreak": 80,
+          "n_benign": 60
+        },
+        "bucket_matched": {
+          "f1_macro": 0.9635882158225753,
+          "precision_macro": 0.9661016949152542,
+          "recall_macro": 0.9636363636363636,
+          "accuracy": 0.9636363636363636,
+          "n": 110,
+          "n_jailbreak": 55,
+          "n_benign": 55
+        },
+        "match_info": {
+          "jailbreak_range": [
+            6,
+            10
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            10
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 80,
+          "benign_original": 75,
+          "benign_matched": 60
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 11,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 13,
+            "bn": 18,
+            "matched": 13
+          },
+          "9": {
+            "jb": 16,
+            "bn": 11,
+            "matched": 11
+          },
+          "10": {
+            "jb": 20,
+            "bn": 11,
+            "matched": 11
+          }
+        },
+        "delta_range_matched": -0.0059335443037975555,
+        "delta_bucket_matched": 0.015220460992461993
+      },
+      "aa_ood": {
+        "full": {
+          "f1_macro": 0.9741924741924741,
+          "precision_macro": 0.9746835443037974,
+          "recall_macro": 0.975,
+          "accuracy": 0.9741935483870968,
+          "n": 155,
+          "n_jailbreak": 80,
+          "n_benign": 75
+        },
+        "range_matched": {
+          "f1_macro": 0.9720279720279721,
+          "precision_macro": 0.975,
+          "recall_macro": 0.9705882352941176,
+          "accuracy": 0.9722222222222222,
+          "n": 72,
+          "n_jailbreak": 34,
+          "n_benign": 38
+        },
+        "bucket_matched": {
+          "f1_macro": 0.9666295884315907,
+          "precision_macro": 0.96875,
+          "recall_macro": 0.9666666666666667,
+          "accuracy": 0.9666666666666667,
+          "n": 60,
+          "n_jailbreak": 30,
+          "n_benign": 30
+        },
+        "match_info": {
+          "jailbreak_range": [
+            3,
+            8
+          ],
+          "benign_range": [
+            6,
+            14
+          ],
+          "overlap_range": [
+            6,
+            8
+          ],
+          "jailbreak_original": 80,
+          "jailbreak_matched": 34,
+          "benign_original": 75,
+          "benign_matched": 38
+        },
+        "bucket_info": {
+          "6": {
+            "jb": 12,
+            "bn": 11,
+            "matched": 11
+          },
+          "7": {
+            "jb": 12,
+            "bn": 9,
+            "matched": 9
+          },
+          "8": {
+            "jb": 10,
+            "bn": 18,
+            "matched": 10
+          }
+        },
+        "delta_range_matched": -0.0021645021645020357,
+        "delta_bucket_matched": -0.0075628857608833755
+      }
+    }
+  },
+  "summary": {
+    "dd_ood": {
+      "full_f1_mean": 0.8873860362068223,
+      "full_f1_std": 0.08625333149870514,
+      "full_f1_per_seed": {
+        "seed42": 0.7654054054054054,
+        "seed123": 0.9483849483849484,
+        "seed456": 0.9483677548301133
+      },
+      "range_matched_f1_mean": 0.8796987042027634,
+      "range_matched_f1_std": 0.09380890639035953,
+      "range_matched_f1_per_seed": {
+        "seed42": 0.7470967741935484,
+        "seed123": 0.9495651278884257,
+        "seed456": 0.9424342105263157
+      },
+      "delta_range_mean": -0.007687332004059059,
+      "delta_range_std": 0.00805233979444171,
+      "bucket_matched_f1_mean": 0.9127216627016638,
+      "bucket_matched_f1_std": 0.07847245589712697,
+      "bucket_matched_f1_per_seed": {
+        "seed42": 0.8018698001543871,
+        "seed123": 0.972706972128029,
+        "seed456": 0.9635882158225753
+      },
+      "delta_bucket_mean": 0.025335626494841484,
+      "delta_bucket_std": 0.008702364554787508
+    },
+    "aa_ood": {
+      "full_f1_mean": 0.8827533861467426,
+      "full_f1_std": 0.09131259338140352,
+      "full_f1_per_seed": {
+        "seed42": 0.7580645161290323,
+        "seed123": 0.9160031681187211,
+        "seed456": 0.9741924741924741
+      },
+      "range_matched_f1_mean": 0.8980246091357204,
+      "range_matched_f1_std": 0.07655100282822207,
+      "range_matched_f1_per_seed": {
+        "seed42": 0.7925925925925925,
+        "seed123": 0.9294532627865961,
+        "seed456": 0.9720279720279721
+      },
+      "delta_range_mean": 0.015271222988977762,
+      "delta_range_std": 0.015034930725160777,
+      "bucket_matched_f1_mean": 0.8914600570607245,
+      "bucket_matched_f1_std": 0.07351986952756484,
+      "bucket_matched_f1_per_seed": {
+        "seed42": 0.7916666666666667,
+        "seed123": 0.916083916083916,
+        "seed456": 0.9666295884315907
+      },
+      "delta_bucket_mean": 0.008706670913982029,
+      "delta_bucket_std": 0.017878198332109824
+    }
+  },
+  "conclusion": [
+    "dd_ood: F1 stable under length matching (delta=-0.0077)",
+    "aa_ood: F1 stable under length matching (delta=+0.0153)"
+  ]
+}

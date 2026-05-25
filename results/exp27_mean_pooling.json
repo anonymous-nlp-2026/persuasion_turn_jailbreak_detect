@@ -1,0 +1,52 @@
+{
+  "42": {
+    "iid_full": 1.0,
+    "dd_ood_k1": 1.0,
+    "dd_ood_k2": 1.0,
+    "dd_ood_k3": 1.0,
+    "dd_ood_k5": 1.0,
+    "dd_ood_full": 1.0,
+    "aa_ood_full": 1.0,
+    "fitd_ood_full": 1.0
+  },
+  "123": {
+    "iid_full": 1.0,
+    "dd_ood_k1": 1.0,
+    "dd_ood_k2": 1.0,
+    "dd_ood_k3": 1.0,
+    "dd_ood_k5": 1.0,
+    "dd_ood_full": 1.0,
+    "aa_ood_full": 1.0,
+    "fitd_ood_full": 1.0
+  },
+  "456": {
+    "iid_full": 1.0,
+    "dd_ood_k1": 1.0,
+    "dd_ood_k2": 1.0,
+    "dd_ood_k3": 1.0,
+    "dd_ood_k5": 1.0,
+    "dd_ood_full": 1.0,
+    "aa_ood_full": 1.0,
+    "fitd_ood_full": 1.0
+  },
+  "mean": {
+    "iid_full": 1.0,
+    "dd_ood_k1": 1.0,
+    "dd_ood_k2": 1.0,
+    "dd_ood_k3": 1.0,
+    "dd_ood_k5": 1.0,
+    "dd_ood_full": 1.0,
+    "aa_ood_full": 1.0,
+    "fitd_ood_full": 1.0
+  },
+  "std": {
+    "iid_full": 0.0,
+    "dd_ood_k1": 0.0,
+    "dd_ood_k2": 0.0,
+    "dd_ood_k3": 0.0,
+    "dd_ood_k5": 0.0,
+    "dd_ood_full": 0.0,
+    "aa_ood_full": 0.0,
+    "fitd_ood_full": 0.0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "9class_new": [
+    {
+      "n_train": 50,
+      "label_distribution": {
+        "benign": 25,
+        "jailbreak": 25
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9903618394184432,
+      "data_seed": 42,
+      "model_seed": 123,
+      "deberta_train_losses": [
+        2.204340260762435,
+        1.3274885278481703,
+        1.0774284692911,
+        0.934190557553218,
+        0.86870416196493
+      ],
+      "deberta_best_val_loss": 0.9591530153901663
+    },
+    {
+      "n_train": 125,
+      "label_distribution": {
+        "jailbreak": 62,
+        "benign": 63
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9808503732554366,
+      "data_seed": 42,
+      "model_seed": 123,
+      "deberta_train_losses": [
+        1.8261154327127669,
+        1.0057118151869093,
+        0.6552184798887798,
+        0.46056587036166874,
+        0.37811531995733577
+      ],
+      "deberta_best_val_loss": 0.55878924240085
+    },
+    {
+      "n_train": 250,
+      "label_distribution": {
+        "jailbreak": 125,
+        "benign": 125
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9903618394184432,
+      "data_seed": 42,
+      "model_seed": 123,
+      "deberta_train_losses": [
+        1.4669506295224812,
+        0.5823273620032888,
+        0.383537381300776,
+        0.28349490397734434,
+        0.2085486835851444
+      ],
+      "deberta_best_val_loss": 0.47219689460039954
+    },
+    {
+      "n_train": 350,
+      "label_distribution": {
+        "benign": 175,
+        "jailbreak": 175
+      },
+      "iid": 1.0,
+      "dd_ood": 0.9903618394184432,
+      "aa_ood": 0.9808503732554366,
+      "data_seed": 42,
+      "model_seed": 123,
+      "deberta_train_losses": [
+        1.3265115617873282,
+        0.4910559627805009,
+        0.33802258720694306,
+        0.24542264709530096,
+        0.17550515583274084
+      ],
+      "deberta_best_val_loss": 0.47728574996407575
+    },
+    {
+      "n_train": 50,
+      "label_distribution": {
+        "benign": 25,
+        "jailbreak": 25
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9260651629072681,
+      "data_seed": 42,
+      "model_seed": 456,
+      "deberta_train_losses": [
+        2.3691432888691244,
+        1.3242817864968226,
+        0.982755123422696,
+        0.8681165828154638,
+        0.7680027737067296
+      ],
+      "deberta_best_val_loss": 0.8878389026963281
+    },
+    {
+      "n_train": 125,
+      "label_distribution": {
+        "jailbreak": 62,
+        "benign": 63
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9530067702110713,
+      "data_seed": 42,
+      "model_seed": 456,
+      "deberta_train_losses": [
+        1.8609478199292744,
+        0.7797324986211838,
+        0.5351986833035,
+        0.3930069677649982,
+        0.3205607585490696
+      ],
+      "deberta_best_val_loss": 0.4874616481002746
+    },
+    {
+      "n_train": 250,
+      "label_distribution": {
+        "jailbreak": 125,
+        "benign": 125
+      },
+      "iid": 1.0,
+      "dd_ood": 1.0,
+      "aa_ood": 0.9349555083077408,
+      "data_seed": 42,
+      "model_seed": 456,
+      "deberta_train_losses": [
+        1.457069914172015,
+        0.572433368075551,
+        0.38944178580592465,
+        0.2935585625117689,
+        0.23110488922459874
+      ],
+      "deberta_best_val_loss": 0.4568232390446521
+    },
+    {
+      "n_train": 350,
+      "label_distribution": {
+        "benign": 175,
+        "jailbreak": 175
+      },
+      "iid": 1.0,
+      "dd_ood": 0.943934114665822,
+      "aa_ood": 0.9349555083077408,
+      "data_seed": 42,
+      "model_seed": 456,
+      "deberta_train_losses": [
+        1.2936680381857484,
+        0.48063159076361683,
+        0.3522548081155596,
+        0.24941965574450667,
+        0.1959480914552618
+      ],
+      "deberta_best_val_loss": 0.424987245498043
+    }
+  ],
+  "vanilla_new": []
+}

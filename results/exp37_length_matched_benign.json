@@ -1,0 +1,161 @@
+{
+  "experiment": "exp37_length_matched_benign",
+  "description": "Length confound analysis: WildChat stratified FPR, benign truncation, jailbreak padding",
+  "model": "plan_002 9-class DeBERTa+BiGRU",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "part1_wildchat_fpr": {
+    "Short (3-10)": {
+      "fpr_mean": 0.770408163265306,
+      "fpr_std": 0.10480938053150071,
+      "n_samples": 196,
+      "turn_count_mean": 6.26530612244898,
+      "turn_count_min": 3,
+      "turn_count_max": 10,
+      "per_seed": {
+        "seed42": 0.6887755102040817,
+        "seed123": 0.7040816326530612,
+        "seed456": 0.9183673469387755
+      }
+    },
+    "Medium (11-15)": {
+      "fpr_mean": 0.9420289855072465,
+      "fpr_std": 0.05422691864889771,
+      "n_samples": 23,
+      "turn_count_mean": 12.304347826086957,
+      "turn_count_min": 11,
+      "turn_count_max": 15,
+      "per_seed": {
+        "seed42": 0.9565217391304348,
+        "seed123": 0.8695652173913043,
+        "seed456": 1.0
+      }
+    },
+    "Long (16+)": {
+      "fpr_mean": 0.8571428571428571,
+      "fpr_std": 0.11664236870396084,
+      "n_samples": 7,
+      "turn_count_mean": 21.714285714285715,
+      "turn_count_min": 17,
+      "turn_count_max": 36,
+      "per_seed": {
+        "seed42": 0.8571428571428571,
+        "seed123": 0.7142857142857143,
+        "seed456": 1.0
+      }
+    }
+  },
+  "part2_benign_truncation": {
+    "original": {
+      "fpr_mean": 0.0,
+      "fpr_std": 0.0,
+      "n_samples": 38,
+      "per_seed": {
+        "seed42": 0.0,
+        "seed123": 0.0,
+        "seed456": 0.0
+      }
+    },
+    "truncated": {
+      "K=3": {
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "delta_vs_original": 0.0,
+        "n_actually_truncated": 38,
+        "mean_turns_after": 3.0,
+        "per_seed": {
+          "seed42": 0.0,
+          "seed123": 0.0,
+          "seed456": 0.0
+        }
+      },
+      "K=5": {
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "delta_vs_original": 0.0,
+        "n_actually_truncated": 38,
+        "mean_turns_after": 5.0,
+        "per_seed": {
+          "seed42": 0.0,
+          "seed123": 0.0,
+          "seed456": 0.0
+        }
+      },
+      "K=8": {
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "delta_vs_original": 0.0,
+        "n_actually_truncated": 13,
+        "mean_turns_after": 7.315789473684211,
+        "per_seed": {
+          "seed42": 0.0,
+          "seed123": 0.0,
+          "seed456": 0.0
+        }
+      },
+      "K=10": {
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "delta_vs_original": 0.0,
+        "n_actually_truncated": 0,
+        "mean_turns_after": 7.894736842105263,
+        "per_seed": {
+          "seed42": 0.0,
+          "seed123": 0.0,
+          "seed456": 0.0
+        }
+      }
+    }
+  },
+  "part3_jailbreak_padding": {
+    "DD": {
+      "original": {
+        "mean": 0.9958333333333332,
+        "std": 0.005892556509887875,
+        "per_seed": {
+          "seed42": 1.0,
+          "seed123": 1.0,
+          "seed456": 0.9875
+        }
+      },
+      "padded": {
+        "mean": 0.9708333333333333,
+        "std": 0.011785113019775804,
+        "target_turns": 15,
+        "mean_turns_after": 15.0,
+        "per_seed": {
+          "seed42": 0.9875,
+          "seed123": 0.9625,
+          "seed456": 0.9625
+        }
+      },
+      "delta": -0.02499999999999991
+    },
+    "AA": {
+      "original": {
+        "mean": 0.9625,
+        "std": 0.03535533905932741,
+        "per_seed": {
+          "seed42": 0.9875,
+          "seed123": 0.9125,
+          "seed456": 0.9875
+        }
+      },
+      "padded": {
+        "mean": 0.3833333333333333,
+        "std": 0.26107416996367566,
+        "target_turns": 15,
+        "mean_turns_after": 15.0,
+        "per_seed": {
+          "seed42": 0.4125,
+          "seed123": 0.05,
+          "seed456": 0.6875
+        }
+      },
+      "delta": -0.5791666666666667
+    }
+  }
+}

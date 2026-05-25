@@ -1,0 +1,102 @@
+{
+  "1": {
+    "plan_013_binary_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_9class_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_baseline": {
+      "f1": 0.987012987012987,
+      "precision": 0.9743589743589743,
+      "recall": 1.0,
+      "accuracy": 0.9868421052631579
+    }
+  },
+  "2": {
+    "plan_013_binary_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_9class_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_baseline": {
+      "f1": 0.9866666666666667,
+      "precision": 1.0,
+      "recall": 0.9736842105263158,
+      "accuracy": 0.9868421052631579
+    }
+  },
+  "3": {
+    "plan_013_binary_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_9class_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_baseline": {
+      "f1": 0.9866666666666667,
+      "precision": 1.0,
+      "recall": 0.9736842105263158,
+      "accuracy": 0.9868421052631579
+    }
+  },
+  "5": {
+    "plan_013_binary_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_9class_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_baseline": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "full": {
+    "plan_013_binary_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_9class_treatment": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "plan_002_baseline": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  }
+}

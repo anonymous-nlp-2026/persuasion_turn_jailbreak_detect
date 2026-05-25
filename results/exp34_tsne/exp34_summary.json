@@ -1,0 +1,33 @@
+{
+  "experiment": "exp34_representation_tsne",
+  "seed": 42,
+  "models": [
+    "vanilla",
+    "MLM",
+    "9-class"
+  ],
+  "data": {
+    "dd_jailbreak": 80,
+    "aa_jailbreak": 80,
+    "benign": 38,
+    "total": 198
+  },
+  "output_dir": "results/exp34_tsne",
+  "files": [
+    "9_class_coords.npz",
+    "9_class_t-sne.pdf",
+    "9_class_t-sne.png",
+    "9_class_umap.pdf",
+    "9_class_umap.png",
+    "mlm_coords.npz",
+    "mlm_t-sne.pdf",
+    "mlm_t-sne.png",
+    "mlm_umap.pdf",
+    "mlm_umap.png",
+    "vanilla_coords.npz",
+    "vanilla_t-sne.pdf",
+    "vanilla_t-sne.png",
+    "vanilla_umap.pdf",
+    "vanilla_umap.png"
+  ]
+}

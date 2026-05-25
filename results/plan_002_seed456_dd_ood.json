@@ -1,0 +1,76 @@
+{
+  "experiment": "plan_002_seed456_dd_ood",
+  "seed": 456,
+  "eval_seed": 42,
+  "dd_ood_results": {
+    "full": {
+      "f1_macro": 0.9903618394184432,
+      "precision": 1.0,
+      "recall": 0.9875,
+      "accuracy": 0.9915254237288136
+    },
+    "k=1": {
+      "f1_macro": 0.9714585181004596,
+      "precision": 1.0,
+      "recall": 0.9625,
+      "accuracy": 0.9745762711864406
+    },
+    "k=2": {
+      "f1_macro": 0.9621794871794871,
+      "precision": 1.0,
+      "recall": 0.95,
+      "accuracy": 0.9661016949152542
+    },
+    "k=3": {
+      "f1_macro": 0.9349555083077408,
+      "precision": 1.0,
+      "recall": 0.9125,
+      "accuracy": 0.940677966101695
+    },
+    "k=5": {
+      "f1_macro": 0.9903618394184432,
+      "precision": 1.0,
+      "recall": 0.9875,
+      "accuracy": 0.9915254237288136
+    }
+  },
+  "iid_results": {
+    "full": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=1": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=2": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=3": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "k=5": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "reference_seed42": {
+    "k=1": 1.0,
+    "k=2": 0.9904,
+    "k=3": 0.9904,
+    "k=5": 1.0,
+    "full": 1.0
+  }
+}

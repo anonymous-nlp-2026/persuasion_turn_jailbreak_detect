@@ -1,0 +1,116 @@
+{
+  "seed42": {
+    "dapt_checkpoint": "checkpoints/exp17/9class_seed42/deberta_multitask/best",
+    "iid": {
+      "f1_macro": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "n": 76,
+      "n_jailbreak": 38,
+      "n_benign": 38
+    },
+    "dd_ood": {
+      "f1_macro": 0.89986885751755,
+      "precision_macro": 0.8877551020408163,
+      "recall_macro": 0.93125,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    },
+    "aa_ood": {
+      "f1_macro": 0.9260651629072681,
+      "precision_macro": 0.9130434782608696,
+      "recall_macro": 0.95,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    }
+  },
+  "seed123": {
+    "dapt_checkpoint": "checkpoints/exp17/9class_seed123/deberta_multitask/best",
+    "iid": {
+      "f1_macro": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "n": 76,
+      "n_jailbreak": 38,
+      "n_benign": 38
+    },
+    "dd_ood": {
+      "f1_macro": 0.9172574990261005,
+      "precision_macro": 0.9042553191489362,
+      "recall_macro": 0.94375,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    },
+    "aa_ood": {
+      "f1_macro": 0.9260651629072681,
+      "precision_macro": 0.9130434782608696,
+      "recall_macro": 0.95,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    }
+  },
+  "seed456": {
+    "dapt_checkpoint": "checkpoints/exp17/9class_seed456/deberta_multitask/best",
+    "iid": {
+      "f1_macro": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "n": 76,
+      "n_jailbreak": 38,
+      "n_benign": 38
+    },
+    "dd_ood": {
+      "f1_macro": 0.9621794871794871,
+      "precision_macro": 0.9523809523809523,
+      "recall_macro": 0.975,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    },
+    "aa_ood": {
+      "f1_macro": 0.9530067702110713,
+      "precision_macro": 0.9418604651162791,
+      "recall_macro": 0.96875,
+      "n": 118,
+      "n_jailbreak": 80,
+      "n_benign": 38
+    }
+  },
+  "cross_checkpoint_stats": {
+    "iid_f1": {
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "std": 0.0,
+      "max_minus_min": 0.0
+    },
+    "dd_ood_f1": {
+      "values": [
+        0.89986885751755,
+        0.9172574990261005,
+        0.9621794871794871
+      ],
+      "mean": 0.9264352812410458,
+      "std": 0.02625296690541845,
+      "max_minus_min": 0.06231062966193712
+    },
+    "aa_ood_f1": {
+      "values": [
+        0.9260651629072681,
+        0.9260651629072681,
+        0.9530067702110713
+      ],
+      "mean": 0.9350456986752026,
+      "std": 0.012700395480389473,
+      "max_minus_min": 0.026941607303803128
+    }
+  },
+  "variance_under_2pp": false
+}

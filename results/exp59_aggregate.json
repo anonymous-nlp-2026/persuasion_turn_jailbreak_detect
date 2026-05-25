@@ -1,0 +1,113 @@
+{
+  "experiment": "exp59_resample_350",
+  "description": "Resample 350 from expanded_1000 train, 3 seeds, 9-class DAPT pipeline",
+  "per_seed": {
+    "seed42": {
+      "dd_ood": {
+        "f1_macro": 0.7654054054054054,
+        "precision": 0.8409090909090908,
+        "recall": 0.78125,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.7580645161290323,
+        "precision": 0.8378378378378378,
+        "recall": 0.775,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "iid": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "seed123": {
+      "dd_ood": {
+        "f1_macro": 0.9483849483849484,
+        "precision": 0.9500333667000334,
+        "recall": 0.9495833333333333,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.9160031681187211,
+        "precision": 0.9229861813279407,
+        "recall": 0.9183333333333333,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "iid": {
+        "f1_macro": 0.9933330370238678,
+        "precision": 0.993421052631579,
+        "recall": 0.9933333333333334,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    },
+    "seed456": {
+      "dd_ood": {
+        "f1_macro": 0.9483677548301133,
+        "precision": 0.9518072289156627,
+        "recall": 0.95,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "aa_ood": {
+        "f1_macro": 0.9741924741924741,
+        "precision": 0.9746835443037974,
+        "recall": 0.975,
+        "n": 155,
+        "n_jailbreak": 80,
+        "n_benign": 75
+      },
+      "iid": {
+        "f1_macro": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n": 150,
+        "n_jailbreak": 75,
+        "n_benign": 75
+      }
+    }
+  },
+  "summary": {
+    "dd_ood": {
+      "mean": 0.8873860362068223,
+      "std": 0.08625333149870514,
+      "values": [
+        0.7654054054054054,
+        0.9483849483849484,
+        0.9483677548301133
+      ]
+    },
+    "aa_ood": {
+      "mean": 0.8827533861467426,
+      "std": 0.09131259338140352,
+      "values": [
+        0.7580645161290323,
+        0.9160031681187211,
+        0.9741924741924741
+      ]
+    },
+    "iid": {
+      "mean": 0.9977776790079559,
+      "std": 0.003142836486895164,
+      "values": [
+        1.0,
+        0.9933330370238678,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "overall": {
+    "f1_macro": 0.05660377358490566,
+    "f1_per_class": [
+      0.0,
+      0.11320754716981132
+    ],
+    "accuracy": 0.06,
+    "fpr_at_95tpr": NaN,
+    "confusion_matrix": [
+      [
+        0,
+        0
+      ],
+      [
+        47,
+        3
+      ]
+    ]
+  },
+  "early_detection": {
+    "k=1": {
+      "accuracy": 0.34,
+      "f1_macro": 0.2537313432835821
+    },
+    "k=2": {
+      "accuracy": 0.22,
+      "f1_macro": 0.18032786885245902
+    },
+    "k=3": {
+      "accuracy": 0.08,
+      "f1_macro": 0.07407407407407407
+    },
+    "k=5": {
+      "accuracy": 0.06,
+      "f1_macro": 0.05660377358490566
+    }
+  },
+  "per_attack_type": {
+    "actorattack": {
+      "f1_macro": 0.05660377358490566,
+      "accuracy": 0.06,
+      "n": 50
+    }
+  }
+}

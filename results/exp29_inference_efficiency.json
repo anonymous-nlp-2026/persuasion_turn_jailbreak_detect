@@ -1,0 +1,123 @@
+{
+  "experiment": "exp29_inference_efficiency",
+  "description": "Inference latency and throughput benchmark",
+  "test_data": "data/plan_002_splits/test.jsonl",
+  "n_test_conversations": 76,
+  "deberta_bigru": {
+    "params_total": 186731022,
+    "params_M": 186.73,
+    "params_breakdown": {
+      "encoder_M": 183.83,
+      "multitask_heads_M": 0.0085,
+      "gru_M": 2.891
+    },
+    "gpu_mem_MB": 861.5,
+    "device": "cuda:0 (GPU)",
+    "latency_ms": {
+      "mean": 12.12,
+      "std": 1.22,
+      "median": 11.96,
+      "p95": 14.53
+    },
+    "throughput_conv_per_sec": 82.48,
+    "n_conversations": 76,
+    "n_measurements": 228,
+    "avg_turns_per_conv": 8.3,
+    "warmup_iters": 10
+  },
+  "tfidf_lr": {
+    "params": 10002,
+    "tfidf_vocab_size": 5000,
+    "tfidf_max_features": 5000,
+    "tfidf_ngram_range": [
+      1,
+      2
+    ],
+    "device": "CPU",
+    "latency_ms": {
+      "mean": 0.4265,
+      "std": 0.0537,
+      "median": 0.4212,
+      "p95": 0.5219
+    },
+    "throughput_conv_per_sec": 2344.9,
+    "batch_inference": {
+      "batch_size": 76,
+      "latency_ms": 0.05,
+      "throughput_conv_per_sec": 1549473.0
+    },
+    "n_conversations": 76,
+    "n_measurements": 760,
+    "warmup_iters": 10
+  },
+  "llm_judge_reference": {
+    "qwen3_8b_zeroshot": {
+      "model": "Qwen3-8B (zero-shot, local)",
+      "total_elapsed_s": {
+        "dd": 381.0,
+        "fitd": 354.3
+      },
+      "n_conversations": {
+        "dd": 118,
+        "fitd": 118
+      },
+      "latency_ms_per_conv": 3229.0,
+      "throughput_conv_per_sec": 0.31,
+      "dd_full_f1": 0.0
+    },
+    "qwen3_8b_fewshot": {
+      "model": "Qwen3-8B (3-shot, local)",
+      "total_elapsed_s": {
+        "dd": 106.4,
+        "aa": 81.6
+      },
+      "n_conversations": {
+        "dd": 118,
+        "aa": 118
+      },
+      "latency_ms_per_conv": 902.0,
+      "throughput_conv_per_sec": 1.11,
+      "aa_full_f1": 0.6612
+    },
+    "gpt4o_estimated": {
+      "model": "GPT-4o (API, estimated)",
+      "latency_ms_per_conv": {
+        "estimated_range": [
+          2000,
+          5000
+        ]
+      },
+      "throughput_conv_per_sec": {
+        "estimated_range": [
+          0.2,
+          0.5
+        ]
+      },
+      "note": "Estimated based on typical API latency for multi-turn conversation analysis. Actual latency depends on prompt length, API load, and network conditions."
+    }
+  },
+  "speedup_comparison": {
+    "deberta_vs_gpt4o": {
+      "speedup_range": [
+        165.0,
+        412.5
+      ],
+      "note": "Our model is 165-413x faster than GPT-4o API"
+    },
+    "tfidf_vs_deberta": {
+      "speedup": 28.4,
+      "note": "TF-IDF is 28x faster but much less accurate on OOD"
+    },
+    "deberta_vs_qwen3_8b_local": {
+      "speedup": 266.4,
+      "note": "Our model is 266x faster than Qwen3-8B local inference"
+    }
+  },
+  "reference_f1": {
+    "note": "AA OOD macro F1 from previous experiments",
+    "deberta_bigru_9class": 0.972,
+    "tfidf_lr": 0.261,
+    "qwen3_8b_fewshot": 0.661,
+    "gpt4o": "N/A (not evaluated on this dataset)"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "seeds": {
+    "42": {
+      "wildchat_fpr": 0.0,
+      "wildchat_n": 49,
+      "iid_f1_macro": 1.0,
+      "iid_accuracy": 1.0,
+      "ood_dd_recall": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_recall": 0.975,
+      "ood_aa_f1": 0.9808503732554366,
+      "ood_fitd_recall": 1.0,
+      "ood_fitd_f1": 1.0
+    },
+    "123": {
+      "wildchat_fpr": 0.0,
+      "wildchat_n": 49,
+      "iid_f1_macro": 1.0,
+      "iid_accuracy": 1.0,
+      "ood_dd_recall": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_recall": 0.9375,
+      "ood_aa_f1": 0.9530067702110713,
+      "ood_fitd_recall": 1.0,
+      "ood_fitd_f1": 1.0
+    },
+    "456": {
+      "wildchat_fpr": 0.0,
+      "wildchat_n": 49,
+      "iid_f1_macro": 1.0,
+      "iid_accuracy": 1.0,
+      "ood_dd_recall": 1.0,
+      "ood_dd_f1": 1.0,
+      "ood_aa_recall": 0.9125,
+      "ood_aa_f1": 0.9349555083077408,
+      "ood_fitd_recall": 1.0,
+      "ood_fitd_f1": 1.0
+    }
+  },
+  "summary": {
+    "wildchat_fpr_mean": 0.0,
+    "wildchat_fpr_std": 0.0,
+    "iid_f1_mean": 1.0,
+    "iid_f1_std": 0.0,
+    "ood_dd_recall_mean": 1.0,
+    "ood_dd_f1_mean": 1.0,
+    "ood_aa_recall_mean": 0.9416666666666668,
+    "ood_aa_f1_mean": 0.9562708839247495,
+    "ood_fitd_recall_mean": 1.0,
+    "ood_fitd_f1_mean": 1.0,
+    "fpr_pass": true,
+    "ood_f1_pass": true,
+    "conclusion": "success"
+  }
+}

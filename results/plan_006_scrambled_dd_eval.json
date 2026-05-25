@@ -1,0 +1,51 @@
+{
+  "dd": {
+    "full": {
+      "scrambled": {
+        "f1_macro": 0.9808503732554366,
+        "precision": 1.0,
+        "recall": 0.975,
+        "accuracy": 0.9830508474576272,
+        "fpr_at_95tpr": 0.0
+      }
+    },
+    "early_detection": {
+      "k=1": {
+        "scrambled": {
+          "f1_macro": 0.9903618394184432,
+          "precision": 1.0,
+          "recall": 0.9875,
+          "accuracy": 0.9915254237288136,
+          "fpr_at_95tpr": 0.0
+        }
+      },
+      "k=2": {
+        "scrambled": {
+          "f1_macro": 0.9349555083077408,
+          "precision": 1.0,
+          "recall": 0.9125,
+          "accuracy": 0.940677966101695,
+          "fpr_at_95tpr": 0.0
+        }
+      },
+      "k=3": {
+        "scrambled": {
+          "f1_macro": 0.9349555083077408,
+          "precision": 1.0,
+          "recall": 0.9125,
+          "accuracy": 0.940677966101695,
+          "fpr_at_95tpr": 0.0
+        }
+      },
+      "k=5": {
+        "scrambled": {
+          "f1_macro": 0.9903618394184432,
+          "precision": 1.0,
+          "recall": 0.9875,
+          "accuracy": 0.9915254237288136,
+          "fpr_at_95tpr": 0.0
+        }
+      }
+    }
+  }
+}

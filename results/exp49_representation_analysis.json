@@ -1,0 +1,1582 @@
+{
+  "experiment": "exp49_representation_analysis",
+  "data": {
+    "iid_test": 76,
+    "dd_ood": 80,
+    "aa_ood": 80
+  },
+  "total_samples": 236,
+  "weight_norm": {
+    "vanilla": {
+      "overall_l2": 0.0,
+      "relative_norm": 0.0,
+      "per_layer": {}
+    },
+    "9-class": {
+      "overall_l2": 3.9984,
+      "relative_norm": 0.003028,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.5479,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.000443
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0091,
+          "pretrained_norm": 17.1053,
+          "relative": 0.000532
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0089,
+          "pretrained_norm": 10.3297,
+          "relative": 0.000861
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.5875,
+          "pretrained_norm": 107.6449,
+          "relative": 0.005457
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.5697,
+          "pretrained_norm": 92.7495,
+          "relative": 0.006142
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.5123,
+          "pretrained_norm": 86.5023,
+          "relative": 0.005923
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.5692,
+          "pretrained_norm": 93.0556,
+          "relative": 0.006117
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.5785,
+          "pretrained_norm": 89.4991,
+          "relative": 0.006464
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.4689,
+          "pretrained_norm": 82.2024,
+          "relative": 0.005704
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.5916,
+          "pretrained_norm": 97.9595,
+          "relative": 0.006039
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.6048,
+          "pretrained_norm": 91.9113,
+          "relative": 0.00658
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.4659,
+          "pretrained_norm": 86.2965,
+          "relative": 0.005398
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.6193,
+          "pretrained_norm": 100.2401,
+          "relative": 0.006178
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.6199,
+          "pretrained_norm": 91.9388,
+          "relative": 0.006742
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.4945,
+          "pretrained_norm": 95.4013,
+          "relative": 0.005184
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.6447,
+          "pretrained_norm": 98.8317,
+          "relative": 0.006523
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.6386,
+          "pretrained_norm": 89.8229,
+          "relative": 0.007109
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.5094,
+          "pretrained_norm": 91.7392,
+          "relative": 0.005553
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.6522,
+          "pretrained_norm": 97.7995,
+          "relative": 0.006669
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.6643,
+          "pretrained_norm": 86.5616,
+          "relative": 0.007675
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.5087,
+          "pretrained_norm": 82.7828,
+          "relative": 0.006145
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.6766,
+          "pretrained_norm": 97.6351,
+          "relative": 0.00693
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.6863,
+          "pretrained_norm": 83.8615,
+          "relative": 0.008184
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.5133,
+          "pretrained_norm": 83.5935,
+          "relative": 0.00614
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.7046,
+          "pretrained_norm": 96.6898,
+          "relative": 0.007287
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.71,
+          "pretrained_norm": 81.8189,
+          "relative": 0.008678
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.573,
+          "pretrained_norm": 75.9213,
+          "relative": 0.007547
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.7191,
+          "pretrained_norm": 96.237,
+          "relative": 0.007472
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.7374,
+          "pretrained_norm": 81.772,
+          "relative": 0.009018
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.5714,
+          "pretrained_norm": 77.362,
+          "relative": 0.007386
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.7446,
+          "pretrained_norm": 101.19,
+          "relative": 0.007358
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.7523,
+          "pretrained_norm": 84.3416,
+          "relative": 0.008919
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.5848,
+          "pretrained_norm": 76.7987,
+          "relative": 0.007615
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.8011,
+          "pretrained_norm": 99.786,
+          "relative": 0.008029
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.7909,
+          "pretrained_norm": 92.0573,
+          "relative": 0.008592
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.6303,
+          "pretrained_norm": 78.4427,
+          "relative": 0.008035
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.8617,
+          "pretrained_norm": 101.7436,
+          "relative": 0.00847
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 1.0697,
+          "pretrained_norm": 113.4696,
+          "relative": 0.009427
+        },
+        "encoder.layer.11.output": {
+          "l2": 0.9811,
+          "pretrained_norm": 111.5651,
+          "relative": 0.008794
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.1825,
+          "pretrained_norm": 71.8464,
+          "relative": 0.00254
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.015,
+          "pretrained_norm": 4.4258,
+          "relative": 0.003388
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.0116,
+          "pretrained_norm": 1.3367,
+          "relative": 0.008715
+        }
+      }
+    },
+    "scrambled": {
+      "overall_l2": 3.7398,
+      "relative_norm": 0.002832,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.6089,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.000492
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0084,
+          "pretrained_norm": 17.1053,
+          "relative": 0.00049
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0078,
+          "pretrained_norm": 10.3297,
+          "relative": 0.000759
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.5375,
+          "pretrained_norm": 107.6449,
+          "relative": 0.004993
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.5454,
+          "pretrained_norm": 92.7495,
+          "relative": 0.00588
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.4837,
+          "pretrained_norm": 86.5023,
+          "relative": 0.005592
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.5301,
+          "pretrained_norm": 93.0556,
+          "relative": 0.005697
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.547,
+          "pretrained_norm": 89.4991,
+          "relative": 0.006111
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.4344,
+          "pretrained_norm": 82.2024,
+          "relative": 0.005285
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.5505,
+          "pretrained_norm": 97.9595,
+          "relative": 0.005619
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.5662,
+          "pretrained_norm": 91.9113,
+          "relative": 0.006161
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.4446,
+          "pretrained_norm": 86.2965,
+          "relative": 0.005152
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.5766,
+          "pretrained_norm": 100.2401,
+          "relative": 0.005752
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.5822,
+          "pretrained_norm": 91.9388,
+          "relative": 0.006332
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.4669,
+          "pretrained_norm": 95.4013,
+          "relative": 0.004894
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.5864,
+          "pretrained_norm": 98.8317,
+          "relative": 0.005933
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.6052,
+          "pretrained_norm": 89.8229,
+          "relative": 0.006738
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.48,
+          "pretrained_norm": 91.7392,
+          "relative": 0.005232
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.6063,
+          "pretrained_norm": 97.7995,
+          "relative": 0.006199
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.6255,
+          "pretrained_norm": 86.5616,
+          "relative": 0.007226
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.4754,
+          "pretrained_norm": 82.7828,
+          "relative": 0.005743
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.6207,
+          "pretrained_norm": 97.6351,
+          "relative": 0.006358
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.6521,
+          "pretrained_norm": 83.8615,
+          "relative": 0.007776
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.4843,
+          "pretrained_norm": 83.5935,
+          "relative": 0.005794
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.6504,
+          "pretrained_norm": 96.6898,
+          "relative": 0.006727
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.6732,
+          "pretrained_norm": 81.8189,
+          "relative": 0.008228
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.5236,
+          "pretrained_norm": 75.9213,
+          "relative": 0.006896
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.6683,
+          "pretrained_norm": 96.237,
+          "relative": 0.006944
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.6965,
+          "pretrained_norm": 81.772,
+          "relative": 0.008517
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.5131,
+          "pretrained_norm": 77.362,
+          "relative": 0.006632
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.6809,
+          "pretrained_norm": 101.19,
+          "relative": 0.006729
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.6882,
+          "pretrained_norm": 84.3416,
+          "relative": 0.00816
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.5265,
+          "pretrained_norm": 76.7987,
+          "relative": 0.006855
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.7039,
+          "pretrained_norm": 99.786,
+          "relative": 0.007054
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.6964,
+          "pretrained_norm": 92.0573,
+          "relative": 0.007565
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.5782,
+          "pretrained_norm": 78.4427,
+          "relative": 0.00737
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.7713,
+          "pretrained_norm": 101.7436,
+          "relative": 0.00758
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 1.0322,
+          "pretrained_norm": 113.4696,
+          "relative": 0.009097
+        },
+        "encoder.layer.11.output": {
+          "l2": 0.9809,
+          "pretrained_norm": 111.5651,
+          "relative": 0.008792
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.1868,
+          "pretrained_norm": 71.8464,
+          "relative": 0.0026
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.013,
+          "pretrained_norm": 4.4258,
+          "relative": 0.002939
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.0092,
+          "pretrained_norm": 1.3367,
+          "relative": 0.006919
+        }
+      }
+    },
+    "binary": {
+      "overall_l2": 3.1603,
+      "relative_norm": 0.002393,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.4043,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.000327
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0088,
+          "pretrained_norm": 17.1053,
+          "relative": 0.000517
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0084,
+          "pretrained_norm": 10.3297,
+          "relative": 0.000816
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.4998,
+          "pretrained_norm": 107.6449,
+          "relative": 0.004643
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.4776,
+          "pretrained_norm": 92.7495,
+          "relative": 0.005149
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.4293,
+          "pretrained_norm": 86.5023,
+          "relative": 0.004963
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.4731,
+          "pretrained_norm": 93.0556,
+          "relative": 0.005084
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.4746,
+          "pretrained_norm": 89.4991,
+          "relative": 0.005303
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.3939,
+          "pretrained_norm": 82.2024,
+          "relative": 0.004792
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.4887,
+          "pretrained_norm": 97.9595,
+          "relative": 0.004989
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.4798,
+          "pretrained_norm": 91.9113,
+          "relative": 0.005221
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.4049,
+          "pretrained_norm": 86.2965,
+          "relative": 0.004692
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.5053,
+          "pretrained_norm": 100.2401,
+          "relative": 0.005041
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.4787,
+          "pretrained_norm": 91.9388,
+          "relative": 0.005206
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.4045,
+          "pretrained_norm": 95.4013,
+          "relative": 0.00424
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.4989,
+          "pretrained_norm": 98.8317,
+          "relative": 0.005048
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.4787,
+          "pretrained_norm": 89.8229,
+          "relative": 0.005329
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.4063,
+          "pretrained_norm": 91.7392,
+          "relative": 0.004429
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.5013,
+          "pretrained_norm": 97.7995,
+          "relative": 0.005126
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.485,
+          "pretrained_norm": 86.5616,
+          "relative": 0.005603
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.404,
+          "pretrained_norm": 82.7828,
+          "relative": 0.00488
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.5176,
+          "pretrained_norm": 97.6351,
+          "relative": 0.005301
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.4949,
+          "pretrained_norm": 83.8615,
+          "relative": 0.005901
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.4208,
+          "pretrained_norm": 83.5935,
+          "relative": 0.005034
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.5299,
+          "pretrained_norm": 96.6898,
+          "relative": 0.005481
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.5132,
+          "pretrained_norm": 81.8189,
+          "relative": 0.006272
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.449,
+          "pretrained_norm": 75.9213,
+          "relative": 0.005914
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.5587,
+          "pretrained_norm": 96.237,
+          "relative": 0.005805
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.5386,
+          "pretrained_norm": 81.772,
+          "relative": 0.006587
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.4426,
+          "pretrained_norm": 77.362,
+          "relative": 0.005722
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.5392,
+          "pretrained_norm": 101.19,
+          "relative": 0.005328
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.5523,
+          "pretrained_norm": 84.3416,
+          "relative": 0.006549
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.4312,
+          "pretrained_norm": 76.7987,
+          "relative": 0.005615
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.6119,
+          "pretrained_norm": 99.786,
+          "relative": 0.006132
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.6137,
+          "pretrained_norm": 92.0573,
+          "relative": 0.006666
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.5152,
+          "pretrained_norm": 78.4427,
+          "relative": 0.006568
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.7045,
+          "pretrained_norm": 101.7436,
+          "relative": 0.006924
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 0.9248,
+          "pretrained_norm": 113.4696,
+          "relative": 0.00815
+        },
+        "encoder.layer.11.output": {
+          "l2": 0.8392,
+          "pretrained_norm": 111.5651,
+          "relative": 0.007522
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.145,
+          "pretrained_norm": 71.8464,
+          "relative": 0.002018
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.0112,
+          "pretrained_norm": 4.4258,
+          "relative": 0.002526
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.0095,
+          "pretrained_norm": 1.3367,
+          "relative": 0.007076
+        }
+      }
+    },
+    "topic": {
+      "overall_l2": 4.8941,
+      "relative_norm": 0.003706,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.8662,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.0007
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0161,
+          "pretrained_norm": 17.1053,
+          "relative": 0.000941
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0149,
+          "pretrained_norm": 10.3297,
+          "relative": 0.001444
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.8769,
+          "pretrained_norm": 107.6449,
+          "relative": 0.008147
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.9051,
+          "pretrained_norm": 92.7495,
+          "relative": 0.009759
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.8349,
+          "pretrained_norm": 86.5023,
+          "relative": 0.009652
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.8736,
+          "pretrained_norm": 93.0556,
+          "relative": 0.009388
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.9219,
+          "pretrained_norm": 89.4991,
+          "relative": 0.010301
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.7963,
+          "pretrained_norm": 82.2024,
+          "relative": 0.009687
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.8696,
+          "pretrained_norm": 97.9595,
+          "relative": 0.008877
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.9214,
+          "pretrained_norm": 91.9113,
+          "relative": 0.010025
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.7861,
+          "pretrained_norm": 86.2965,
+          "relative": 0.009109
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.8683,
+          "pretrained_norm": 100.2401,
+          "relative": 0.008663
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.9187,
+          "pretrained_norm": 91.9388,
+          "relative": 0.009992
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.7691,
+          "pretrained_norm": 95.4013,
+          "relative": 0.008062
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.896,
+          "pretrained_norm": 98.8317,
+          "relative": 0.009066
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.8907,
+          "pretrained_norm": 89.8229,
+          "relative": 0.009916
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.7436,
+          "pretrained_norm": 91.7392,
+          "relative": 0.008106
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.8587,
+          "pretrained_norm": 97.7995,
+          "relative": 0.00878
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.9024,
+          "pretrained_norm": 86.5616,
+          "relative": 0.010425
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.7127,
+          "pretrained_norm": 82.7828,
+          "relative": 0.008609
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.9305,
+          "pretrained_norm": 97.6351,
+          "relative": 0.00953
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.8657,
+          "pretrained_norm": 83.8615,
+          "relative": 0.010323
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.6773,
+          "pretrained_norm": 83.5935,
+          "relative": 0.008102
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.8745,
+          "pretrained_norm": 96.6898,
+          "relative": 0.009045
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.8367,
+          "pretrained_norm": 81.8189,
+          "relative": 0.010227
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.6504,
+          "pretrained_norm": 75.9213,
+          "relative": 0.008567
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.8411,
+          "pretrained_norm": 96.237,
+          "relative": 0.00874
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.803,
+          "pretrained_norm": 81.772,
+          "relative": 0.009819
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.5962,
+          "pretrained_norm": 77.362,
+          "relative": 0.007706
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.8004,
+          "pretrained_norm": 101.19,
+          "relative": 0.00791
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.7705,
+          "pretrained_norm": 84.3416,
+          "relative": 0.009135
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.5639,
+          "pretrained_norm": 76.7987,
+          "relative": 0.007342
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.7595,
+          "pretrained_norm": 99.786,
+          "relative": 0.007611
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.7942,
+          "pretrained_norm": 92.0573,
+          "relative": 0.008628
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.5989,
+          "pretrained_norm": 78.4427,
+          "relative": 0.007635
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.8665,
+          "pretrained_norm": 101.7436,
+          "relative": 0.008516
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 0.8097,
+          "pretrained_norm": 113.4696,
+          "relative": 0.007135
+        },
+        "encoder.layer.11.output": {
+          "l2": 0.574,
+          "pretrained_norm": 111.5651,
+          "relative": 0.005145
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.2316,
+          "pretrained_norm": 71.8464,
+          "relative": 0.003224
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.0239,
+          "pretrained_norm": 4.4258,
+          "relative": 0.0054
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.017,
+          "pretrained_norm": 1.3367,
+          "relative": 0.012707
+        }
+      }
+    },
+    "JB-MLM": {
+      "overall_l2": 3.375,
+      "relative_norm": 0.002556,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.695,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.000562
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0077,
+          "pretrained_norm": 17.1053,
+          "relative": 0.000448
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0071,
+          "pretrained_norm": 10.3297,
+          "relative": 0.000685
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.3799,
+          "pretrained_norm": 107.6449,
+          "relative": 0.003529
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.431,
+          "pretrained_norm": 92.7495,
+          "relative": 0.004647
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.4154,
+          "pretrained_norm": 86.5023,
+          "relative": 0.004802
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.4379,
+          "pretrained_norm": 93.0556,
+          "relative": 0.004705
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.4778,
+          "pretrained_norm": 89.4991,
+          "relative": 0.005339
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.4618,
+          "pretrained_norm": 82.2024,
+          "relative": 0.005618
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.4953,
+          "pretrained_norm": 97.9595,
+          "relative": 0.005056
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.5058,
+          "pretrained_norm": 91.9113,
+          "relative": 0.005503
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.4914,
+          "pretrained_norm": 86.2965,
+          "relative": 0.005694
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.5538,
+          "pretrained_norm": 100.2401,
+          "relative": 0.005525
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.5226,
+          "pretrained_norm": 91.9388,
+          "relative": 0.005684
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.4691,
+          "pretrained_norm": 95.4013,
+          "relative": 0.004917
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.5447,
+          "pretrained_norm": 98.8317,
+          "relative": 0.005512
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.5539,
+          "pretrained_norm": 89.8229,
+          "relative": 0.006166
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.4834,
+          "pretrained_norm": 91.7392,
+          "relative": 0.005269
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.5663,
+          "pretrained_norm": 97.7995,
+          "relative": 0.00579
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.5789,
+          "pretrained_norm": 86.5616,
+          "relative": 0.006688
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.4954,
+          "pretrained_norm": 82.7828,
+          "relative": 0.005984
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.5747,
+          "pretrained_norm": 97.6351,
+          "relative": 0.005886
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.5838,
+          "pretrained_norm": 83.8615,
+          "relative": 0.006961
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.4794,
+          "pretrained_norm": 83.5935,
+          "relative": 0.005735
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.5319,
+          "pretrained_norm": 96.6898,
+          "relative": 0.005501
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.6066,
+          "pretrained_norm": 81.8189,
+          "relative": 0.007414
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.5122,
+          "pretrained_norm": 75.9213,
+          "relative": 0.006746
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.5805,
+          "pretrained_norm": 96.237,
+          "relative": 0.006032
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.6337,
+          "pretrained_norm": 81.772,
+          "relative": 0.00775
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.5278,
+          "pretrained_norm": 77.362,
+          "relative": 0.006822
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.6633,
+          "pretrained_norm": 101.19,
+          "relative": 0.006555
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.6687,
+          "pretrained_norm": 84.3416,
+          "relative": 0.007929
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.5606,
+          "pretrained_norm": 76.7987,
+          "relative": 0.007299
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.6705,
+          "pretrained_norm": 99.786,
+          "relative": 0.006719
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.7075,
+          "pretrained_norm": 92.0573,
+          "relative": 0.007686
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.5617,
+          "pretrained_norm": 78.4427,
+          "relative": 0.00716
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.7148,
+          "pretrained_norm": 101.7436,
+          "relative": 0.007026
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 0.7607,
+          "pretrained_norm": 113.4696,
+          "relative": 0.006704
+        },
+        "encoder.layer.11.output": {
+          "l2": 0.51,
+          "pretrained_norm": 111.5651,
+          "relative": 0.004571
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.1411,
+          "pretrained_norm": 71.8464,
+          "relative": 0.001964
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.0164,
+          "pretrained_norm": 4.4258,
+          "relative": 0.003715
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.0101,
+          "pretrained_norm": 1.3367,
+          "relative": 0.007566
+        }
+      }
+    },
+    "wiki-MLM": {
+      "overall_l2": 2.9236,
+      "relative_norm": 0.002214,
+      "per_layer": {
+        "embeddings.word_embeddings.weight": {
+          "l2": 0.7047,
+          "pretrained_norm": 1236.8876,
+          "relative": 0.00057
+        },
+        "embeddings.LayerNorm.weight": {
+          "l2": 0.0051,
+          "pretrained_norm": 17.1053,
+          "relative": 0.000298
+        },
+        "embeddings.LayerNorm.bias": {
+          "l2": 0.0048,
+          "pretrained_norm": 10.3297,
+          "relative": 0.000467
+        },
+        "encoder.layer.0.attention": {
+          "l2": 0.2567,
+          "pretrained_norm": 107.6449,
+          "relative": 0.002385
+        },
+        "encoder.layer.0.intermediate": {
+          "l2": 0.252,
+          "pretrained_norm": 92.7495,
+          "relative": 0.002718
+        },
+        "encoder.layer.0.output": {
+          "l2": 0.2605,
+          "pretrained_norm": 86.5023,
+          "relative": 0.003011
+        },
+        "encoder.layer.1.attention": {
+          "l2": 0.2771,
+          "pretrained_norm": 93.0556,
+          "relative": 0.002978
+        },
+        "encoder.layer.1.intermediate": {
+          "l2": 0.2788,
+          "pretrained_norm": 89.4991,
+          "relative": 0.003115
+        },
+        "encoder.layer.1.output": {
+          "l2": 0.3108,
+          "pretrained_norm": 82.2024,
+          "relative": 0.003781
+        },
+        "encoder.layer.2.attention": {
+          "l2": 0.3053,
+          "pretrained_norm": 97.9595,
+          "relative": 0.003117
+        },
+        "encoder.layer.2.intermediate": {
+          "l2": 0.2991,
+          "pretrained_norm": 91.9113,
+          "relative": 0.003254
+        },
+        "encoder.layer.2.output": {
+          "l2": 0.3462,
+          "pretrained_norm": 86.2965,
+          "relative": 0.004012
+        },
+        "encoder.layer.3.attention": {
+          "l2": 0.3415,
+          "pretrained_norm": 100.2401,
+          "relative": 0.003407
+        },
+        "encoder.layer.3.intermediate": {
+          "l2": 0.3236,
+          "pretrained_norm": 91.9388,
+          "relative": 0.003519
+        },
+        "encoder.layer.3.output": {
+          "l2": 0.3477,
+          "pretrained_norm": 95.4013,
+          "relative": 0.003645
+        },
+        "encoder.layer.4.attention": {
+          "l2": 0.3753,
+          "pretrained_norm": 98.8317,
+          "relative": 0.003797
+        },
+        "encoder.layer.4.intermediate": {
+          "l2": 0.3495,
+          "pretrained_norm": 89.8229,
+          "relative": 0.003891
+        },
+        "encoder.layer.4.output": {
+          "l2": 0.3894,
+          "pretrained_norm": 91.7392,
+          "relative": 0.004245
+        },
+        "encoder.layer.5.attention": {
+          "l2": 0.3693,
+          "pretrained_norm": 97.7995,
+          "relative": 0.003776
+        },
+        "encoder.layer.5.intermediate": {
+          "l2": 0.3662,
+          "pretrained_norm": 86.5616,
+          "relative": 0.00423
+        },
+        "encoder.layer.5.output": {
+          "l2": 0.409,
+          "pretrained_norm": 82.7828,
+          "relative": 0.004941
+        },
+        "encoder.layer.6.attention": {
+          "l2": 0.3955,
+          "pretrained_norm": 97.6351,
+          "relative": 0.004051
+        },
+        "encoder.layer.6.intermediate": {
+          "l2": 0.3706,
+          "pretrained_norm": 83.8615,
+          "relative": 0.004419
+        },
+        "encoder.layer.6.output": {
+          "l2": 0.4109,
+          "pretrained_norm": 83.5935,
+          "relative": 0.004915
+        },
+        "encoder.layer.7.attention": {
+          "l2": 0.3803,
+          "pretrained_norm": 96.6898,
+          "relative": 0.003933
+        },
+        "encoder.layer.7.intermediate": {
+          "l2": 0.4068,
+          "pretrained_norm": 81.8189,
+          "relative": 0.004972
+        },
+        "encoder.layer.7.output": {
+          "l2": 0.4488,
+          "pretrained_norm": 75.9213,
+          "relative": 0.005912
+        },
+        "encoder.layer.8.attention": {
+          "l2": 0.425,
+          "pretrained_norm": 96.237,
+          "relative": 0.004416
+        },
+        "encoder.layer.8.intermediate": {
+          "l2": 0.4722,
+          "pretrained_norm": 81.772,
+          "relative": 0.005774
+        },
+        "encoder.layer.8.output": {
+          "l2": 0.4816,
+          "pretrained_norm": 77.362,
+          "relative": 0.006225
+        },
+        "encoder.layer.9.attention": {
+          "l2": 0.4866,
+          "pretrained_norm": 101.19,
+          "relative": 0.004809
+        },
+        "encoder.layer.9.intermediate": {
+          "l2": 0.5428,
+          "pretrained_norm": 84.3416,
+          "relative": 0.006436
+        },
+        "encoder.layer.9.output": {
+          "l2": 0.5338,
+          "pretrained_norm": 76.7987,
+          "relative": 0.00695
+        },
+        "encoder.layer.10.attention": {
+          "l2": 0.5863,
+          "pretrained_norm": 99.786,
+          "relative": 0.005876
+        },
+        "encoder.layer.10.intermediate": {
+          "l2": 0.666,
+          "pretrained_norm": 92.0573,
+          "relative": 0.007235
+        },
+        "encoder.layer.10.output": {
+          "l2": 0.6352,
+          "pretrained_norm": 78.4427,
+          "relative": 0.008097
+        },
+        "encoder.layer.11.attention": {
+          "l2": 0.7229,
+          "pretrained_norm": 101.7436,
+          "relative": 0.007106
+        },
+        "encoder.layer.11.intermediate": {
+          "l2": 0.9014,
+          "pretrained_norm": 113.4696,
+          "relative": 0.007944
+        },
+        "encoder.layer.11.output": {
+          "l2": 1.1053,
+          "pretrained_norm": 111.5651,
+          "relative": 0.009907
+        },
+        "encoder.rel_embeddings.weight": {
+          "l2": 0.1029,
+          "pretrained_norm": 71.8464,
+          "relative": 0.001432
+        },
+        "encoder.LayerNorm.weight": {
+          "l2": 0.0209,
+          "pretrained_norm": 4.4258,
+          "relative": 0.004731
+        },
+        "encoder.LayerNorm.bias": {
+          "l2": 0.0124,
+          "pretrained_norm": 1.3367,
+          "relative": 0.009277
+        }
+      }
+    }
+  },
+  "svd_geometry": {
+    "vanilla": {
+      "participation_ratio": 31.93,
+      "top10_variance_ratio": 0.9431,
+      "effective_dim_90": 13,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        4.9737,
+        1.9446,
+        1.6229,
+        1.1179,
+        0.8418,
+        0.7874,
+        0.7361,
+        0.6412,
+        0.609,
+        0.5738,
+        0.5426,
+        0.5167,
+        0.4706,
+        0.4606,
+        0.4276,
+        0.4219,
+        0.4124,
+        0.3985,
+        0.3832,
+        0.3756
+      ]
+    },
+    "9-class": {
+      "participation_ratio": 9.37,
+      "top10_variance_ratio": 0.9959,
+      "effective_dim_90": 3,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        300.6742,
+        190.5763,
+        95.7224,
+        75.5884,
+        44.9455,
+        26.3921,
+        21.7677,
+        17.3518,
+        16.2246,
+        12.9359,
+        11.7367,
+        11.4732,
+        11.2505,
+        9.6803,
+        9.5513,
+        8.4753,
+        7.7208,
+        7.6182,
+        7.1721,
+        6.7722
+      ]
+    },
+    "scrambled": {
+      "participation_ratio": 7.82,
+      "top10_variance_ratio": 0.9963,
+      "effective_dim_90": 2,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        263.9194,
+        118.695,
+        63.9601,
+        33.4973,
+        29.7742,
+        20.7182,
+        12.7514,
+        10.5188,
+        9.3029,
+        8.5914,
+        7.6388,
+        6.8735,
+        6.7075,
+        6.5239,
+        6.1012,
+        5.8794,
+        5.5553,
+        5.3149,
+        5.224,
+        4.7348
+      ]
+    },
+    "binary": {
+      "participation_ratio": 3.73,
+      "top10_variance_ratio": 0.999,
+      "effective_dim_90": 1,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        344.692,
+        94.188,
+        24.6635,
+        19.8115,
+        10.7604,
+        8.6433,
+        7.7942,
+        7.4064,
+        6.0131,
+        5.3161,
+        5.0433,
+        4.6134,
+        4.2427,
+        4.0752,
+        3.8086,
+        3.31,
+        3.2188,
+        3.0421,
+        2.9844,
+        2.9108
+      ]
+    },
+    "topic": {
+      "participation_ratio": 14.46,
+      "top10_variance_ratio": 0.9897,
+      "effective_dim_90": 4,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        195.7864,
+        130.9485,
+        112.7078,
+        50.3112,
+        37.3882,
+        35.2258,
+        22.5408,
+        18.6579,
+        18.1728,
+        14.4735,
+        14.0613,
+        11.4237,
+        10.2092,
+        10.1598,
+        9.2751,
+        9.0992,
+        8.9137,
+        8.362,
+        7.7782,
+        7.5741
+      ]
+    },
+    "JB-MLM": {
+      "participation_ratio": 24.56,
+      "top10_variance_ratio": 0.9635,
+      "effective_dim_90": 7,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        5.6433,
+        2.9742,
+        1.6999,
+        1.4204,
+        0.8377,
+        0.7413,
+        0.7147,
+        0.621,
+        0.5804,
+        0.5443,
+        0.5256,
+        0.4952,
+        0.4377,
+        0.4287,
+        0.4157,
+        0.4003,
+        0.3854,
+        0.3728,
+        0.349,
+        0.3427
+      ]
+    },
+    "wiki-MLM": {
+      "participation_ratio": 25.0,
+      "top10_variance_ratio": 0.9667,
+      "effective_dim_90": 7,
+      "num_samples": 236,
+      "embedding_dim": 768,
+      "top20_singular_values": [
+        9.9238,
+        7.7165,
+        3.9078,
+        3.2511,
+        2.1367,
+        1.8412,
+        1.6122,
+        1.3439,
+        1.2739,
+        1.1036,
+        1.0435,
+        0.9878,
+        0.942,
+        0.9128,
+        0.8976,
+        0.8131,
+        0.7525,
+        0.7126,
+        0.6913,
+        0.6769
+      ]
+    }
+  },
+  "clustering": {
+    "vanilla": {
+      "jb_intra_var": 0.000437,
+      "benign_intra_var": 0.000183,
+      "inter_class_dist": 0.000207,
+      "inter_class_sim": 0.999793,
+      "fisher_ratio": 6.9e-05,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "9-class": {
+      "jb_intra_var": 0.397623,
+      "benign_intra_var": 0.002132,
+      "inter_class_dist": 1.336193,
+      "inter_class_sim": -0.336193,
+      "fisher_ratio": 4.466274,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "scrambled": {
+      "jb_intra_var": 0.254468,
+      "benign_intra_var": 0.002486,
+      "inter_class_dist": 0.817798,
+      "inter_class_sim": 0.182202,
+      "fisher_ratio": 2.602778,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "binary": {
+      "jb_intra_var": 0.112958,
+      "benign_intra_var": 0.005028,
+      "inter_class_dist": 1.525593,
+      "inter_class_sim": -0.525593,
+      "fisher_ratio": 19.726283,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "topic": {
+      "jb_intra_var": 0.413848,
+      "benign_intra_var": 0.522339,
+      "inter_class_dist": 0.107958,
+      "inter_class_sim": 0.892042,
+      "fisher_ratio": 0.012449,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "JB-MLM": {
+      "jb_intra_var": 0.000439,
+      "benign_intra_var": 0.0002,
+      "inter_class_dist": 0.000727,
+      "inter_class_sim": 0.999273,
+      "fisher_ratio": 0.000829,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    },
+    "wiki-MLM": {
+      "jb_intra_var": 0.002103,
+      "benign_intra_var": 0.001166,
+      "inter_class_dist": 0.000964,
+      "inter_class_sim": 0.999036,
+      "fisher_ratio": 0.000284,
+      "n_jailbreak": 198,
+      "n_benign": 38
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "early_detection": {
+    "1": {
+      "treatment": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "baseline": {
+        "f1": 0.987012987012987,
+        "precision": 0.9743589743589743,
+        "recall": 1.0,
+        "accuracy": 0.9868421052631579,
+        "fpr_at_95tpr": 0.02631578947368421
+      },
+      "tfidf": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      }
+    },
+    "2": {
+      "treatment": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "baseline": {
+        "f1": 0.9866666666666667,
+        "precision": 1.0,
+        "recall": 0.9736842105263158,
+        "accuracy": 0.9868421052631579,
+        "fpr_at_95tpr": 0.02631578947368421
+      },
+      "tfidf": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      }
+    },
+    "3": {
+      "treatment": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "baseline": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "tfidf": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      }
+    },
+    "5": {
+      "treatment": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "baseline": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "tfidf": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      }
+    },
+    "full": {
+      "treatment": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "baseline": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      },
+      "tfidf": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "fpr_at_95tpr": 0.0
+      }
+    }
+  },
+  "stage1": {
+    "best_epoch": 3,
+    "val_persuasion_acc": 0.8302,
+    "val_intent_acc": 1.0,
+    "val_loss": 0.4515
+  }
+}

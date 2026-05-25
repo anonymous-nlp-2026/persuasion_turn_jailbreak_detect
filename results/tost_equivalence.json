@@ -1,0 +1,128 @@
+{
+  "DD": {
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1000
+    ],
+    "n": 5,
+    "9class_f1": [
+      1.0,
+      1.0,
+      0.99,
+      1.0,
+      1.0
+    ],
+    "scrambled_f1": [
+      0.99,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cohens_d_paired": 0.0,
+    "tost": {
+      "margin_5pp": {
+        "mean_diff": 0.0,
+        "se": 0.003162,
+        "p_tost": 4.7e-05,
+        "p_upper": 4.7e-05,
+        "p_lower": 4.7e-05,
+        "t_upper": -15.8114,
+        "t_lower": 15.8114,
+        "n": 5,
+        "margin": 0.05,
+        "equivalent": true
+      },
+      "margin_3pp": {
+        "mean_diff": 0.0,
+        "se": 0.003162,
+        "p_tost": 0.000344,
+        "p_upper": 0.000344,
+        "p_lower": 0.000344,
+        "t_upper": -9.4868,
+        "t_lower": 9.4868,
+        "n": 5,
+        "margin": 0.03,
+        "equivalent": true
+      },
+      "margin_2pp": {
+        "mean_diff": 0.0,
+        "se": 0.003162,
+        "p_tost": 0.001599,
+        "p_upper": 0.001599,
+        "p_lower": 0.001599,
+        "t_upper": -6.3246,
+        "t_lower": 6.3246,
+        "n": 5,
+        "margin": 0.02,
+        "equivalent": true
+      }
+    }
+  },
+  "AA": {
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1000
+    ],
+    "n": 5,
+    "9class_f1": [
+      0.99,
+      0.935,
+      0.99,
+      0.972,
+      0.972
+    ],
+    "scrambled_f1": [
+      0.891,
+      0.99,
+      0.971,
+      0.99,
+      0.99
+    ],
+    "cohens_d_paired": 0.0923,
+    "tost": {
+      "margin_5pp": {
+        "mean_diff": 0.0054,
+        "se": 0.026162,
+        "p_tost": 0.081721,
+        "p_upper": 0.081721,
+        "p_lower": 0.05081,
+        "t_upper": -1.7048,
+        "t_lower": 2.1176,
+        "n": 5,
+        "margin": 0.05,
+        "equivalent": false
+      },
+      "margin_3pp": {
+        "mean_diff": 0.0054,
+        "se": 0.026162,
+        "p_tost": 0.200154,
+        "p_upper": 0.200154,
+        "p_lower": 0.123722,
+        "t_upper": -0.9403,
+        "t_lower": 1.3531,
+        "n": 5,
+        "margin": 0.03,
+        "equivalent": false
+      },
+      "margin_2pp": {
+        "mean_diff": 0.0054,
+        "se": 0.026162,
+        "p_tost": 0.303282,
+        "p_upper": 0.303282,
+        "p_lower": 0.193296,
+        "t_upper": -0.5581,
+        "t_lower": 0.9709,
+        "n": 5,
+        "margin": 0.02,
+        "equivalent": false
+      }
+    }
+  }
+}

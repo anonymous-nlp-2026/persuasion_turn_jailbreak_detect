@@ -1,0 +1,62 @@
+{
+  "9class_seed2024": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 1.0,
+    "fitd_ood": 1.0
+  },
+  "scrambled_seed2024": {
+    "iid": 1.0,
+    "dd_ood": 0.9904,
+    "aa_ood": 0.9809,
+    "fitd_ood": 1.0
+  },
+  "9class_seed2025": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 0.9809,
+    "fitd_ood": 0.9904
+  },
+  "scrambled_seed2025": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 1.0,
+    "fitd_ood": 0.9904
+  },
+  "9class_seed2026": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 1.0,
+    "fitd_ood": 1.0
+  },
+  "scrambled_seed2026": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 0.9904,
+    "fitd_ood": 1.0
+  },
+  "9class_seed314": {
+    "iid": 1.0,
+    "dd_ood": 0.9904,
+    "aa_ood": 0.9809,
+    "fitd_ood": 1.0
+  },
+  "scrambled_seed314": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 0.8326,
+    "fitd_ood": 1.0
+  },
+  "9class_seed628": {
+    "iid": 1.0,
+    "dd_ood": 0.9904,
+    "aa_ood": 0.9715,
+    "fitd_ood": 1.0
+  },
+  "scrambled_seed628": {
+    "iid": 1.0,
+    "dd_ood": 1.0,
+    "aa_ood": 0.8575,
+    "fitd_ood": 1.0
+  }
+}

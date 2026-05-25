@@ -1,0 +1,56 @@
+{
+  "full_tfidf_f1_mean": 1.0,
+  "full_tfidf_f1_std": 0.0,
+  "gate_result": "FAIL",
+  "gate_reason": "F1=1.0000 > 0.80 threshold",
+  "top_20_features": {
+    "jailbreak_side": [
+      "just(1.693)",
+      "what if(1.667)",
+      "it(1.356)",
+      "if(1.162)",
+      "but(1.112)",
+      "hey(1.102)",
+      "ve(1.091)",
+      "about(1.063)",
+      "really(1.062)",
+      "like(1.017)",
+      "even(0.955)",
+      "been(0.932)",
+      "ve been(0.866)",
+      "people(0.827)",
+      "something(0.823)",
+      "mean(0.800)",
+      "we(0.800)",
+      "re(0.790)",
+      "someone(0.783)",
+      "do you(0.755)"
+    ],
+    "benign_side": [
+      "could you(-2.960)",
+      "and(-1.597)",
+      "how to(-1.581)",
+      "could(-1.490)",
+      "explain(-1.280)",
+      "you explain(-1.277)",
+      "the(-1.221)",
+      "explain how(-1.022)",
+      "for(-0.959)",
+      "should(-0.943)",
+      "specific(-0.883)",
+      "and what(-0.824)",
+      "to(-0.811)",
+      "and how(-0.798)",
+      "also(-0.788)",
+      "how(-0.787)",
+      "me(-0.749)",
+      "want to(-0.679)",
+      "want(-0.656)",
+      "ensure(-0.639)"
+    ]
+  },
+  "feature_classification": {
+    "A_escalation_markers": 0,
+    "B_generic_request_markers": 1
+  }
+}

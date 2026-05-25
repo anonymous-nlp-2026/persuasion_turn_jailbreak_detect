@@ -1,0 +1,264 @@
+{
+  "experiment": "exp57_svd_iid_only",
+  "hypothesis": "SVD directions computed on IID training data only are sufficient for cross-attack OOD detection",
+  "data_counts": {
+    "iid_train": 350,
+    "iid_test": 76,
+    "iid_val": 74,
+    "dd_ood": 80,
+    "aa_ood": 80,
+    "fitd_ood": 80
+  },
+  "svd_info": {
+    "iid_only": {
+      "top10_singular_values": [
+        546.1993408203125,
+        158.90985107421875,
+        115.22586822509766,
+        78.57713317871094,
+        37.50274658203125,
+        27.174381256103516,
+        23.71233367919922,
+        16.928083419799805,
+        15.568244934082031,
+        14.17253303527832
+      ],
+      "variance_explained_top3": 0.9678,
+      "variance_explained_top5": 0.9896,
+      "variance_explained_top10": 0.9954
+    },
+    "all_data": {
+      "top10_singular_values": [
+        741.9379272460938,
+        269.6623229980469,
+        152.2078094482422,
+        122.1181869506836,
+        90.53990173339844,
+        55.926883697509766,
+        45.62373352050781,
+        35.35685348510742,
+        31.891386032104492,
+        25.71784019470215
+      ],
+      "variance_explained_top3": 0.946,
+      "variance_explained_top5": 0.9798,
+      "variance_explained_top10": 0.9917
+    }
+  },
+  "probe_results": {
+    "svd_iid_only_top3": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9474,
+        "accuracy": 0.9,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "svd_all_data_top3": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 0.9937,
+        "accuracy": 0.9875,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9041,
+        "accuracy": 0.825,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "svd_iid_only_top5": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9333,
+        "accuracy": 0.875,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "svd_all_data_top5": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 0.9937,
+        "accuracy": 0.9875,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.8966,
+        "accuracy": 0.8125,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "svd_iid_only_top10": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9333,
+        "accuracy": 0.875,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "svd_all_data_top10": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 0.9937,
+        "accuracy": 0.9875,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.8966,
+        "accuracy": 0.8125,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "random_3": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9542,
+        "accuracy": 0.9125,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    },
+    "full_768": {
+      "IID_test": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 76
+      },
+      "DD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      },
+      "AA": {
+        "f1": 0.9333,
+        "accuracy": 0.875,
+        "n_test": 80
+      },
+      "FITD": {
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "n_test": 80
+      }
+    }
+  },
+  "subspace_alignment": {
+    "top3": {
+      "principal_angles_cos": [
+        0.9998018741607666,
+        0.9885483384132385,
+        0.9332356452941895
+      ],
+      "mean_cos": 0.9739,
+      "min_cos": 0.9332
+    },
+    "top5": {
+      "principal_angles_cos": [
+        0.9999722242355347,
+        0.9985743165016174,
+        0.9950824975967407,
+        0.9874364733695984,
+        0.621820867061615
+      ],
+      "mean_cos": 0.9206,
+      "min_cos": 0.6218
+    },
+    "top10": {
+      "principal_angles_cos": [
+        0.9999917149543762,
+        0.999870240688324,
+        0.999710738658905,
+        0.9981498122215271,
+        0.9958366751670837,
+        0.9762779474258423,
+        0.9539282917976379,
+        0.7166540622711182,
+        0.6277456283569336,
+        0.2717665135860443
+      ],
+      "mean_cos": 0.854,
+      "min_cos": 0.2718
+    }
+  }
+}

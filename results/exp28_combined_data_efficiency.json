@@ -1,0 +1,155 @@
+{
+  "9class": {
+    "50": {
+      "n_train": 50,
+      "seeds": {
+        "42": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9904
+        },
+        "123": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9903618394184432
+        },
+        "456": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9260651629072681
+        }
+      },
+      "mean": {
+        "iid": 1.0,
+        "dd_ood": 1.0,
+        "aa_ood": 0.9689423341085704
+      },
+      "std": {
+        "iid": 0.0,
+        "dd_ood": 0.0,
+        "aa_ood": 0.037132724404853955
+      },
+      "n_seeds": 3
+    },
+    "125": {
+      "n_train": 125,
+      "seeds": {
+        "42": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9904
+        },
+        "123": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9808503732554366
+        },
+        "456": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9530067702110713
+        }
+      },
+      "mean": {
+        "iid": 1.0,
+        "dd_ood": 1.0,
+        "aa_ood": 0.9747523811555027
+      },
+      "std": {
+        "iid": 0.0,
+        "dd_ood": 0.0,
+        "aa_ood": 0.01942813782249983
+      },
+      "n_seeds": 3
+    },
+    "250": {
+      "n_train": 250,
+      "seeds": {
+        "42": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 1.0
+        },
+        "123": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9903618394184432
+        },
+        "456": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 0.9349555083077408
+        }
+      },
+      "mean": {
+        "iid": 1.0,
+        "dd_ood": 1.0,
+        "aa_ood": 0.9751057825753947
+      },
+      "std": {
+        "iid": 0.0,
+        "dd_ood": 0.0,
+        "aa_ood": 0.03510351731201365
+      },
+      "n_seeds": 3
+    },
+    "350": {
+      "n_train": 350,
+      "seeds": {
+        "42": {
+          "iid": 1.0,
+          "dd_ood": 1.0,
+          "aa_ood": 1.0
+        },
+        "123": {
+          "iid": 1.0,
+          "dd_ood": 0.9903618394184432,
+          "aa_ood": 0.9808503732554366
+        },
+        "456": {
+          "iid": 1.0,
+          "dd_ood": 0.943934114665822,
+          "aa_ood": 0.9349555083077408
+        }
+      },
+      "mean": {
+        "iid": 1.0,
+        "dd_ood": 0.9780986513614218,
+        "aa_ood": 0.9719352938543925
+      },
+      "std": {
+        "iid": 0.0,
+        "dd_ood": 0.029977244879536628,
+        "aa_ood": 0.03342611935928677
+      },
+      "n_seeds": 3
+    }
+  },
+  "vanilla": {
+    "125": {
+      "n_train": 125,
+      "label_distribution": {
+        "jailbreak": 62,
+        "benign": 63
+      },
+      "iid": 0.5324036095159967,
+      "dd_ood": 0.24358974358974358,
+      "aa_ood": 0.24358974358974358,
+      "deberta_train_losses": [],
+      "deberta_best_val_loss": null
+    },
+    "350": {
+      "n_train": 350,
+      "label_distribution": {
+        "benign": 175,
+        "jailbreak": 175
+      },
+      "iid": 1.0,
+      "dd_ood": 0.3596269968661622,
+      "aa_ood": 0.48940227356068944,
+      "deberta_train_losses": [],
+      "deberta_best_val_loss": null
+    }
+  },
+  "note": "exp28b crashed during eval (float16 dtype in GRU). 9-class 3-seed complete. Vanilla N=50/250 missing (only N=125/350 from exp28 seed42)."
+}

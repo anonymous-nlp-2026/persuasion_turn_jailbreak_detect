@@ -1,0 +1,130 @@
+{
+  "experiment": "exp65_svd_necessity_ablation",
+  "hypothesis": "Removing top-3 SVD directions destroys OOD detection; removing random-3 does not",
+  "svd_info": {
+    "computed_on": "training per-turn CLS embeddings (9-class encoder, plan_002)",
+    "top10_singular_values": [
+      1453.5467529296875,
+      605.2247924804688,
+      518.502197265625,
+      359.2217102050781,
+      264.2070007324219,
+      174.96640014648438,
+      124.88189697265625,
+      98.81849670410156,
+      79.4363021850586,
+      68.30970001220703
+    ],
+    "variance_explained_top3": 0.8981
+  },
+  "eval_setup": {
+    "ood_composition": "OOD jailbreak + IID test benign",
+    "gru_retrained_per_condition": true,
+    "gru_config": {
+      "hidden": 256,
+      "layers": 2,
+      "dropout": 0.3,
+      "lr": 0.001,
+      "epochs": 20
+    }
+  },
+  "conditions": [
+    "original",
+    "remove_top3_svd",
+    "remove_random3"
+  ],
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "results": {
+    "original": {
+      "dd_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "aa_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 0.9904,
+          "456": 0.9904
+        },
+        "mean": 0.9936,
+        "std": 0.0045
+      },
+      "fitd_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "remove_top3_svd": {
+      "dd_ood": {
+        "per_seed": {
+          "42": 0.8326,
+          "123": 0.7512,
+          "456": 0.9085
+        },
+        "mean": 0.8308,
+        "std": 0.0642
+      },
+      "aa_ood": {
+        "per_seed": {
+          "42": 0.9261,
+          "123": 0.935,
+          "456": 0.953
+        },
+        "mean": 0.938,
+        "std": 0.0112
+      },
+      "fitd_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "remove_random3": {
+      "dd_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "aa_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 0.9904,
+          "456": 0.9904
+        },
+        "mean": 0.9936,
+        "std": 0.0045
+      },
+      "fitd_ood": {
+        "per_seed": {
+          "42": 1.0,
+          "123": 1.0,
+          "456": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0
+      }
+    }
+  }
+}

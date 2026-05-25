@@ -1,0 +1,210 @@
+{
+  "9class": {
+    "per_seed": {
+      "42": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 0,
+            "ratio": 0.0,
+            "mean": null,
+            "median": null
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 3,
+            "ratio": 0.0309,
+            "mean": 0.8342,
+            "median": 0.8437
+          },
+          "high (>0.9)": {
+            "count": 94,
+            "ratio": 0.9691,
+            "mean": 0.9978,
+            "median": 1.0
+          },
+          "total_fp": 97,
+          "overall_mean": 0.9928,
+          "overall_median": 1.0
+        }
+      },
+      "123": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 0,
+            "ratio": 0.0,
+            "mean": null,
+            "median": null
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 3,
+            "ratio": 0.0227,
+            "mean": 0.879,
+            "median": 0.8724
+          },
+          "high (>0.9)": {
+            "count": 129,
+            "ratio": 0.9773,
+            "mean": 0.9981,
+            "median": 1.0
+          },
+          "total_fp": 132,
+          "overall_mean": 0.9954,
+          "overall_median": 1.0
+        }
+      },
+      "456": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 1,
+            "ratio": 0.0095,
+            "mean": 0.5958,
+            "median": 0.5958
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 5,
+            "ratio": 0.0476,
+            "mean": 0.7819,
+            "median": 0.7821
+          },
+          "high (>0.9)": {
+            "count": 99,
+            "ratio": 0.9429,
+            "mean": 0.9979,
+            "median": 1.0
+          },
+          "total_fp": 105,
+          "overall_mean": 0.9838,
+          "overall_median": 0.9999
+        }
+      }
+    },
+    "majority_vote": {
+      "bins": {
+        "low (0.5\u20130.7)": {
+          "count": 26,
+          "ratio": 0.25,
+          "mean": 0.6634,
+          "median": 0.6667
+        },
+        "mid (0.7\u20130.9)": {
+          "count": 5,
+          "ratio": 0.0481,
+          "mean": 0.7712,
+          "median": 0.7539
+        },
+        "high (>0.9)": {
+          "count": 73,
+          "ratio": 0.7019,
+          "mean": 0.9951,
+          "median": 1.0
+        },
+        "total_fp": 104,
+        "overall_mean": 0.9014,
+        "overall_median": 0.9999
+      }
+    }
+  },
+  "jb_mlm": {
+    "per_seed": {
+      "42": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 20,
+            "ratio": 0.3922,
+            "mean": 0.5823,
+            "median": 0.5785
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 10,
+            "ratio": 0.1961,
+            "mean": 0.7815,
+            "median": 0.768
+          },
+          "high (>0.9)": {
+            "count": 21,
+            "ratio": 0.4118,
+            "mean": 0.9779,
+            "median": 0.9854
+          },
+          "total_fp": 51,
+          "overall_mean": 0.7842,
+          "overall_median": 0.7692
+        }
+      },
+      "123": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 5,
+            "ratio": 0.1724,
+            "mean": 0.5894,
+            "median": 0.5999
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 4,
+            "ratio": 0.1379,
+            "mean": 0.7742,
+            "median": 0.7628
+          },
+          "high (>0.9)": {
+            "count": 20,
+            "ratio": 0.6897,
+            "mean": 0.9722,
+            "median": 0.9804
+          },
+          "total_fp": 29,
+          "overall_mean": 0.8789,
+          "overall_median": 0.9717
+        }
+      },
+      "456": {
+        "bins": {
+          "low (0.5\u20130.7)": {
+            "count": 4,
+            "ratio": 0.1111,
+            "mean": 0.5465,
+            "median": 0.5457
+          },
+          "mid (0.7\u20130.9)": {
+            "count": 11,
+            "ratio": 0.3056,
+            "mean": 0.7981,
+            "median": 0.7811
+          },
+          "high (>0.9)": {
+            "count": 21,
+            "ratio": 0.5833,
+            "mean": 0.9674,
+            "median": 0.9708
+          },
+          "total_fp": 36,
+          "overall_mean": 0.8689,
+          "overall_median": 0.9457
+        }
+      }
+    },
+    "majority_vote": {
+      "bins": {
+        "low (0.5\u20130.7)": {
+          "count": 5,
+          "ratio": 0.1471,
+          "mean": 0.5992,
+          "median": 0.5715
+        },
+        "mid (0.7\u20130.9)": {
+          "count": 6,
+          "ratio": 0.1765,
+          "mean": 0.7926,
+          "median": 0.7671
+        },
+        "high (>0.9)": {
+          "count": 20,
+          "ratio": 0.5882,
+          "mean": 0.9657,
+          "median": 0.9713
+        },
+        "total_fp": 34,
+        "overall_mean": 0.8334,
+        "overall_median": 0.9327
+      }
+    }
+  }
+}

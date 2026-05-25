@@ -1,0 +1,134 @@
+{
+  "vanilla": {
+    "iid_test": {
+      "fisher_ratio": {
+        "mean": 0.118,
+        "top10_mean": 0.4478
+      },
+      "silhouette_score": 0.0342,
+      "centroid_distance": {
+        "l2": 0.9253,
+        "normalized": 0.5938
+      },
+      "n_turns": 582,
+      "n_benign": 301,
+      "n_jailbreak": 281
+    },
+    "dd_ood": {
+      "fisher_ratio": {
+        "mean": 0.4014,
+        "top10_mean": 2.9746
+      },
+      "silhouette_score": 0.4113,
+      "centroid_distance": {
+        "l2": 1.1123,
+        "normalized": 1.0615
+      },
+      "n_turns": 946,
+      "n_benign": 301,
+      "n_jailbreak": 645
+    },
+    "aa_ood": {
+      "fisher_ratio": {
+        "mean": 0.4082,
+        "top10_mean": 3.0273
+      },
+      "silhouette_score": 0.33,
+      "centroid_distance": {
+        "l2": 1.0449,
+        "normalized": 1.0303
+      },
+      "n_turns": 712,
+      "n_benign": 301,
+      "n_jailbreak": 411
+    }
+  },
+  "9class_dapt": {
+    "iid_test": {
+      "fisher_ratio": {
+        "mean": 0.0733,
+        "top10_mean": 0.4251
+      },
+      "silhouette_score": 0.0484,
+      "centroid_distance": {
+        "l2": 7.5541,
+        "normalized": 0.3662
+      },
+      "n_turns": 582,
+      "n_benign": 301,
+      "n_jailbreak": 281
+    },
+    "dd_ood": {
+      "fisher_ratio": {
+        "mean": 0.1995,
+        "top10_mean": 1.4646
+      },
+      "silhouette_score": 0.0786,
+      "centroid_distance": {
+        "l2": 12.3283,
+        "normalized": 0.5568
+      },
+      "n_turns": 946,
+      "n_benign": 301,
+      "n_jailbreak": 645
+    },
+    "aa_ood": {
+      "fisher_ratio": {
+        "mean": 0.8323,
+        "top10_mean": 4.8773
+      },
+      "silhouette_score": 0.3014,
+      "centroid_distance": {
+        "l2": 27.6284,
+        "normalized": 1.3767
+      },
+      "n_turns": 712,
+      "n_benign": 301,
+      "n_jailbreak": 411
+    }
+  },
+  "topic_dapt": {
+    "iid_test": {
+      "fisher_ratio": {
+        "mean": 0.108,
+        "top10_mean": 0.583
+      },
+      "silhouette_score": 0.0756,
+      "centroid_distance": {
+        "l2": 10.7299,
+        "normalized": 0.6221
+      },
+      "n_turns": 582,
+      "n_benign": 301,
+      "n_jailbreak": 281
+    },
+    "dd_ood": {
+      "fisher_ratio": {
+        "mean": 0.6527,
+        "top10_mean": 3.2567
+      },
+      "silhouette_score": 0.2743,
+      "centroid_distance": {
+        "l2": 25.3927,
+        "normalized": 1.3982
+      },
+      "n_turns": 946,
+      "n_benign": 301,
+      "n_jailbreak": 645
+    },
+    "aa_ood": {
+      "fisher_ratio": {
+        "mean": 0.3113,
+        "top10_mean": 1.7473
+      },
+      "silhouette_score": 0.1407,
+      "centroid_distance": {
+        "l2": 18.2648,
+        "normalized": 0.9214
+      },
+      "n_turns": 712,
+      "n_benign": 301,
+      "n_jailbreak": 411
+    }
+  }
+}

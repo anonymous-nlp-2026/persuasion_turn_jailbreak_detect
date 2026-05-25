@@ -1,0 +1,31 @@
+{
+  "experiment": "exp59_resample_350",
+  "seed": 456,
+  "data_dir": "data/exp59_resample/seed456",
+  "results": {
+    "dd_ood": {
+      "f1_macro": 0.9483677548301133,
+      "precision": 0.9518072289156627,
+      "recall": 0.95,
+      "n": 155,
+      "n_jailbreak": 80,
+      "n_benign": 75
+    },
+    "aa_ood": {
+      "f1_macro": 0.9741924741924741,
+      "precision": 0.9746835443037974,
+      "recall": 0.975,
+      "n": 155,
+      "n_jailbreak": 80,
+      "n_benign": 75
+    },
+    "iid": {
+      "f1_macro": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 150,
+      "n_jailbreak": 75,
+      "n_benign": 75
+    }
+  }
+}

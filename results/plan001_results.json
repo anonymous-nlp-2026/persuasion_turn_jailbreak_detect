@@ -1,0 +1,117 @@
+{
+  "tfidf_f1_mean": 1.0,
+  "tfidf_f1_std": 0.0,
+  "pass": false,
+  "top_features_benign": [
+    "like",
+    "it",
+    "do",
+    "is",
+    "was",
+    "how do",
+    "guess",
+    "huh",
+    "but",
+    "was wondering"
+  ],
+  "top_features_jailbreak": [
+    "to",
+    "out",
+    "could",
+    "if we",
+    "really",
+    "without",
+    "any",
+    "help",
+    "who",
+    "me"
+  ],
+  "top_features_benign_coefs": [
+    [
+      "like",
+      -1.8902161496344378
+    ],
+    [
+      "it",
+      -1.6991611940826612
+    ],
+    [
+      "do",
+      -1.5683742870147979
+    ],
+    [
+      "is",
+      -1.5400318298618423
+    ],
+    [
+      "was",
+      -1.3456711082898838
+    ],
+    [
+      "how do",
+      -1.2702533875572262
+    ],
+    [
+      "guess",
+      -1.249739386784066
+    ],
+    [
+      "huh",
+      -1.2253460521575927
+    ],
+    [
+      "but",
+      -1.186640017291629
+    ],
+    [
+      "was wondering",
+      -1.1216645840207595
+    ]
+  ],
+  "top_features_jailbreak_coefs": [
+    [
+      "to",
+      0.9842909754731406
+    ],
+    [
+      "out",
+      0.9492344609986573
+    ],
+    [
+      "could",
+      0.8179117678080808
+    ],
+    [
+      "if we",
+      0.8076040850111873
+    ],
+    [
+      "really",
+      0.8035182406965545
+    ],
+    [
+      "without",
+      0.7536030659277871
+    ],
+    [
+      "any",
+      0.7031456490050005
+    ],
+    [
+      "help",
+      0.6732793104432534
+    ],
+    [
+      "who",
+      0.6167212651792747
+    ],
+    [
+      "me",
+      0.60854438633125
+    ]
+  ],
+  "feature_analysis": "style shortcut",
+  "n_jailbreak": 250,
+  "n_benign": 230,
+  "n_balanced_per_class": 230
+}

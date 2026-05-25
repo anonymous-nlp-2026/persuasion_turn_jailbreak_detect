@@ -1,0 +1,86 @@
+{
+  "overall": {
+    "f1_macro": 0.8289177489177489,
+    "f1_per_class": [
+      0.8311688311688312,
+      0.8266666666666667
+    ],
+    "accuracy": 0.8289473684210527,
+    "fpr_at_95tpr": 0.6052631578947368,
+    "confusion_matrix": [
+      [
+        32,
+        6
+      ],
+      [
+        7,
+        31
+      ]
+    ]
+  },
+  "early_detection": {
+    "k=1": {
+      "accuracy": 0.5263157894736842,
+      "f1_macro": 0.3892857142857143
+    },
+    "k=2": {
+      "accuracy": 0.5394736842105263,
+      "f1_macro": 0.4155130740496594
+    },
+    "k=3": {
+      "accuracy": 0.5921052631578947,
+      "f1_macro": 0.5106957424714433
+    },
+    "k=5": {
+      "accuracy": 0.7631578947368421,
+      "f1_macro": 0.7490829053558328
+    }
+  },
+  "per_attack_type": {
+    "Academic Disguise": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 3
+    },
+    "Classic Crescendo": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 3
+    },
+    "DAN Variant": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 4
+    },
+    "Emotional Path": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 3
+    },
+    "Full Spectrum": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 2
+    },
+    "Mixed Emotional": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 2
+    },
+    "Obfuscation Path": {
+      "f1_macro": 1.0,
+      "accuracy": 1.0,
+      "n": 2
+    },
+    "benign": {
+      "f1_macro": 0.45714285714285713,
+      "accuracy": 0.8421052631578947,
+      "n": 38
+    },
+    "persuasion-based": {
+      "f1_macro": 0.3870967741935484,
+      "accuracy": 0.631578947368421,
+      "n": 19
+    }
+  }
+}

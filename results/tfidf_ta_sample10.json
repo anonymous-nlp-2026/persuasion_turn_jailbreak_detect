@@ -1,0 +1,132 @@
+{
+  "macro_f1": 0.7,
+  "gate_threshold": 0.65,
+  "gate_pass": false,
+  "n_jailbreak": 10,
+  "n_benign": 10,
+  "folds": 3,
+  "top_features_jailbreak": [
+    {
+      "feature": "anyone",
+      "coef": 0.1779
+    },
+    {
+      "feature": "you",
+      "coef": 0.1679
+    },
+    {
+      "feature": "feel",
+      "coef": 0.1566
+    },
+    {
+      "feature": "what if",
+      "coef": 0.1428
+    },
+    {
+      "feature": "could",
+      "coef": 0.1368
+    },
+    {
+      "feature": "one",
+      "coef": 0.1335
+    },
+    {
+      "feature": "almost",
+      "coef": 0.1328
+    },
+    {
+      "feature": "there ve",
+      "coef": 0.132
+    },
+    {
+      "feature": "ever",
+      "coef": 0.1278
+    },
+    {
+      "feature": "without anyone",
+      "coef": 0.1255
+    },
+    {
+      "feature": "don know",
+      "coef": 0.1221
+    },
+    {
+      "feature": "hey there",
+      "coef": 0.121
+    },
+    {
+      "feature": "might",
+      "coef": 0.1184
+    },
+    {
+      "feature": "this",
+      "coef": 0.1174
+    },
+    {
+      "feature": "only",
+      "coef": 0.1164
+    }
+  ],
+  "top_features_benign": [
+    {
+      "feature": "do they",
+      "coef": -0.2424
+    },
+    {
+      "feature": "how do",
+      "coef": -0.2322
+    },
+    {
+      "feature": "or",
+      "coef": -0.1993
+    },
+    {
+      "feature": "was",
+      "coef": -0.1718
+    },
+    {
+      "feature": "they have",
+      "coef": -0.1685
+    },
+    {
+      "feature": "are there",
+      "coef": -0.1645
+    },
+    {
+      "feature": "was also",
+      "coef": -0.1641
+    },
+    {
+      "feature": "also wondering",
+      "coef": -0.1609
+    },
+    {
+      "feature": "hey that",
+      "coef": -0.1601
+    },
+    {
+      "feature": "support",
+      "coef": -0.1514
+    },
+    {
+      "feature": "should",
+      "coef": -0.1447
+    },
+    {
+      "feature": "so if",
+      "coef": -0.1366
+    },
+    {
+      "feature": "an",
+      "coef": -0.1362
+    },
+    {
+      "feature": "like do",
+      "coef": -0.1297
+    },
+    {
+      "feature": "all",
+      "coef": -0.1251
+    }
+  ]
+}
