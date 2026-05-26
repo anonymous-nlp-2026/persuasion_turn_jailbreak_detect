@@ -24,7 +24,7 @@ plt.rcParams.update({
     'ps.fonttype': 42,
 })
 
-with open('../../artifacts/exp50_layerwise_results.json') as f:
+with open('/home/ubuntu/.agent-ml-research-idea_gen_0514_2/projects/persuasion_turn_jailbreak_detect/artifacts/exp50_layerwise_results.json') as f:
     data = json.load(f)
 
 variants = data['variants']
@@ -93,7 +93,7 @@ ax1.legend(loc='upper left', framealpha=0.95, edgecolor='#cccccc',
 
 plt.tight_layout(w_pad=1.5)
 
-out_base = '../../docs/paper/figures/paper/fig_layerwise_representation'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0514_2/projects/persuasion_turn_jailbreak_detect/docs/paper/figures/paper/fig_layerwise_representation'
 fig.savefig(out_base + '.pdf', bbox_inches='tight', pad_inches=0.05)
 fig.savefig(out_base + '.png', bbox_inches='tight', pad_inches=0.05, dpi=300)
 plt.close()

@@ -93,7 +93,7 @@ ax.legend(loc='upper right', framealpha=0.95, edgecolor='#cccccc',
           borderpad=0.4, handlelength=2.0, labelspacing=0.3)
 
 plt.tight_layout()
-out_base = '../../docs/paper/figures/paper/fig_fpr_adaptation'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0514_2/projects/persuasion_turn_jailbreak_detect/docs/paper/figures/paper/fig_fpr_adaptation'
 plt.savefig(out_base + '.pdf', bbox_inches='tight', pad_inches=0.05, dpi=300)
 plt.savefig(out_base + '.png', bbox_inches='tight', pad_inches=0.05, dpi=300)
 print("Done")

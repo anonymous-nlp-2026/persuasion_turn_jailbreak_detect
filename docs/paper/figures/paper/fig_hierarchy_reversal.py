@@ -108,7 +108,7 @@ arrow = FancyArrowPatch(
 )
 fig.patches.append(arrow)
 
-out_base = '../../docs/paper/figures/paper/fig_hierarchy_reversal'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0514_2/projects/persuasion_turn_jailbreak_detect/docs/paper/figures/paper/fig_hierarchy_reversal'
 plt.savefig(out_base + '.pdf', bbox_inches='tight', pad_inches=0.05, dpi=300)
 plt.savefig(out_base + '.png', bbox_inches='tight', pad_inches=0.05, dpi=300)
 plt.close()

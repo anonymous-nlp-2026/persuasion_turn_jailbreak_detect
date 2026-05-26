@@ -24,7 +24,7 @@ Our findings suggest a capacity-aware deployment strategy. At base scale (125--1
 
 Classification DAPT recovers OOD detection at base scale (F1\,=\,0.97--1.0 vs.\ vanilla 0.26--0.31), though not under mixed-LLM training on diverse attacks (ActorAttack F1\,=\,0.504); on single-turn human-authored data, the hierarchy reverses (ToxicChat MLM 0.837 vs.\ classification 0.596), making these advantages condition-specific and counterproductive at 355M. Few-shot adaptation reduces FPR from 58--68\% to 0--1.5\%; this ablation framework provides a template for future controlled studies of domain adaptation in safety-critical natural language processing (NLP) tasks.
 
-\section{Limitations}
+\section*{Limitations}
 \label{sec:limitations}
 
 \begin{itemize}[nosep,leftmargin=*]
@@ -32,3 +32,7 @@ Classification DAPT recovers OOD detection at base scale (F1\,=\,0.97--1.0 vs.\ 
 \item \textbf{IID benign assumption.} OOD F1 assumes IID benign data; few-shot adaptation recovers performance but is validated on only two platforms ($n \leq 50$).
 \item \textbf{Scope.} Only persuasion-mediated multi-turn attacks at base-to-large scale (125--355M); single-turn token-level attacks and non-text modalities are not addressed.
 \end{itemize}
+
+\section*{Ethical Considerations}
+
+This work is defensive: it improves detection of multi-turn jailbreak attacks rather than developing new attacks. We acknowledge dual-use risk, as the persuasion taxonomy could inform adversarial actors. We mitigate this by using only synthetic conversations (no real harmful content), withholding attack-generation prompts, and focusing contributions on detection mechanisms. No human subjects were involved; all data will be released under CC BY-NC 4.0.

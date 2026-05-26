@@ -1,6 +1,4 @@
-% References for persuasion_turn_jailbreak_detect
-% Auto-generated from literature_map.yaml (2026-05-18)
-% Total entries: 31
+% References
 
 % ============================================================
 % Category 1: Production Multi-Turn Safety Systems
@@ -15,11 +13,13 @@
   archivePrefix={arXiv},
 }
 
-@misc{metallamaguard3_2024,
-  title={Llama Guard 3},
-  author={{Meta AI}},
+@article{metallamaguard3_2024,
+  title={The Llama 3 Herd of Models},
+  author={Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and others},
+  journal={arXiv preprint},
   year={2024},
-  howpublished={Meta AI (released with Llama 3.1)},
+  eprint={2407.21783},
+  archivePrefix={arXiv},
 }
 
 @article{zeng2024shieldgemma,
@@ -40,7 +40,7 @@
 
 @techreport{anthropic2025constitutional,
   title={Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming},
-  author={Sharma, Mrinank and Tong, Meg and Mu, Jesse and Korbak, Tomek and others},
+  author={Sharma, Mrinank and Tong, Meg and Mu, Jesse and Wei, Jerry and others},
   institution={Anthropic},
   year={2025},
   eprint={2501.18837},
@@ -70,7 +70,7 @@
 }
 
 @article{gguard2025,
-  title={An Attention-Aware GNN-Based Input Defender Against Multi-Turn Jailbreak on LLMs},
+  title={Attention-Aware GNN-based Input Defense against Multi-Turn LLM Jailbreak},
   author={Huang, Zixuan and Huang, Kecheng and Yin, Lihao and He, Bowei and Zhen, Huiling and Yuan, Mingxuan and Shao, Zili},
   journal={arXiv preprint},
   year={2025},
@@ -164,7 +164,6 @@
   year={2024},
 }
 
-% Note: key retains "2024" for citation compatibility; paper published at USENIX Security 2025
 @inproceedings{russinovich2024crescendo,
   title={Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack},
   author={Russinovich, Mark and Salem, Ahmed and Eldan, Ronen},
@@ -174,7 +173,6 @@
   archivePrefix={arXiv},
 }
 
-% Note: key retains "2023" for citation compatibility; paper published at SaTML 2025
 @inproceedings{chao2023pair,
   title={Jailbreaking Black Box Large Language Models in Twenty Queries},
   author={Chao, Patrick and Robey, Alexander and Dobriban, Edgar and Hassani, Hamed and Pappas, George J. and Wong, Eric},
@@ -217,20 +215,12 @@
   year={2024},
 }
 
-% Note: key retains "2024" for citation compatibility; paper published at ICLR 2025
-@inproceedings{ren2024actorattack,
-  title={ActorAttack: Red-Teaming Large Language Models via Multi-Turn Actor Network Theory},
+@article{ren2024actorattack,
+  title={Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues},
   author={Ren, Qibing and Li, Hao and Liu, Dongrui and Xie, Zhanxu and Lu, Xiaoya and Qiao, Yu and Sha, Lei and Yan, Junchi and Ma, Lizhuang and Shao, Jing},
-  booktitle={International Conference on Learning Representations},
-  year={2025},
-}
-
-@article{zou2023gcg,
-  title={Universal and Transferable Adversarial Attacks on Aligned Language Models},
-  author={Zou, Andy and Wang, Zifan and Carlini, Nicholas and Nasr, Milad and Kolter, J. Zico and Fredrikson, Matt},
   journal={arXiv preprint},
-  year={2023},
-  eprint={2307.15043},
+  year={2024},
+  eprint={2410.10700},
   archivePrefix={arXiv},
 }
 
@@ -290,7 +280,6 @@
   archivePrefix={arXiv},
 }
 
-% Note: key retains "2024" for citation compatibility; paper published at ICLR 2025
 @inproceedings{andriushchenko2024adaptive,
   title={Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks},
   author={Andriushchenko, Maksym and Croce, Francesco and Flammarion, Nicolas},
@@ -302,12 +291,6 @@
 % Technical Foundation
 % ============================================================
 
-@inproceedings{he2021deberta,
-  title={DeBERTa: Decoding-enhanced BERT with Disentangled Attention},
-  author={He, Pengcheng and Liu, Xiaodong and Gao, Jianfeng and Chen, Weizhu},
-  booktitle={International Conference on Learning Representations},
-  year={2021},
-}
 
 @inproceedings{he2023debertav3,
   title={{DeBERTaV3}: Improving {DeBERTa} using {ELECTRA}-Style Pre-Training with Gradient-Disentangled Embedding Sharing},
@@ -335,7 +318,7 @@
 
 @article{qwen3_2025,
   title={Qwen3 Technical Report},
-  author={Yang, An and Yang, Baosong and Zhang, Beichen and Wang, Binyuan and Li, Bo and Lin, Bowen and others},
+  author={Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and others},
   journal={arXiv preprint},
   year={2025},
   eprint={2505.09388},
@@ -432,13 +415,6 @@
 % Probing Classifiers
 % ============================================================
 
-@inproceedings{devlin2019bert,
-  title={{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
-  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
-  booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-  pages={4171--4186},
-  year={2019},
-}
 
 @inproceedings{conneau2018probing,
   title={What you can cram into a single \$\&!\#* vector: Probing sentence embeddings for linguistic properties},
@@ -471,24 +447,24 @@
   year={2019},
 }
 
-@inproceedings{robey2024smoothllm,
+@article{robey2024smoothllm,
   title={SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks},
   author={Robey, Alexander and Wong, Eric and Hassani, Hamed and Pappas, George J.},
-  booktitle={Proceedings of the 41st International Conference on Machine Learning},
-  year={2024},
+  journal={Transactions on Machine Learning Research},
+  year={2025},
 }
 
 @inproceedings{mehrotra2024tap,
-  title={Tree of Attacks: Jailbreaking Black-Box LLMs with the Pruning of Candidate Outputs},
+  title={Tree of Attacks: Jailbreaking Black-Box LLMs Automatically},
   author={Mehrotra, Anay and Zampetakis, Manolis and Kassianik, Paul and Nelson, Blaine and Anderson, Hyrum and Singer, Yaron and Karbasi, Amin},
   booktitle={Advances in Neural Information Processing Systems},
   year={2024},
 }
 
-@article{chao2024jailbreakbench,
+@inproceedings{chao2024jailbreakbench,
   title={JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models},
   author={Chao, Patrick and Robey, Alexander and Dobriban, Edgar and Hassani, Hamed and Pappas, George J. and Wong, Eric},
-  journal={arXiv preprint arXiv:2404.01318},
+  booktitle={Advances in Neural Information Processing Systems (Datasets and Benchmarks Track)},
   year={2024},
 }
 
@@ -500,7 +476,7 @@
 }
 
 @inproceedings{lu2025xboundary,
-  title={X-Boundary: Establishing Exact Safety Boundary to Shield {LLMs} from Multi-Turn Jailbreaks without Compromising Usability},
+  title={X-Boundary: Establishing Exact Safety Boundary to Shield {LLMs} from Jailbreak Attacks without Compromising Usability},
   author={Lu, Xiaoya and Liu, Dongrui and Yu, Yi and Xu, Luxin and Shao, Jing},
   booktitle={Findings of the Association for Computational Linguistics: EMNLP 2025},
   year={2025},
@@ -526,26 +502,23 @@
   archivePrefix={arXiv},
 }
 
-@article{jiang2024redqueen,
-  title={{RED QUEEN}: Safeguarding Large Language Models against Concealed Multi-Turn Jailbreaking},
+@inproceedings{jiang2024redqueen,
+  title={Red Queen: Exposing Latent Multi-Turn Risks in Large Language Models},
   author={Jiang, Yifan and Aggarwal, Kriti and Laud, Tanmay and Munir, Kashif and Pujara, Jay and Mukherjee, Subhabrata},
-  journal={arXiv preprint},
-  year={2024},
-  eprint={2409.17458},
-  archivePrefix={arXiv},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+  pages={25554--25591},
+  year={2025},
 }
 
-@inproceedings{song2026multibreak,
-  title={{MultiBreak}: A Scalable and Diverse Multi-turn Jailbreak Benchmark for Evaluating {LLM} Safety},
+@article{song2026multibreak,
+  title={{MultiBreak}: A Scalable and Diverse Multi-turn Jailbreak Benchmark for Stress-testing {LLM} Safety},
   author={Song, Jialin and Liu, Xiaodong and Yang, Weiwei and Chen, Wuyang and Feng, Mingqian and Zhu, Xuekai and Gao, Jianfeng},
-  booktitle={International Conference on Machine Learning},
+  journal={arXiv preprint},
   year={2026},
   eprint={2605.01687},
   archivePrefix={arXiv},
 }
 
-% ============================================================
-% New citations (added 2026-05-21)
 % ============================================================
 
 @inproceedings{xie2024gradsafe,
@@ -570,8 +543,6 @@
   year={2024},
 }
 
-% ============================================================
-% New citations (added 2026-05-20)
 % ============================================================
 
 @inproceedings{zhang2025jbshield,
@@ -628,23 +599,9 @@
   year={2019},
 }
 
-@inproceedings{chen2020simclr,
-  title={A Simple Framework for Contrastive Learning of Visual Representations},
-  author={Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
-  booktitle={International Conference on Machine Learning (ICML)},
-  pages={1597--1607},
-  year={2020},
-}
 
-@inproceedings{grill2020byol,
-  title={Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning},
-  author={Grill, Jean-Bastien and Strub, Florian and Altch{\'e}, Florent and Tallec, Corentin and Richemond, Pierre H. and Buchatskaya, Elena and Doersch, Carl and Pires, Bernardo Avila and Guo, Zhaohan Daniel and Azar, Mohammad Gheshlaghi and Piot, Bilal and Kavukcuoglu, Koray and Munos, R{\'e}mi and Valko, Michal},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2020},
-}
 
-% ============================================================
-% New citations (Round 10 fixes)
+
 % ============================================================
 
 @article{zhang2021understanding,
@@ -666,119 +623,19 @@
 }
 
 % ============================================================
-% New citations (D073 Phase 2)
-% ============================================================
 
-@article{marchiori2025jdapt,
-  title={J-DAPT: CORAL-Based Domain Adaptation with Cross-Modal Fusion for Multimodal Robotic Jailbreak Detection},
-  author={Marchiori, Andrea and others},
-  journal={arXiv preprint},
-  year={2025},
-  eprint={2509.23281},
-  archivePrefix={arXiv},
-}
 
-@article{wang2026trajguard,
-  title={TrajGuard: Trajectory-Based Hidden-State Detection of Multi-Turn Jailbreak Attacks},
-  author={Wang, Yifan and others},
-  journal={arXiv preprint},
-  year={2026},
-  eprint={2604.07727},
-  archivePrefix={arXiv},
-}
 
-@article{templeton2024saemitigators,
-  title={Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet},
-  author={Templeton, Adly and Conerly, Tom and Marcus, Jonathan and Lindsey, Jack and Bricken, Trenton and Chen, Brian and Pearce, Adam and Citro, Craig and Ameisen, Emmanuel and Jones, Andy and Cunningham, Hoagy and Turner, Nicholas L. and McDougall, Callum and MacDiarmid, Monte and Freeman, C. Daniel and Sumers, Theodore R. and Rees, Edward and Batson, Joshua and Jermyn, Adam and Carter, Shan and Olah, Chris and Henighan, Tom},
-  journal={Transformer Circuits Thread},
-  year={2024},
-}
 
-@article{alon2023perplexity,
-  title={Detecting Language Model Attacks with Perplexity},
-  author={Alon, Gabriel and Kamfonas, Michael},
-  journal={arXiv preprint},
-  year={2023},
-  eprint={2308.14132},
-  archivePrefix={arXiv},
-}
-
-@article{phute2023selfdefense,
-  title={LLM Self Defense: By Self Examination, LLMs Know They Are Being Tricked},
-  author={Phute, Mansi and Helber, Alec and Hull, Matthew and Peng, ShiNung and Szyber, Sebastian and Caliskan, Aylin and Khashabi, Daniel},
-  journal={arXiv preprint},
-  year={2023},
-  eprint={2308.07308},
-  archivePrefix={arXiv},
-}
 
 % ============================================================
-% New citations (MR1-5 supplement)
-% ============================================================
 
-@inproceedings{nian2025jaildam,
-  title={{JailDAM}: Jailbreak Detection with Adaptive Memory for Vision-Language Model},
-  author={Nian, Yi and Zhu, Shenzhe and Qin, Yuehan and Li, Li and Wang, Ziyi and Xiao, Chaowei and Zhao, Yue},
-  booktitle={Conference on Language Modeling},
-  year={2025},
-  eprint={2504.03770},
-  archivePrefix={arXiv},
-}
 
-@inproceedings{anil2024manyshot,
-  title={Many-shot Jailbreaking},
-  author={Anil, Cem and Durmus, Esin and Panickssery, Nina and Sharma, Mrinank and Benton, Joe and Kundu, Sandipan and Batson, Joshua and Tong, Meg and Mu, Jesse and Ford, Daniel and Mosconi, Francesco and Agrawal, Rajashree and Schaeffer, Rylan and Bashkansky, Naomi and Svenningsen, Samuel and Lambert, Mike and Radhakrishnan, Ansh and Denison, Carson and Hubinger, Evan J. and Bai, Yuntao and Bricken, Trenton and Maxwell, Timothy and Schiefer, Nicholas and Sully, James and Tamkin, Alex and Lanham, Tamera and Nguyen, Karina and Korbak, Tomasz and Kaplan, Jared and Ganguli, Deep and Bowman, Samuel R. and Perez, Ethan and Grosse, Roger Baker and Duvenaud, David},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2024},
-}
 
-@article{jain2023baseline,
-  title={Baseline Defenses for Adversarial Attacks Against Aligned Language Models},
-  author={Jain, Neel and Schwarzschild, Avi and Wen, Yuxin and Somepalli, Gowthami and Kirchenbauer, John and Chiang, Ping-yeh and Goldblum, Micah and Saha, Aniruddha and Geiping, Jonas and Goldstein, Tom},
-  journal={arXiv preprint},
-  year={2023},
-  eprint={2309.00614},
-  archivePrefix={arXiv},
-}
 
-@inproceedings{shen2025antidote,
-  title={Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models},
-  author={Shen, Guobin and Zhao, Dongcheng and Dong, Yiting and He, Xiang and Zeng, Yi},
-  booktitle={International Conference on Learning Representations},
-  year={2025},
-  eprint={2410.02298},
-  archivePrefix={arXiv},
-}
 
-@article{hsu2024improved,
-  title={Improved LLM Jailbreak Detection via Pretrained Embeddings},
-  author={Hsu, Erick and Hsu, Ikuya and Chung, Paul},
-  journal={arXiv preprint},
-  year={2024},
-  eprint={2412.01547},
-  archivePrefix={arXiv},
-}
 
-@article{li2025m2s,
-  title={{M2S}: Multi-Turn to Single-Turn -- Converting Multi-Turn Jailbreak Attacks to Single-Turn for Enhanced Safety Guardrails},
-  author={Li, Minxuan and Liu, Yue and Chen, Siyuan and Sun, Fangzhao and Ren, Hao and Liu, Zhengyi and Wu, Chengming and Xie, Xing},
-  journal={arXiv preprint},
-  year={2025},
-  eprint={2503.04856},
-  archivePrefix={arXiv},
-}
 
-@inproceedings{li2025repejailbreak,
-  title={Revisiting Jailbreaking for Large Language Models: A Representation Engineering Perspective},
-  author={Li, Tianlong and Wang, Zhenghua and Liu, Wenhao and Wu, Muling and Dou, Shihan and Lv, Changze and Wang, Xiaohua and Zheng, Xiaoqing and Huang, Xuanjing},
-  booktitle={Proceedings of the 31st International Conference on Computational Linguistics},
-  year={2025},
-  eprint={2401.06824},
-  archivePrefix={arXiv},
-}
-
-% ============================================================
-% New citations (P3 Should-Fix)
 % ============================================================
 
 @article{kadali2025internallayers,
@@ -827,20 +684,11 @@
   archivePrefix={arXiv},
 }
 
-@article{yousefpour2025repbend,
+@inproceedings{yousefpour2025repbend,
   title={Representation Bending for Large Language Model Safety},
   author={Yousefpour, Ashkan and others},
-  journal={arXiv preprint},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics},
   year={2025},
-  eprint={2504.01550},
-  archivePrefix={arXiv},
 }
 
-@article{galinkin2024improved,
-  title={Improved Large Language Model Jailbreak Detection via Pretrained Embeddings},
-  author={Galinkin, Erick and Sablotny, Martin},
-  journal={arXiv preprint},
-  year={2024},
-  eprint={2412.01547},
-  archivePrefix={arXiv},
-}
+

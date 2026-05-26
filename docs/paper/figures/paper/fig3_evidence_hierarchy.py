@@ -72,7 +72,7 @@ ax.legend(fontsize=6, loc='upper right', frameon=True, fancybox=False,
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 
-out_base = '../../docs/paper/figures/paper/fig3_evidence_hierarchy'
+out_base = '/home/ubuntu/.agent-ml-research-idea_gen_0514_2/projects/persuasion_turn_jailbreak_detect/docs/paper/figures/paper/fig3_evidence_hierarchy'
 fig.savefig(out_base + '.pdf', bbox_inches='tight', pad_inches=0.02)
 fig.savefig(out_base + '.png', bbox_inches='tight', pad_inches=0.02, dpi=300)
 plt.close()

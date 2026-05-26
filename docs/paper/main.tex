@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
+\IfFileExists{inconsolata.sty}{\usepackage{inconsolata}}{}
 \usepackage{graphicx}
 \graphicspath{{../../}}
 \usepackage{amsmath}
@@ -39,6 +40,6 @@
 \clearpage
 \input{appendix}
 
-% checklist removed — EMNLP 2026 ARR requires checklist in OpenReview form, not in PDF
+% checklist in OpenReview form
 
 \end{document}
